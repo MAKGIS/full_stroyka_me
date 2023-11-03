@@ -1,1 +1,1 @@
-# stroyka_template_v11
+# full_stroyka_me
