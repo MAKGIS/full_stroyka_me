@@ -6,6 +6,11 @@ import { WishlistService } from '../../services/wishlist.service';
 import { CompareService } from '../../services/compare.service';
 import { RootService } from '../../services/root.service';
 
+import { TranslateService } from '@ngx-translate/core';
+import { Observable } from 'rxjs';
+// import { LanguageService } from '../../services/language.service';
+
+
 export type ProductLayout = 'standard' | 'sidebar' | 'columnar' | 'quickview';
 
 @Component({
@@ -18,13 +23,13 @@ export class ProductComponent {
 
     @Input() product!: Product;
 
+    isLog = true;
+
     quantity: FormControl = new FormControl(1);
 
     addingToCart = false;
     addingToWishlist = false;
     addingToCompare = false;
-
-    isLog = true;
 
     constructor(
         @Inject(PLATFORM_ID) private platformId: any,
@@ -32,11 +37,20 @@ export class ProductComponent {
         private wishlist: WishlistService,
         private compare: CompareService,
         public root: RootService,
+        public translate: TranslateService,
+        // public languageService: LanguageService
     ) { }
 
     ngOnInit(): void {
+        // this.translate.use(this.languageService.options);
+
         if (this.isLog){
             console.log('- cmp -- ProductComponent.ngOnInit() product -> %o ', this.product);
+
+            // console.log('- cmp -- ProductComponent.ngOnInit() languageService -> %o ', this.languageService.options);
+            console.log('- cmp -- ProductComponent.ngOnInit() translate -> %o ', this.translate);
+            console.log('- cmp -- ProductComponent.ngOnInit() currentLang -> %o ', this.translate.currentLang);
+            console.log('- cmp -- ProductComponent.ngOnInit() currentLoader -> %o ', this.translate.currentLoader);
         }
      }
 

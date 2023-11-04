@@ -29,6 +29,17 @@ import { PageWishlistComponent } from './pages/page-wishlist/page-wishlist.compo
 import { ProductSidebarComponent } from './components/product-sidebar/product-sidebar.component';
 import { PageOrderSuccessComponent } from './pages/page-order-success/page-order-success.component';
 
+/*  not use !!!
+import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient } from '@angular/common/http';
+import { createTranslateLoader } from 'src/app/app.module';
+*/
+/*
+export function createTranslateLoader3(http: HttpClient) {
+    return new TranslateHttpLoader(http, './assets/i18n/shop/', '.json');
+}
+*/
 @NgModule({
     declarations: [
         // components
@@ -57,7 +68,18 @@ import { PageOrderSuccessComponent } from './pages/page-order-success/page-order
         BlocksModule,
         SharedModule,
         ShopRoutingModule,
-        WidgetsModule
+        WidgetsModule,
+/*
+        TranslateModule.forChild({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: (createTranslateLoader),
+                deps: [HttpClient]
+            },
+            //isolate: true,
+            //extend: true
+        })
+        */
     ]
 })
 export class ShopModule { }

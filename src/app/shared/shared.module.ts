@@ -43,7 +43,16 @@ import { ColorTypePipe } from './pipes/color-type.pipe';
 import { CurrencyFormatPipe } from './pipes/currency-format.pipe';
 import { ProductGalleryComponent } from './components/product-gallery/product-gallery.component';
 
-
+// Translate
+import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient } from '@angular/common/http';
+import { createTranslateLoader } from '../app.module';
+/*
+export function createTranslateLoader2(http: HttpClient) {
+    return new TranslateHttpLoader(http, './assets/i18n/shared/', '.json');
+}
+*/
 @NgModule({
     declarations: [
         // directives
@@ -89,6 +98,16 @@ import { ProductGalleryComponent } from './components/product-gallery/product-ga
         CarouselModule,
         ModalModule.forRoot(),
         RedZoomModule,
+
+        TranslateModule.forChild({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: (createTranslateLoader),
+                deps: [HttpClient]
+            },
+            //isolate: true,
+            //extend: true
+        })
     ],
     exports: [
         // directives

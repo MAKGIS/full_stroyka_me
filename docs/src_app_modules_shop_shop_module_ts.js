@@ -3349,6 +3349,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+/*  not use !!!
+import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient } from '@angular/common/http';
+import { createTranslateLoader } from 'src/app/app.module';
+*/
+/*
+export function createTranslateLoader3(http: HttpClient) {
+    return new TranslateHttpLoader(http, './assets/i18n/shop/', '.json');
+}
+*/
 class ShopModule {
     static { this.ɵfac = function ShopModule_Factory(t) { return new (t || ShopModule)(); }; }
     static { this.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_16__["ɵɵdefineNgModule"]({ type: ShopModule }); }

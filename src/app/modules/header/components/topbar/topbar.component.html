@@ -66,6 +66,7 @@
                 </div>
             </div>
             <div class="topbar__item">
+
                 <div class="topbar-dropdown" appDropdown="topbar-dropdown--opened" #languageDropdown="appDropdown">
                     <button class="topbar-dropdown__btn" type="button" (click)="languageDropdown.toggle()">
                         Language: <span class="topbar__item-value">EN</span>
@@ -73,7 +74,7 @@
                     </button>
 
                     <div class="topbar-dropdown__body">
-                        <div class="menu menu--layout--topbar menu--with-icons">
+                       <div class="menu menu--layout--topbar menu--with-icons">
                             <ul class="menu__list">
                                 <li
                                     class="menu__item"
@@ -82,7 +83,7 @@
                                     (mouseleave)="menuItem.classList.remove('menu__item--hover')"
                                     #menuItem
                                 >
-                                    <button class="menu__item-link" type="button" (click)="languageDropdown.close();">
+                                    <button class="menu__item-link" type="button" (click)="switchLang(language.key);languageDropdown.close();">
                                         <span class="menu__item-icon">
                                             <img [src]="'assets/images/languages/'+language.image+'.png'"
                                                  [srcset]="'assets/images/languages/'+language.image+'.png 1x,' +

@@ -1,0 +1,15 @@
+{
+ "prd": {
+  "Reviews": "Reviews ru 1 prd"
+ },
+
+    "Sitetitle": "Hoekige site met meerdere talen",
+    "Name": "Naam",
+    "NameError": "Ik weet zeker dat je een naam moet hebben",
+    "Email": "E-mailadres",
+    "PhoneNo": "Telefoon nr",
+    "Password": "Wachtwoord",
+    "Bio": "Voer bio in",
+    "TermsConditions": "Ik ga akkoord met de voorwaarden.",
+    "Submit": "voorleggen"
+}
