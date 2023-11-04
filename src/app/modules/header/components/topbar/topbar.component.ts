@@ -12,6 +12,16 @@ interface Currency {
     symbol: string;
 }
 
+function compare( a, b ) {
+    if ( a.key < b.key ){
+      return -1;
+    }
+    if ( a.key > b.key ){
+      return 1;
+    }
+    return 0;
+  }
+
 @Component({
     selector: 'app-header-topbar',
     templateUrl: './topbar.component.html',
@@ -42,7 +52,6 @@ export class TopbarComponent {
         // public languageService: LanguageService
     ) {
         translate.addLangs(['en', 'fr', 'gr', 'ru', 'it']);
-
 
         const currentLang = environment.currentLang;
 

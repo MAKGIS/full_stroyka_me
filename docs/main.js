@@ -4317,6 +4317,15 @@ const _c3 = function () { return { label: "Addresses", url: "/account/addresses"
 const _c4 = function () { return { label: "Password", url: "/account/password" }; };
 const _c5 = function () { return { label: "Logout", url: "/account/login" }; };
 const _c6 = function (a0, a1, a2, a3, a4, a5) { return [a0, a1, a2, a3, a4, a5]; };
+function compare(a, b) {
+    if (a.key < b.key) {
+        return -1;
+    }
+    if (a.key > b.key) {
+        return 1;
+    }
+    return 0;
+}
 class TopbarComponent {
     constructor(currencyService, translate) {
         this.currencyService = currencyService;
@@ -4355,7 +4364,7 @@ class TopbarComponent {
         }
     }
     static { this.ɵfac = function TopbarComponent_Factory(t) { return new (t || TopbarComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_shared_services_currency_service__WEBPACK_IMPORTED_MODULE_1__.CurrencyService), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_ngx_translate_core__WEBPACK_IMPORTED_MODULE_6__.TranslateService)); }; }
-    static { this.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({ type: TopbarComponent, selectors: [["app-header-topbar"]], decls: 54, vars: 18, consts: [[1, "test-border"], [1, "test-name-Component"], [1, "site-header__topbar", "topbar"], [1, "topbar__container", "container"], [1, "topbar__row"], [1, "topbar__item", "topbar__item--link"], ["routerLink", "/site/about-us", 1, "topbar-link"], ["routerLink", "/site/contact-us", 1, "topbar-link"], ["routerLink", "", 1, "topbar-link"], ["routerLink", "/shop/track-order", 1, "topbar-link"], ["routerLink", "/blog", 1, "topbar-link"], [1, "topbar__spring"], [1, "topbar__item"], ["appDropdown", "topbar-dropdown--opened", 1, "topbar-dropdown"], ["accountDropdown", "appDropdown"], ["type", "button", 1, "topbar-dropdown__btn", 3, "click"], ["name", "arrow-rounded-down-7x5", "size", "7x5"], [1, "topbar-dropdown__body"], ["layout", "topbar", 3, "items", "itemClick"], ["currencyDropdown", "appDropdown"], [1, "topbar__item-value"], [1, "menu", "menu--layout--topbar"], [1, "menu__list"], ["class", "menu__item", 3, "mouseover", "mouseleave", 4, "ngFor", "ngForOf"], ["languageDropdown", "appDropdown"], [1, "menu", "menu--layout--topbar", "menu--with-icons"], [1, "menu__item", 3, "mouseover", "mouseleave"], ["menuItem", ""], ["type", "button", 1, "menu__item-link", 3, "click"], [1, "menu__item-icon"], ["alt", "", 3, "src", "srcset"]], template: function TopbarComponent_Template(rf, ctx) { if (rf & 1) {
+    static { this.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({ type: TopbarComponent, selectors: [["app-header-topbar"]], decls: 54, vars: 19, consts: [[1, "test-border"], [1, "test-name-Component"], [1, "site-header__topbar", "topbar"], [1, "topbar__container", "container"], [1, "topbar__row"], [1, "topbar__item", "topbar__item--link"], ["routerLink", "/site/about-us", 1, "topbar-link"], ["routerLink", "/site/contact-us", 1, "topbar-link"], ["routerLink", "", 1, "topbar-link"], ["routerLink", "/shop/track-order", 1, "topbar-link"], ["routerLink", "/blog", 1, "topbar-link"], [1, "topbar__spring"], [1, "topbar__item"], ["appDropdown", "topbar-dropdown--opened", 1, "topbar-dropdown"], ["accountDropdown", "appDropdown"], ["type", "button", 1, "topbar-dropdown__btn", 3, "click"], ["name", "arrow-rounded-down-7x5", "size", "7x5"], [1, "topbar-dropdown__body"], ["layout", "topbar", 3, "items", "itemClick"], ["currencyDropdown", "appDropdown"], [1, "topbar__item-value"], [1, "menu", "menu--layout--topbar"], [1, "menu__list"], ["class", "menu__item", 3, "mouseover", "mouseleave", 4, "ngFor", "ngForOf"], ["languageDropdown", "appDropdown"], [1, "menu", "menu--layout--topbar", "menu--with-icons"], [1, "menu__item", 3, "mouseover", "mouseleave"], ["menuItem", ""], ["type", "button", 1, "menu__item-link", 3, "click"], [1, "menu__item-icon"], ["alt", "", 3, "src", "srcset"]], template: function TopbarComponent_Template(rf, ctx) { if (rf & 1) {
             const _r17 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵgetCurrentView"]();
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "div", 0)(1, "div", 1);
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](2);
@@ -4399,7 +4408,7 @@ class TopbarComponent {
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function TopbarComponent_Template_button_click_45_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r17); const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵreference"](44); return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](_r3.toggle()); });
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](46, " Language: ");
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](47, "span", 20);
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](48, "EN");
+            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](48);
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](49, "app-icon", 16);
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
@@ -4410,12 +4419,14 @@ class TopbarComponent {
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](2);
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate"](ctx.constructor.name);
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](27);
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("items", _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction6"](11, _c6, _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction0"](5, _c0), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction0"](6, _c1), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction0"](7, _c2), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction0"](8, _c3), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction0"](9, _c4), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction0"](10, _c5)));
+            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("items", _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction6"](12, _c6, _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction0"](6, _c0), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction0"](7, _c1), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction0"](8, _c2), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction0"](9, _c3), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction0"](10, _c4), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction0"](11, _c5)));
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](7);
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate"](ctx.currencyService.options.code);
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](5);
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngForOf", ctx.currencies);
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](12);
+            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](7);
+            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate"](ctx.translate.currentLang);
+            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](5);
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngForOf", ctx.languages);
         } }, dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_7__.NgForOf, _angular_router__WEBPACK_IMPORTED_MODULE_8__.RouterLinkWithHref, _shared_directives_dropdown_directive__WEBPACK_IMPORTED_MODULE_2__.DropdownDirective, _shared_components_icon_icon_component__WEBPACK_IMPORTED_MODULE_3__.IconComponent, _menu_menu_component__WEBPACK_IMPORTED_MODULE_4__.MenuComponent], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJ0b3BiYXIuY29tcG9uZW50LnNjc3MifQ== */"] }); }
 }
