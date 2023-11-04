@@ -67,6 +67,13 @@
             </div>
             <div class="topbar__item">
 
+                <select class="form-control" #selectedLang (change)="switchLang(selectedLang.value)">
+                    <option *ngFor="let language of translate.getLangs()" [value]="language"
+                      [selected]="language === translate.currentLang">
+                      {{ language }}
+                    </option>
+                  </select>
+
                 <div class="topbar-dropdown" appDropdown="topbar-dropdown--opened" #languageDropdown="appDropdown">
                     <button class="topbar-dropdown__btn" type="button" (click)="languageDropdown.toggle()">
                         Language: <span class="topbar__item-value">EN</span>
