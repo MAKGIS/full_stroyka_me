@@ -13449,6 +13449,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
 }
 .test-border {
   /* border: 1px dashed red; */
+  height: 100%; /*  !!!  use alredy !!! */
 }
 
 /*# sourceMappingURL=styles.css.map*/
