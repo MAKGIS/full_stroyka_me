@@ -2,6 +2,26 @@
    "prd": {
     "Reviews": "Reviews en 1 prd"
    },
+   "hdr": {
+    "Customer Service": "Customer Service"
+   },
+    "tbr": {
+      "About Us": "About Us",
+      "Contacts": "Contacts",
+      "Store Location": "Store Location",
+      "Track Order": "Track Order",
+      "Blog": "Blog",
+      "My Account": "My Account",
+      "Dashboard": "Dashboard",
+      "Edit Profile": "Edit Profile",
+      "Order History": "Order History",
+      "Addresses": "Addresses",
+      "Password": "Password",
+      "Logout": "Logout",
+      "Currency": "Currency",
+      "Language": "Language",
+      "myAccount": "[{label: 'Dashboard', url: '/account/dashboard'}, {label: 'Logout',  url: '/account/login'}]"
+    },
 
     "Name": "Name",
     "NameError": "I am sure you must have a name!",

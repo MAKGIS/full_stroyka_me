@@ -12,15 +12,38 @@ interface Currency {
     symbol: string;
 }
 
-function compare( a, b ) {
-    if ( a.key < b.key ){
-      return -1;
+interface LanguageType {
+    name: string;
+    image: string;
+    key: string;
+}
+export const langSpliter = '#';
+
+export function getLangLabel(label: string, langIndex: number): string {
+
+    const langWords = label.split(langSpliter);
+
+    //console.log('- cmp -- TopbarComponent.getLangLabel() langIndex -> %o langWords -> %o ', langIndex, langWords);
+
+    let word = langWords[0].trim();
+
+    if ( langIndex < langWords.length) {
+        if (langWords[langIndex].trim() != '') {
+            word = langWords[langIndex].trim();
+        }
     }
-    if ( a.key > b.key ){
-      return 1;
-    }
-    return 0;
-  }
+
+    return word;
+}
+
+export function getLangIndex(languages:LanguageType[], lang: string ): number {
+
+    const index = languages.findIndex(object => {
+        return object.key === lang;
+      });
+
+    return index;
+}
 
 @Component({
     selector: 'app-header-topbar',
@@ -31,12 +54,14 @@ export class TopbarComponent {
 
     isLog = true;
 
-    languages = [
+   // lang = 'fr';
+
+    languages: LanguageType[] = [
         {name: 'English', image: 'language-1', key: 'en'},
         {name: 'French',  image: 'language-2', key: 'fr'},
-        {name: 'German',  image: 'language-3', key: 'gr'},
-        {name: 'Russian', image: 'language-4', key: 'ru'},
-        {name: 'Italian', image: 'language-5', key: 'it'}
+        {name: 'Russian', image: 'language-3', key: 'ru'}//,
+        // {name: 'German',  image: 'language-4', key: 'gr'},
+        // {name: 'Italian', image: 'language-5', key: 'it'}
     ];
 
     currencies = [
@@ -46,12 +71,28 @@ export class TopbarComponent {
         {name: '₽ Russian Ruble',  url: '', code: 'RUB', symbol: '₽'}
     ];
 
+
+    myAccount = [
+        {label: 'Dashboard # Tableau de bord # Панель управления',
+        url: '/account/dashboard'},
+        {label: 'Edit Profile # Modifier le profil # Редактировать профиль',
+        url: '/account/profile'},
+        {label: 'Order History # Historique des commandes # История заказов',
+         url: '/account/orders'},
+        {label: 'Addresses # Adresses # Адреса',
+        url: '/account/addresses'},
+        {label: 'Password # Mot de passe # Пароль',
+        url: '/account/password'},
+        {label: 'Logout # Déconnexion # Выход',
+        url: '/account/login'}
+    ];
+
     constructor(
         public currencyService: CurrencyService,
         public translate: TranslateService,
         // public languageService: LanguageService
     ) {
-        translate.addLangs(['en', 'fr', 'gr', 'ru', 'it']);
+        translate.addLangs(this.languages.map(item => item.key));
 
         const currentLang = environment.currentLang;
 
@@ -75,5 +116,25 @@ export class TopbarComponent {
         if (this.isLog) {
             console.log('- cmp -- TopbarComponent.switchLang() currentLang -> %o ', this.translate.currentLang);
         }
+    }
+
+    getMyAccount(): any[] {
+
+      const lang = this.translate.currentLang;
+      const langIndex =  getLangIndex(this.languages, lang);
+
+      let myAccountV = this.myAccount.map(a => {return {...a}});
+
+      myAccountV =  myAccountV.map(item => {
+
+            return {
+            label:  getLangLabel(item.label, langIndex), url: item.url }
+        })
+
+       if (this.isLog) {
+       // console.log('- cmp -- TopbarksComponent.getMyAccount() myAccountV -> %o ', myAccountV);
+       }
+
+       return myAccountV;
     }
 }

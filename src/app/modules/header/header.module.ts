@@ -7,6 +7,12 @@ import { RouterModule } from '@angular/router';
 // modules
 import { SharedModule } from '../../shared/shared.module';
 
+// Translate
+import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient } from '@angular/common/http';
+import { createTranslateLoader } from 'src/app/app.module';
+
 // components
 import { AccountMenuComponent } from './components/account-menu/account-menu.component';
 import { DepartmentsComponent } from './components/departments/departments.component';
@@ -38,7 +44,15 @@ import { TopbarComponent } from './components/topbar/topbar.component';
         CommonModule,
         RouterModule,
         // modules
-        SharedModule
+        SharedModule,
+
+        TranslateModule.forChild({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: (createTranslateLoader),
+                deps: [HttpClient]
+            }
+        })
     ],
     exports: [
         // components

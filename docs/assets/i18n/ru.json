@@ -2,6 +2,27 @@
  "prd": {
   "Reviews": "Reviews ru 1 prd"
  },
+ "hdr": {
+  "Customer Service": "Обслуживание клиентов"
+ },
+ "tbr": {
+  "About Us": "О нас",
+  "Contacts": "Контакты",
+  "Store Location": "Местоположение магазина",
+  "Track Order": "Отслеживать заказ",
+  "Blog": "Блог",
+  "My Account": "Мой аккаунт",
+  "Dashboard": "Панель управления",
+  "Edit Profile": "Редактировать профиль",
+  "Order History": "История заказов",
+  "Addresses": "Адреса",
+  "Password": "Пароль",
+  "Logout": "Выход",
+  "Currency": "Валюта",
+  "Language": "Язык",
+  "myAccount": "[{label: 'Dashboard', url: '/account/dashboard'}, {label: 'Logout',  url: '/account/login'}]"
+
+},
 
     "Sitetitle": "Hoekige site met meerdere talen",
     "Name": "Naam",
