@@ -20,7 +20,15 @@
     "Logout": "Déconnexion",
     "Currency": "Devise",
     "Language": "Langue",
-    "myAccount": "[{label: 'Dashboard', url: '/account/dashboard'}, {label: 'Logout',  url: '/account/login'}]"
+
+    "€ Euro":  "€ Euros",
+    "£ Pound Sterling": "£ Livre sterling",
+    "$ US Dollar": "$ Dollar américain",
+    "₽ Russian Ruble": "₽ Rouble russe",
+
+    "English": "Anglais",
+    "French": "Français",
+    "Russian": "Russe"
 
   },
 

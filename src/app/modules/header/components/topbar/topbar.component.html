@@ -56,7 +56,7 @@
                                     #menuItem
                                 >
                                     <button class="menu__item-link" type="button" (click)="setCurrency(currency); currencyDropdown.close();">
-                                        {{ currency.name }}
+                                        {{ 'tbr.'+currency.name  | translate }}
                                     </button>
                                 </li>
                             </ul>
@@ -89,7 +89,7 @@
                                                  [srcset]="'assets/images/languages/'+language.image+'.png 1x,' +
                                                            'assets/images/languages/'+language.image+'@2x.png 2x'" alt="">
                                         </span>
-                                        {{ language.name }}
+                                        {{ 'tbr.'+language.name  | translate }}
                                     </button>
                                 </li>
                             </ul>
