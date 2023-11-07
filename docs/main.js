@@ -4258,10 +4258,7 @@ class NavComponent {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "TopbarComponent": () => (/* binding */ TopbarComponent),
-/* harmony export */   "getLangIndex": () => (/* binding */ getLangIndex),
-/* harmony export */   "getLangLabel": () => (/* binding */ getLangLabel),
-/* harmony export */   "langSpliter": () => (/* binding */ langSpliter)
+/* harmony export */   "TopbarComponent": () => (/* binding */ TopbarComponent)
 /* harmony export */ });
 /* harmony import */ var src_environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/environments/environment */ 2340);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 2560);
@@ -4289,11 +4286,12 @@ function TopbarComponent_li_48_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](2, "button", 28);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function TopbarComponent_li_48_Template_button_click_2_listener() { const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r8); const currency_r5 = restoredCtx.$implicit; const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵnextContext"](); const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵreference"](38); ctx_r10.setCurrency(currency_r5); return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](_r1.close()); });
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpipe"](4, "translate");
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()();
 } if (rf & 2) {
     const currency_r5 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate1"](" ", currency_r5.name, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpipeBind1"](4, 1, "tbr." + currency_r5.name), " ");
 } }
 function TopbarComponent_li_61_Template(rf, ctx) { if (rf & 1) {
     const _r14 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵgetCurrentView"]();
@@ -4305,35 +4303,47 @@ function TopbarComponent_li_61_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](4, "img", 30);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpipe"](6, "translate");
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()();
 } if (rf & 2) {
     const language_r11 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("src", "assets/images/languages/" + language_r11.image + ".png", _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵsanitizeUrl"])("srcset", "assets/images/languages/" + language_r11.image + ".png 1x," + "assets/images/languages/" + language_r11.image + "@2x.png 2x");
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate1"](" ", language_r11.name, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpipeBind1"](6, 3, "tbr." + language_r11.name), " ");
 } }
 ;
 ;
 ;
-const langSpliter = '#';
-function getLangLabel(label, langIndex) {
+/*
+export const langSpliter = '#';
+
+export function getLangLabel(label: string, langIndex: number): string {
+
     const langWords = label.split(langSpliter);
+
     //console.log('- cmp -- TopbarComponent.getLangLabel() langIndex -> %o langWords -> %o ', langIndex, langWords);
+
     let word = langWords[0].trim();
-    if (langIndex < langWords.length) {
+
+    if ( langIndex < langWords.length) {
         if (langWords[langIndex].trim() != '') {
             word = langWords[langIndex].trim();
         }
     }
+
     return word;
 }
-function getLangIndex(languages, lang) {
+
+export function getLangIndex(languages:LanguageType[], lang: string ): number {
+
     const index = languages.findIndex(object => {
         return object.key === lang;
-    });
+      });
+
     return index;
 }
+*/
 class TopbarComponent {
     constructor(currencyService, translate) {
         this.currencyService = currencyService;
@@ -4353,21 +4363,34 @@ class TopbarComponent {
             { name: '$ US Dollar', url: '', code: 'USD', symbol: '$' },
             { name: '₽ Russian Ruble', url: '', code: 'RUB', symbol: '₽' }
         ];
-        this.myAccount = [
-            { label: 'Dashboard # Tableau de bord # Панель управления',
-                url: '/account/dashboard' },
-            { label: 'Edit Profile # Modifier le profil # Редактировать профиль',
-                url: '/account/profile' },
-            { label: 'Order History # Historique des commandes # История заказов',
-                url: '/account/orders' },
-            { label: 'Addresses # Adresses # Адреса',
-                url: '/account/addresses' },
-            { label: 'Password # Mot de passe # Пароль',
-                url: '/account/password' },
-            { label: 'Logout # Déconnexion # Выход',
-                url: '/account/login' }
+        this.url = [
+            '/account/dashboard', '/account/profile', '/account/orders',
+            '/account/addresses', '/account/password', '/account/login'
         ];
-        this.myAccountV = [];
+        this.myAccount_en = [
+            { label: 'Dashboard', url: this.url[0] },
+            { label: 'Edit Profile', url: this.url[1] },
+            { label: 'Order History', url: this.url[2] },
+            { label: 'Addresses', url: this.url[3] },
+            { label: 'Password', url: this.url[4] },
+            { label: 'Logout', url: this.url[5] }
+        ];
+        this.myAccount_fr = [
+            { label: 'Tableau de bord', url: this.url[0] },
+            { label: 'Modifier le profil', url: this.url[1] },
+            { label: 'Historique des commandes', url: this.url[2] },
+            { label: 'Adresses', url: this.url[3] },
+            { label: 'Mot de passe', url: this.url[4] },
+            { label: 'Déconnexion', url: this.url[5] }
+        ];
+        this.myAccount_ru = [
+            { label: 'Панель управления', url: this.url[0] },
+            { label: 'Редактировать профиль', url: this.url[1] },
+            { label: 'История заказов', url: this.url[2] },
+            { label: 'Адреса', url: this.url[3] },
+            { label: 'Пароль', url: this.url[4] },
+            { label: 'Выход', url: this.url[5] }
+        ];
         translate.addLangs(this.languages.map(item => item.key));
         const currentLang = src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.currentLang;
         translate.setDefaultLang(currentLang);
@@ -4388,18 +4411,27 @@ class TopbarComponent {
         }
     }
     getMyAccount() {
-        //return this.myAccount;
-        const lang = this.translate.currentLang;
-        const langIndex = getLangIndex(this.languages, lang);
-        this.myAccountV = JSON.parse(JSON.stringify(this.myAccount));
-        //this.myAccount.map(a => {return {...a}});
-        this.myAccountV = this.myAccountV.map(item => {
-            return {
-                label: getLangLabel(item.label, langIndex), url: item.url
-            };
-            /// label:  item.label, url: item.url }
-        });
-        return this.myAccountV;
+        switch (this.translate.currentLang) {
+            case 'fr': return this.myAccount_fr;
+            case 'ru': return this.myAccount_ru;
+            default: return this.myAccount_en;
+        }
+        /*
+              const lang = this.translate.currentLang;
+              const langIndex =  getLangIndex(this.languages, lang);
+        
+              this.myAccountV = JSON.parse(JSON.stringify(this.myAccount));
+              //this.myAccount.map(a => {return {...a}});
+        
+              this.myAccountV =  this.myAccountV.map(item => {
+        
+                    return {
+                       label:  getLangLabel(item.label, langIndex), url: item.url }
+                   /// label:  item.label, url: item.url }
+                })
+        
+               return this.myAccountV;
+               */
     }
     static { this.ɵfac = function TopbarComponent_Factory(t) { return new (t || TopbarComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_shared_services_currency_service__WEBPACK_IMPORTED_MODULE_1__.CurrencyService), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_ngx_translate_core__WEBPACK_IMPORTED_MODULE_6__.TranslateService)); }; }
     static { this.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({ type: TopbarComponent, selectors: [["app-header-topbar"]], decls: 62, vars: 30, consts: [[1, "test-border"], [1, "test-name-Component"], [1, "site-header__topbar", "topbar"], [1, "topbar__container", "container"], [1, "topbar__row"], [1, "topbar__item", "topbar__item--link"], ["routerLink", "/site/about-us", 1, "topbar-link"], ["routerLink", "/site/contact-us", 1, "topbar-link"], ["routerLink", "", 1, "topbar-link"], ["routerLink", "/shop/track-order", 1, "topbar-link"], ["routerLink", "/blog", 1, "topbar-link"], [1, "topbar__spring"], [1, "topbar__item"], ["appDropdown", "topbar-dropdown--opened", 1, "topbar-dropdown"], ["accountDropdown", "appDropdown"], ["type", "button", 1, "topbar-dropdown__btn", 3, "click"], ["name", "arrow-rounded-down-7x5", "size", "7x5"], [1, "topbar-dropdown__body"], ["layout", "topbar", 3, "items", "itemClick"], ["currencyDropdown", "appDropdown"], [1, "topbar__item-value"], [1, "menu", "menu--layout--topbar"], [1, "menu__list"], ["class", "menu__item", 3, "mouseover", "mouseleave", 4, "ngFor", "ngForOf"], ["languageDropdown", "appDropdown"], [1, "menu", "menu--layout--topbar", "menu--with-icons"], [1, "menu__item", 3, "mouseover", "mouseleave"], ["menuItem", ""], ["type", "button", 1, "menu__item-link", 3, "click"], [1, "menu__item-icon"], ["alt", "", 3, "src", "srcset"]], template: function TopbarComponent_Template(rf, ctx) { if (rf & 1) {
@@ -4447,7 +4479,7 @@ class TopbarComponent {
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](44, "app-icon", 16);
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](45, "div", 17)(46, "div", 21)(47, "ul", 22);
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](48, TopbarComponent_li_48_Template, 4, 1, "li", 23);
+            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](48, TopbarComponent_li_48_Template, 5, 3, "li", 23);
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()()()()();
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](49, "div", 12)(50, "div", 13, 24)(52, "button", 15);
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function TopbarComponent_Template_button_click_52_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵrestoreView"](_r17); const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵreference"](51); return _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵresetView"](_r3.toggle()); });
@@ -4459,7 +4491,7 @@ class TopbarComponent {
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](57, "app-icon", 16);
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](58, "div", 17)(59, "div", 25)(60, "ul", 22);
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](61, TopbarComponent_li_61_Template, 6, 3, "li", 23);
+            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](61, TopbarComponent_li_61_Template, 7, 5, "li", 23);
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()()()()()()()()();
         } if (rf & 2) {
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](2);

@@ -20,8 +20,15 @@
   "Logout": "Выход",
   "Currency": "Валюта",
   "Language": "Язык",
-  "myAccount": "[{label: 'Dashboard', url: '/account/dashboard'}, {label: 'Logout',  url: '/account/login'}]"
 
+  "€ Euro":  "€ Евро",
+  "£ Pound Sterling": "£ Фунт стерлингов",
+  "$ US Dollar": "$ Доллар США",
+  "₽ Russian Ruble": "₽ Российский рубль",
+
+  "English": "Английский",
+  "French": "Французский",
+  "Russian": "Русский"
 },
 
     "Sitetitle": "Hoekige site met meerdere talen",
