@@ -4313,6 +4313,9 @@ function TopbarComponent_li_61_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate1"](" ", language_r11.name, " ");
 } }
+;
+;
+;
 const langSpliter = '#';
 function getLangLabel(label, langIndex) {
     const langWords = label.split(langSpliter);
@@ -4364,6 +4367,7 @@ class TopbarComponent {
             { label: 'Logout # Déconnexion # Выход',
                 url: '/account/login' }
         ];
+        this.myAccountV = [];
         translate.addLangs(this.languages.map(item => item.key));
         const currentLang = src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.currentLang;
         translate.setDefaultLang(currentLang);
@@ -4384,18 +4388,18 @@ class TopbarComponent {
         }
     }
     getMyAccount() {
+        //return this.myAccount;
         const lang = this.translate.currentLang;
         const langIndex = getLangIndex(this.languages, lang);
-        let myAccountV = this.myAccount.map(a => { return { ...a }; });
-        myAccountV = myAccountV.map(item => {
+        this.myAccountV = JSON.parse(JSON.stringify(this.myAccount));
+        //this.myAccount.map(a => {return {...a}});
+        this.myAccountV = this.myAccountV.map(item => {
             return {
                 label: getLangLabel(item.label, langIndex), url: item.url
             };
+            /// label:  item.label, url: item.url }
         });
-        if (this.isLog) {
-            // console.log('- cmp -- TopbarksComponent.getMyAccount() myAccountV -> %o ', myAccountV);
-        }
-        return myAccountV;
+        return this.myAccountV;
     }
     static { this.ɵfac = function TopbarComponent_Factory(t) { return new (t || TopbarComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_shared_services_currency_service__WEBPACK_IMPORTED_MODULE_1__.CurrencyService), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_ngx_translate_core__WEBPACK_IMPORTED_MODULE_6__.TranslateService)); }; }
     static { this.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({ type: TopbarComponent, selectors: [["app-header-topbar"]], decls: 62, vars: 30, consts: [[1, "test-border"], [1, "test-name-Component"], [1, "site-header__topbar", "topbar"], [1, "topbar__container", "container"], [1, "topbar__row"], [1, "topbar__item", "topbar__item--link"], ["routerLink", "/site/about-us", 1, "topbar-link"], ["routerLink", "/site/contact-us", 1, "topbar-link"], ["routerLink", "", 1, "topbar-link"], ["routerLink", "/shop/track-order", 1, "topbar-link"], ["routerLink", "/blog", 1, "topbar-link"], [1, "topbar__spring"], [1, "topbar__item"], ["appDropdown", "topbar-dropdown--opened", 1, "topbar-dropdown"], ["accountDropdown", "appDropdown"], ["type", "button", 1, "topbar-dropdown__btn", 3, "click"], ["name", "arrow-rounded-down-7x5", "size", "7x5"], [1, "topbar-dropdown__body"], ["layout", "topbar", 3, "items", "itemClick"], ["currencyDropdown", "appDropdown"], [1, "topbar__item-value"], [1, "menu", "menu--layout--topbar"], [1, "menu__list"], ["class", "menu__item", 3, "mouseover", "mouseleave", 4, "ngFor", "ngForOf"], ["languageDropdown", "appDropdown"], [1, "menu", "menu--layout--topbar", "menu--with-icons"], [1, "menu__item", 3, "mouseover", "mouseleave"], ["menuItem", ""], ["type", "button", 1, "menu__item-link", 3, "click"], [1, "menu__item-icon"], ["alt", "", 3, "src", "srcset"]], template: function TopbarComponent_Template(rf, ctx) { if (rf & 1) {
@@ -5242,7 +5246,7 @@ class CurrencyResolverService {
         this.router = router;
         this.shop = shop;
         this.currencyService = currencyService;
-        this.isLog = true;
+        this.isLog = false;
     }
     resolve() {
         const codeBase = src_environments_environment__WEBPACK_IMPORTED_MODULE_0__.environment.currencyCodePrice;
@@ -13020,7 +13024,7 @@ class CurrencyFormatPipe {
         this.locale = locale;
         this.service = service;
         this.currencyPipe = new _angular_common__WEBPACK_IMPORTED_MODULE_1__.CurrencyPipe(this.locale);
-        this.isLog = true;
+        this.isLog = false;
     }
     transform(value, currencyCode, display, digitsInfo, locale) {
         currencyCode = currencyCode || this.service.options.code;

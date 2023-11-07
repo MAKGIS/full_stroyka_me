@@ -9,7 +9,7 @@ import { CurrencyService } from '../services/currency.service';
 export class CurrencyFormatPipe implements PipeTransform {
     currencyPipe: CurrencyPipe = new CurrencyPipe(this.locale);
 
-    isLog = true;
+    isLog = false;
 
     constructor(
         @Inject(LOCALE_ID) private locale: string,

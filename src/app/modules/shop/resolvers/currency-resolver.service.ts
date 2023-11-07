@@ -14,7 +14,7 @@ import { CurrencyResponce, RateValue } from 'src/app/shared/interfaces/currency'
 })
 export class CurrencyResolverService implements Resolve<any> {
 
-    isLog = true;
+    isLog = false;
 
     constructor(
         private root: RootService,

@@ -4,19 +4,26 @@ import { CurrencyService } from '../../../../shared/services/currency.service';
 import { TranslateService } from '@ngx-translate/core';
 // import { LanguageService } from 'src/app/shared/services/language.service';
 import { environment } from 'src/environments/environment';
+import { Observable, of } from 'rxjs';
 
 interface Currency {
     name: string;
     url: string;
     code: string;
     symbol: string;
-}
+};
 
 interface LanguageType {
     name: string;
     image: string;
     key: string;
-}
+};
+
+interface MyAccountType {
+    label: string;
+    url: string;
+};
+
 export const langSpliter = '#';
 
 export function getLangLabel(label: string, langIndex: number): string {
@@ -72,7 +79,7 @@ export class TopbarComponent {
     ];
 
 
-    myAccount = [
+    myAccount: MyAccountType[] = [
         {label: 'Dashboard # Tableau de bord # Панель управления',
         url: '/account/dashboard'},
         {label: 'Edit Profile # Modifier le profil # Редактировать профиль',
@@ -86,6 +93,8 @@ export class TopbarComponent {
         {label: 'Logout # Déconnexion # Выход',
         url: '/account/login'}
     ];
+
+    myAccountV: MyAccountType[] = [];
 
     constructor(
         public currencyService: CurrencyService,
@@ -118,23 +127,22 @@ export class TopbarComponent {
         }
     }
 
-    getMyAccount(): any[] {
+    getMyAccount(): MyAccountType[] {
+     //return this.myAccount;
 
       const lang = this.translate.currentLang;
       const langIndex =  getLangIndex(this.languages, lang);
 
-      let myAccountV = this.myAccount.map(a => {return {...a}});
+      this.myAccountV = JSON.parse(JSON.stringify(this.myAccount));
+      //this.myAccount.map(a => {return {...a}});
 
-      myAccountV =  myAccountV.map(item => {
+      this.myAccountV =  this.myAccountV.map(item => {
 
             return {
-            label:  getLangLabel(item.label, langIndex), url: item.url }
+               label:  getLangLabel(item.label, langIndex), url: item.url }
+           /// label:  item.label, url: item.url }
         })
 
-       if (this.isLog) {
-       // console.log('- cmp -- TopbarksComponent.getMyAccount() myAccountV -> %o ', myAccountV);
-       }
-
-       return myAccountV;
+       return this.myAccountV;
     }
 }
