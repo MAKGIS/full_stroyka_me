@@ -6,7 +6,7 @@ export const mobileMenu: MobileMenuItem[] = [
         {type: 'link', label: 'Home 2', url: '/home-two'},
         {type: 'link', label: 'Offcanvas Cart', url: '/offcanvas-cart'}
     ]},
-
+/*
     {type: 'link', label: 'Categories', url: '/shop/catalog', children: [
         {type: 'link', label: 'Power Tools', url: '/shop/catalog', children: [
             {type: 'link', label: 'Engravers',           url: '/shop/catalog'},
@@ -23,7 +23,7 @@ export const mobileMenu: MobileMenuItem[] = [
             {type: 'link', label: 'Lathes',              url: '/shop/catalog'}
         ]}
     ]},
-
+*/
     // {type: 'link', label: 'Shop', url: '/shop/catalog/power-tools', children: [
         {type: 'link', label: 'Shop', url: '/shop/catalog', children: [
             // {type: 'link', label: 'Shop Grid', url: '/shop/catalog/power-tools', children: [
@@ -80,17 +80,18 @@ export const mobileMenu: MobileMenuItem[] = [
     ]},
 
     {type: 'button', label: 'Currency', children: [
-        {type: 'button', label: '€ Euro',           data: {currency: 'EUR'}},
-        {type: 'button', label: '£ Pound Sterling', data: {currency: 'GBP'}},
-        {type: 'button', label: '$ US Dollar',      data: {currency: 'USD'}},
-        {type: 'button', label: '₽ Russian Ruble',  data: {currency: 'RUB'}}
+        {type: 'button', label: '€ Euro',           data: {currency: 'EUR'}, symbol: '€'},
+        {type: 'button', label: '£ Pound Sterling', data: {currency: 'GBP'}, symbol: '£'},
+        {type: 'button', label: '$ US Dollar',      data: {currency: 'USD'}, symbol: '$'},
+        {type: 'button', label: '₽ Russian Ruble',  data: {currency: 'RUB'}, symbol: '₽'}
     ]},
 
     {type: 'button', label: 'Language', children: [
-        {type: 'button', label: 'English', data: {language: 'EN'}},
-        {type: 'button', label: 'French',  data: {language: 'FR'}},
-        {type: 'button', label: 'German',  data: {language: 'DE'}},
-        {type: 'button', label: 'Russian', data: {language: 'RU'}},
-        {type: 'button', label: 'Italian', data: {language: 'IT'}}
+        {type: 'button', label: 'English', data: {language: 'en'}},
+        {type: 'button', label: 'French',  data: {language: 'fr'}},
+       // {type: 'button', label: 'German',  data: {language: 'de'}},
+        {type: 'button', label: 'Russian', data: {language: 'ru'}},
+       // {type: 'button', label: 'Italian', data: {language: 'it'}}
     ]}
+
 ];

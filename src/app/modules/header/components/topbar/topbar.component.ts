@@ -67,7 +67,7 @@ export class TopbarComponent {
         {name: 'English', image: 'language-1', key: 'en'},
         {name: 'French',  image: 'language-2', key: 'fr'},
         {name: 'Russian', image: 'language-3', key: 'ru'}//,
-        // {name: 'German',  image: 'language-4', key: 'gr'},
+        // {name: 'German',  image: 'language-4', key: 'de'},
         // {name: 'Italian', image: 'language-5', key: 'it'}
     ];
 
@@ -78,33 +78,13 @@ export class TopbarComponent {
         {name: '₽ Russian Ruble',  url: '', code: 'RUB', symbol: '₽'}
     ];
 
-    url: string[] = [
-         '/account/dashboard', '/account/profile', '/account/orders',
-         '/account/addresses', '/account/password','/account/login'
-         ];
-    myAccount_en: MyAccountType[] = [
-        {label: 'Dashboard',    url: this.url[0]},
-        {label: 'Edit Profile', url: this.url[1]},
-        {label: 'Order History',url: this.url[2]},
-        {label: 'Addresses',    url: this.url[3]},
-        {label: 'Password',     url: this.url[4]},
-        {label: 'Logout',       url: this.url[5]}
-    ];
-    myAccount_fr: MyAccountType[] = [
-        {label: 'Tableau de bord',          url: this.url[0]},
-        {label: 'Modifier le profil',       url: this.url[1]},
-        {label: 'Historique des commandes', url: this.url[2]},
-        {label: 'Adresses',                 url: this.url[3]},
-        {label: 'Mot de passe',             url: this.url[4]},
-        {label: 'Déconnexion',              url: this.url[5]}
-    ];
-    myAccount_ru: MyAccountType[] = [
-        {label: 'Панель управления',        url: this.url[0]},
-        {label: 'Редактировать профиль',    url: this.url[1]},
-        {label: 'История заказов',          url: this.url[2]},
-        {label: 'Адреса',                   url: this.url[3]},
-        {label: 'Пароль',                   url: this.url[4]},
-        {label: 'Выход',                    url: this.url[5]}
+    myAccount: MyAccountType[] = [
+        {label: 'Dashboard',    url: '/account/dashboard'},
+        {label: 'Edit Profile', url: '/account/profile'},
+        {label: 'Order History',url: '/account/orders'},
+        {label: 'Addresses',    url: '/account/addresses'},
+        {label: 'Password',     url: '/account/password'},
+        {label: 'Logout',       url: '/account/login'}
     ];
 
     constructor(
@@ -137,16 +117,9 @@ export class TopbarComponent {
             console.log('- cmp -- TopbarComponent.switchLang() currentLang -> %o ', this.translate.currentLang);
         }
     }
-
+/*
     getMyAccount(): MyAccountType[] {
 
-        switch(this.translate.currentLang)
-        {
-            case 'fr': return this.myAccount_fr;
-            case 'ru': return this.myAccount_ru;
-            default: return this.myAccount_en;
-        }
-/*
       const lang = this.translate.currentLang;
       const langIndex =  getLangIndex(this.languages, lang);
 
@@ -161,6 +134,6 @@ export class TopbarComponent {
         })
 
        return this.myAccountV;
-       */
     }
+ */
 }

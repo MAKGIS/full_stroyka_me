@@ -2,7 +2,7 @@ import {
     AfterViewChecked, AfterViewInit,
     Component,
     ElementRef,
-    Inject, NgZone,
+    Inject, Input, NgZone,
     OnDestroy,
     OnInit,
     PLATFORM_ID, QueryList,
@@ -27,6 +27,8 @@ import { DepartmentsService } from 'src/app/shared/api/departments.service';
 })
 export class DepartmentsComponent implements OnInit, OnDestroy, AfterViewInit, AfterViewChecked {
     private destroy$: Subject<void> = new Subject();
+
+    @Input() tagLang: string = '';
 
     @ViewChild('bodyElement') bodyElementRef!: ElementRef;
     @ViewChild('containerElement') containerElementRef!: ElementRef;
@@ -395,4 +397,10 @@ export class DepartmentsComponent implements OnInit, OnDestroy, AfterViewInit, A
 
         return elements[index].nativeElement as HTMLDivElement;
     }
+
+    getItemLabel(label: string): string {
+
+        return this.tagLang + label;
+    }
+
 }

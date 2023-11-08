@@ -12,6 +12,17 @@ import { MobileHeaderComponent } from './components/mobile-header/mobile-header.
 import { MobileLinksComponent } from './components/mobile-links/mobile-links.component';
 import { MobileMenuComponent } from './components/mobile-menu/mobile-menu.component';
 
+/*  not use !!! */
+import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient } from '@angular/common/http';
+import { createTranslateLoader } from 'src/app/app.module';
+
+/*
+export function createTranslateLoader3(http: HttpClient) {
+    return new TranslateHttpLoader(http, './assets/i18n/shop/', '.json');
+}
+*/
 @NgModule({
     declarations: [
         // components
@@ -24,7 +35,17 @@ import { MobileMenuComponent } from './components/mobile-menu/mobile-menu.compon
         CommonModule,
         RouterModule,
         // modules
-        SharedModule
+        SharedModule,
+
+        TranslateModule.forChild({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: (createTranslateLoader),
+                deps: [HttpClient]
+            },
+            //isolate: true,
+            //extend: true
+        })
     ],
     exports: [
         // components

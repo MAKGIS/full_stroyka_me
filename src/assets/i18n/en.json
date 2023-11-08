@@ -5,12 +5,120 @@
    "hdr": {
     "Customer Service": "Customer Service"
    },
+   "search": {
+     "Search over 10,000 products": "Search over 10,000 products"
+   },
+   "menu": {
+       "Menu": "Menu",
+
+       "Categories": "Categories",
+            "Power Tools": "Power Tools",
+            "Machine Tools": "Machine Tools",
+
+          "Currency": "Currency",
+          "Language": "Language",
+
+          "€ Euro":  "€ Euro",
+          "£ Pound Sterling": "£ Pound Sterling",
+          "$ US Dollar": "$ US Dollar",
+          "₽ Russian Ruble": "₽ Russian Ruble",
+
+          "English": "English",
+          "French": "French",
+          "Russian": "Russian",
+
+
+       "Shop By Category": "Shop By Category",
+
+      "Home": "Home",
+        "Home 1": "Home 1",
+        "Home 2": "Home 2",
+        "Offcanvas Cart": "Offcanvas Cart",
+
+      "Megamenu": "Megamenu",
+
+      "Shop": "Shop",
+          "Shop Grid": "Shop Grid",
+              "3 Columns Sidebar": "3 Columns Sidebar",
+              "4 Columns Full": "4 Columns Full",
+              "5 Columns Ful": "5 Columns Ful",
+          "Shop List": "Shop list",
+          "Shop Right Sidebar": "Shop Right Sidebar",
+          "Product": "Product",
+              "Product Alt": "Product Alt",
+              "Product Sidebar":"Product Sidebar",
+          "Cart":"Cart",
+          "Checkout":"Checkout",
+          "Order Success":"Order Success",
+          "Wishlist":"Wishlist",
+          "Compare":"Compare",
+          "Track Order":"Track Order",
+
+      "Account": "Account",
+          "Login":"Login",
+          "Dashboard":"Dashboard",
+          "Edit Profile":"Edit Profile",
+          "Order History":"Order History",
+          "Order Details":"Order Details",
+          "Address Book":"Address Book",
+          "Edit Address":"Edit Address",
+          "Change Password":"Change Password",
+
+      "Blog": "Blog",
+          "Blog Classic": "Blog Classic",
+          "Blog Grid": "Blog Grid",
+          "Blog List": "Blog List",
+          "Blog Left Sidebar": "Blog Left Sidebar",
+          "Post Page": "Post Page",
+          "Post Without Sidebar": "Post Without Sidebar",
+
+      "Pages": "Pages",
+          "About Us": "About Us",
+          "Contact Us": "Contact Us",
+          "Contact Us Alt": "Contact Us Alt",
+          "404": "404",
+          "Terms And Conditions": "Terms And Conditions",
+          "FAQ": "FAQ",
+          "Components": "Components",
+          "Typography": "Typography",
+
+
+      "Buy Theme": "Buy Theme"
+   },
+   "megamenu": {
+    "Power Tools": "Power Tools",
+      "Engravers": "Engravers",
+      "Wrenches": "Wrenches",
+      "Wall Chaser": "Wall Chaser",
+      "Pneumatic Tools": "Pneumatic Tools",
+  "Machine Tools": "Machine Tools",
+      "Thread Cutting": "Thread Cutting",
+      "Chip Blowers": "Chip Blowers",
+      "Sharpening Machines": "Sharpening Machines",
+      "Pipe Cutters": "Pipe Cutters",
+      "Slotting machines": "Slotting machines",
+      "Lathes": "Lathes",
+  "Hand Tools": "Hand Tools",
+      "Screwdrivers": "Screwdrivers",
+      "Handsaws": "Handsaws",
+      "Knives": "Knives",
+      "Axes": "Axes",
+      "Multitools": "Multitools",
+      "Paint Tools": "Paint Tools",
+  "Garden Equipment": "Garden Equipment",
+      "Motor Pumps": "Motor Pumps",
+      "Chainsaws": "Chainsaws",
+      "Electric Saws": "Electric Saws",
+      "Brush Cutters": "Brush Cutters"
+
+   },
     "tbr": {
       "About Us": "About Us",
       "Contacts": "Contacts",
       "Store Location": "Store Location",
       "Track Order": "Track Order",
       "Blog": "Blog",
+
       "My Account": "My Account",
       "Dashboard": "Dashboard",
       "Edit Profile": "Edit Profile",

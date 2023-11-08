@@ -5,6 +5,112 @@
  "hdr": {
   "Customer Service": "Обслуживание клиентов"
  },
+ "search": {
+  "Search over 10,000 products": "Найдите более 10 000 продуктов"
+},
+ "menu": {
+  "Menu": "Menu",
+
+  "Categories": "Categories",
+      "Power Tools": "Power Tools",
+      "Machine Tools": "Machine Tools",
+
+      "Currency": "Валюта",
+      "Language": "Язык",
+
+      "€ Euro":  "€ Евро",
+      "£ Pound Sterling": "£ Фунт стерлингов",
+      "$ US Dollar": "$ Доллар США",
+      "₽ Russian Ruble": "₽ Российский рубль",
+
+      "English": "Английский",
+      "French": "Французский",
+      "Russian": "Русский",
+
+
+  "Shop By Category": "Магазин по категориям",
+
+  "Home": "Дом",
+       "Home 1": "Дом 1",
+       "Home 2": "Дом 2",
+       "Offcanvas Cart": "Корзина",
+
+  "Megamenu": "Мегаменю",
+  "Shop": "Магазин",
+      "Shop Grid": "Shop Grid",
+        "3 Columns Sidebar": "3 Columns Sidebar",
+        "4 Columns Full": "4 Columns Full",
+        "5 Columns Ful": "5 Columns Ful",
+      "Shop List": "Shop list",
+      "Shop Right Sidebar": "Shop Right Sidebar",
+      "Product": "Product",
+          "Product Alt": "Product Alt",
+          "Product Sidebar":"Product Sidebar",
+      "Cart":"Cart",
+      "Checkout":"Checkout",
+      "Order Success":"Order Success",
+      "Wishlist":"Wishlist",
+      "Compare":"Compare",
+      "Track Order":"Track Order",
+
+  "Account": "Аккаунт",
+        "Login":"Login",
+        "Dashboard":"Dashboard",
+        "Edit Profile":"Edit Profile",
+        "Order History":"Order History",
+        "Order Details":"Order Details",
+        "Address Book":"Address Book",
+        "Edit Address":"Edit Address",
+        "Change Password":"Change Password",
+
+  "Blog": "Блог",
+        "Blog Classic": "Blog Classic",
+        "Blog Grid": "Blog Grid",
+        "Blog List": "Blog List",
+        "Blog Left Sidebar": "Blog Left Sidebar",
+        "Post Page": "Post Page",
+        "Post Without Sidebar": "Post Without Sidebar",
+
+  "Pages": "Страницы",
+        "About Us": "About Us",
+        "Contact Us": "Contact Us",
+        "Contact Us Alt": "Contact Us Alt",
+        "404": "404",
+        "Terms And Conditions": "Terms And Conditions",
+        "FAQ": "FAQ",
+        "Components": "Components",
+        "Typography": "Typography",
+
+
+  "Buy Theme": "Купить тему"
+ },
+ "megamenu": {
+  "Power Tools": "Power Tools",
+    "Engravers": "Engravers",
+    "Wrenches": "Wrenches",
+    "Wall Chaser": "Wall Chaser",
+    "Pneumatic Tools": "Pneumatic Tools",
+"Machine Tools": "Machine Tools",
+    "Thread Cutting": "Thread Cutting",
+    "Chip Blowers": "Chip Blowers",
+    "Sharpening Machines": "Sharpening Machines",
+    "Pipe Cutters": "Pipe Cutters",
+    "Slotting machines": "Slotting machines",
+    "Lathes": "Lathes",
+"Hand Tools": "Hand Tools",
+    "Screwdrivers": "Screwdrivers",
+    "Handsaws": "Handsaws",
+    "Knives": "Knives",
+    "Axes": "Axes",
+    "Multitools": "Multitools",
+    "Paint Tools": "Paint Tools",
+"Garden Equipment": "Garden Equipment",
+    "Motor Pumps": "Motor Pumps",
+    "Chainsaws": "Chainsaws",
+    "Electric Saws": "Electric Saws",
+    "Brush Cutters": "Brush Cutters"
+
+ },
  "tbr": {
   "About Us": "О нас",
   "Contacts": "Контакты",

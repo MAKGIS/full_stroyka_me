@@ -16,7 +16,7 @@
 
         <ng-template #link>
             <div class="nav-links__item-body">
-                {{ item.label }}
+                 {{ getItemLabel(item.label) | translate }}
                 <app-icon *ngIf="item.menu" class="nav-links__item-arrow" name="arrow-rounded-down-9x6" size="9x6"></app-icon>
             </div>
         </ng-template>
@@ -34,7 +34,7 @@
             [ngClass]="{'nav-links__submenu--open': hoveredItem === item}"
             #submenuElement
         >
-            <app-header-menu [items]="item.menu.items" (itemClick)="onSubItemClick()"></app-header-menu>
+            <app-header-menu [tagLang]="'menu.'"  [items]="item.menu.items" (itemClick)="onSubItemClick()"></app-header-menu>
         </div>
         <!--suppress JSUnusedGlobalSymbols -->
         <div
@@ -43,7 +43,7 @@
             [ngClass]="{'nav-links__submenu--open': hoveredItem === item}"
             #submenuElement
         >
-            <app-header-megamenu [menu]="item.menu" (itemClick)="onSubItemClick()"></app-header-megamenu>
+            <app-header-megamenu [tagLang]="'megamenu.'" [menu]="item.menu" (itemClick)="onSubItemClick()"></app-header-megamenu>
         </div>
     </li>
 </ul>

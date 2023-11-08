@@ -11,6 +11,7 @@ export interface MobileMenuItemLink extends MobileMenuItemBase {
 
 export interface MobileMenuItemButton extends MobileMenuItemBase {
     type: 'button';
+    symbol?: string;
 }
 
 export interface MobileMenuItemDivider {

@@ -1,4 +1,4 @@
-import { AfterViewChecked, Component, ElementRef, NgZone, OnDestroy, OnInit, QueryList, ViewChildren } from '@angular/core';
+import { AfterViewChecked, Component, ElementRef, Input, NgZone, OnDestroy, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { navigation } from '../../../../../data/header-navigation';
 import { NavigationLink } from '../../../../shared/interfaces/navigation-link';
 import { DirectionService } from '../../../../shared/services/direction.service';
@@ -14,6 +14,8 @@ import { HeaderService } from '../../../../shared/services/header.service';
 export class LinksComponent implements OnInit, OnDestroy, AfterViewChecked {
     @ViewChildren('submenuElement') submenuElements!: QueryList<ElementRef>;
     @ViewChildren('itemElement') itemElements!: QueryList<ElementRef>;
+
+    @Input() tagLang: string = '';
 
     destroy$: Subject<void> = new Subject<void>();
 
@@ -156,5 +158,10 @@ export class LinksComponent implements OnInit, OnDestroy, AfterViewChecked {
         }
 
         return elements[index].nativeElement as HTMLDivElement;
+    }
+
+    getItemLabel(label: string): string {
+
+        return this.tagLang + label;
     }
 }

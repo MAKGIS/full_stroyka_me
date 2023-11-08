@@ -12,5 +12,12 @@ export class MegamenuComponent {
 
     @Output() itemClick: EventEmitter<NestedLink> = new EventEmitter<NestedLink>();
 
+    @Input() tagLang: string = '';
+
     constructor() { }
+
+    getItemLabel(label: string): string {
+
+        return this.tagLang + label;
+    }
 }

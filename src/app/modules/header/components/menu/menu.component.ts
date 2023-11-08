@@ -21,6 +21,8 @@ export class MenuComponent implements AfterViewChecked {
     @Input() layout: 'classic'|'topbar' = 'classic';
     @Input() items: NestedLink[] = [];
 
+    @Input() tagLang: string = '';
+
     @Output() itemClick: EventEmitter<NestedLink> = new EventEmitter<NestedLink>();
 
     @ViewChild('menuElement') elementRef!: ElementRef;
@@ -147,5 +149,10 @@ export class MenuComponent implements AfterViewChecked {
         }
 
         return elements[index].nativeElement as HTMLDivElement;
+    }
+
+    getItemLabel(label: string): string {
+
+        return this.tagLang + label;
     }
 }

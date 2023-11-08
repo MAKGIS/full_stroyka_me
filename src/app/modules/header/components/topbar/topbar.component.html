@@ -31,7 +31,7 @@
 
                     <div class="topbar-dropdown__body">
                         <app-header-menu layout="topbar" (itemClick)="accountDropdown.close()"
-                        [items]= getMyAccount()
+                        [items]=myAccount  [tagLang]="'tbr.'"
                         ></app-header-menu>
                     </div>
                 </div>
