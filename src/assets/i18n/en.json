@@ -140,12 +140,40 @@
       "Russian": "Russian"
     },
 
-    "Name": "Name",
-    "NameError": "I am sure you must have a name!",
-    "Email": "Email address",
-    "PhoneNo": "Phone No",
-    "Password": "Password",
-    "Bio": "Enter bio",
-    "TermsConditions": "I agree to terms and conditions.",
-    "Submit": "Submit"
+    "footer": {
+
+      "footer-contacts-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in feugiat lorem. Pellentque ac placerat tellus.",
+      "store": {
+          "address": "715 Fake Street, New York 10021 USA",
+          "email": "stroyka@example.com",
+          "phones": "(800) 060-0730', '(800) 060-0730",
+          "hours": "Mon-Sat 10:00pm - 7:00pm"
+      },
+
+      "footer-newsletter-text": "Praesent pellentesque volutpat ex, vitae auctor lorem pulvinar mollis felis at lacinia.",
+      "Email Address": "Email Address",
+      "Subscribe": "Subscribe",
+      "footer-newsletter-text-social": "Follow us on social networks",
+
+      "Information": "Information",
+      "My Account": "My Account",
+
+      "About Us": "About Us",
+      "Delivery Information": "Delivery Information",
+      "Privacy Policy": "Privacy Policy",
+      "Brands": "Brands",
+      "Contact Us": "Contact Us",
+      "Returns": "Returns",
+      "Site Map": "Site Map",
+
+      "Store Location": "Store Location",
+      "Order History": "Order History",
+      "Wish List": "Wish List",
+      "Newsletter": "Newsletter",
+      "Specials": "Specials",
+      "Gift Cards": "Gift Cards",
+      "Affiliate": "Affiliate"
+
+    }
+
 }

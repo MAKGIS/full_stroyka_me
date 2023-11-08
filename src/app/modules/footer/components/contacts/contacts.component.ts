@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { StoreService } from '../../../../shared/services/store.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-footer-contacts',
@@ -7,5 +8,17 @@ import { StoreService } from '../../../../shared/services/store.service';
     styleUrls: ['./contacts.component.scss']
 })
 export class ContactsComponent {
-    constructor(public store: StoreService) { }
+
+    @Input() tagLang: string = '';
+
+    constructor(
+        public store: StoreService,
+        public translate: TranslateService
+        ) { }
+
+    getItemLabel(label: string): string {
+
+        return this.tagLang + label;
+    }
+
 }
