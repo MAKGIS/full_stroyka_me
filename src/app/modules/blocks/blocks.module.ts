@@ -26,6 +26,12 @@ import { BlockSlideshowComponent } from './block-slideshow/block-slideshow.compo
 // components
 import { BlockHeaderComponent } from './components/block-header/block-header.component';
 
+// Translate
+import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient } from '@angular/common/http';
+import { createTranslateLoader } from 'src/app/app.module';
+
 @NgModule({
     declarations: [
         // blocks
@@ -50,7 +56,15 @@ import { BlockHeaderComponent } from './components/block-header/block-header.com
         // modules (third-party)
         CarouselModule,
         // modules
-        SharedModule
+        SharedModule,
+
+        TranslateModule.forChild({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: (createTranslateLoader),
+                deps: [HttpClient]
+            }
+        })
     ],
     exports: [
         // blocks

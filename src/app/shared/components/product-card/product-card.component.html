@@ -13,9 +13,9 @@
     </button>
 
     <div *ngIf="product.badges.length" class="product-card__badges-list">
-        <div *ngIf="product.badges.includes('sale')" class="product-card__badge product-card__badge--sale">Sale</div>
-        <div *ngIf="product.badges.includes('hot')" class="product-card__badge product-card__badge--hot">Hot</div>
-        <div *ngIf="product.badges.includes('new')" class="product-card__badge product-card__badge--new">New</div>
+        <div *ngIf="product.badges.includes('sale')" class="product-card__badge product-card__badge--sale">{{ tagLang+'Sale'  | translate }}</div>
+        <div *ngIf="product.badges.includes('hot')" class="product-card__badge product-card__badge--hot">{{ tagLang+'Hot'  | translate }}</div>
+        <div *ngIf="product.badges.includes('new')" class="product-card__badge product-card__badge--new">{{ tagLang+'New'  | translate }}</div>
     </div>
 
     <div class="product-card__image product-image">
@@ -32,7 +32,7 @@
         </div>
         <div class="product-card__rating">
             <app-rating [value]="product.rating"></app-rating>
-            <div class="product-card__rating-legend">{{ product.reviews }} Reviews</div>
+            <div class="product-card__rating-legend">{{ product.reviews }} {{ tagLang+'Reviews'  | translate }}</div>
         </div>
         <ul *ngIf="featuredAttributes.length" class="product-card__features-list">
             <li *ngFor="let attribute of featuredAttributes">
@@ -45,8 +45,8 @@
     </div>
     <div class="product-card__actions">
         <div class="product-card__availability">
-            Availability:
-            <span *ngIf="product.availability === 'in-stock'" class="text-success">In Stock</span>
+            {{ tagLang+'Availability'  | translate }}:
+            <span *ngIf="product.availability === 'in-stock'" class="text-success">{{ tagLang+'In Stock'  | translate }}</span>
         </div>
         <div class="product-card__prices">
             <ng-container *ngIf="product.compareAtPrice">
@@ -58,8 +58,10 @@
             </ng-container>
         </div>
         <div class="product-card__buttons">
-            <button class="btn btn-primary product-card__addtocart" type="button" appClick (click)="addToCart()" [ngClass]="{'btn-loading': addingToCart}">Add To Cart</button>
-            <button class="btn btn-secondary product-card__addtocart product-card__addtocart--list" type="button" appClick (click)="addToCart()" [ngClass]="{'btn-loading': addingToCart}">Add To Cart</button>
+            <button class="btn btn-primary product-card__addtocart" type="button" appClick (click)="addToCart()" [ngClass]="{'btn-loading': addingToCart}">{{ tagLang+'Add To Cart'  | translate }}</button>
+            <button class="btn btn-secondary product-card__addtocart product-card__addtocart--list" type="button" appClick (click)="addToCart()" [ngClass]="{'btn-loading': addingToCart}">{{ tagLang+'Add To Cart'  | translate }}</button>
+        </div>
+        <div class="product-card__buttons">
             <button class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist" type="button" appClick (click)="addToWishlist()" [ngClass]="{'btn-loading': addingToWishlist}">
                 <app-icon name="wishlist-16" size="16"></app-icon>
                 <span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>

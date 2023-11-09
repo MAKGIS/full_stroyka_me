@@ -2,8 +2,8 @@
 // --- You can add your custom CSS here and it will overwrite template styles.
 // -------------------------
 .test-name-Component {
-    /* display: block; */
-    display: none;
+   /*  display: block; */
+   display: none;
    color:brown;
 }
 
@@ -13,3 +13,8 @@
  height: 100%;  /*  !!!  use alredy !!! */
 }
 
+.test-border-red {
+
+    border: 1px dashed red;
+    height: 100%;  /*  !!!  use alredy !!! */
+   }

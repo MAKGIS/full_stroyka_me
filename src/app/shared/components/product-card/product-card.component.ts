@@ -21,6 +21,8 @@ export class ProductCardComponent implements OnInit, OnDestroy, OnChanges {
     @Input() product!: Product;
     @Input() layout: 'grid-sm'|'grid-nl'|'grid-lg'|'list'|'horizontal'|null = null;
 
+    tagLang = 'prod-card.';
+
     addingToCart = false;
     addingToWishlist = false;
     addingToCompare = false;

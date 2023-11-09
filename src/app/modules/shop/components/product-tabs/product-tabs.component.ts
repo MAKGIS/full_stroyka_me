@@ -3,6 +3,7 @@ import { ProductFeaturesSection} from '../../../../shared/interfaces/product';
 import { specification } from '../../../../../data/shop-product-spec';
 import { reviews } from '../../../../../data/shop-product-reviews';
 import { Review } from '../../../../shared/interfaces/review';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-product-tabs',
@@ -13,8 +14,12 @@ export class ProductTabsComponent {
     @Input() withSidebar = false;
     @Input() tab: 'description'|'specification'|'reviews' = 'description';
 
+    tagLang = 'prod-tabs.';
+
     specification: ProductFeaturesSection[] = specification;
     reviews: Review[] = reviews;
 
-    constructor() { }
+    constructor(
+        public translate: TranslateService
+    ) { }
 }

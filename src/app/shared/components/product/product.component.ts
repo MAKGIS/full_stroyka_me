@@ -23,6 +23,8 @@ export class ProductComponent {
 
     @Input() product!: Product;
 
+    tagLang = 'product.';
+
     isLog = true;
 
     quantity: FormControl = new FormControl(1);
@@ -76,5 +78,11 @@ export class ProductComponent {
 
             this.compare.add(this.product).subscribe({complete: () => this.addingToCompare = false});
         }
+    }
+
+    getLangText(text: string): string {
+
+        const textV = "{{ 'product." + text + "'  | translate }}";
+        return textV;
     }
 }

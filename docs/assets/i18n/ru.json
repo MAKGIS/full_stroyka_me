@@ -1,7 +1,56 @@
 {
- "prd": {
-  "Reviews": "Reviews ru 1 prd"
- },
+  "product": {
+
+    "Wishlist": "Wishlist",
+    "Compare": "Compare",
+    "Reviews": "Reviews",
+    "Write A Review": "Write A Review",
+
+    "Brand": "Бренд",
+    "Availability": "Availability",
+    "In Stock": "In Stock",
+
+    "Color": "Color",
+    "Material": "Material",
+    "Metal": "Metal",
+    "Wood": "Wood",
+    "Plastic": "Plastic",
+    "Quantity": "Quantity"
+
+   },
+   "prod-tabs": {
+
+    "Description": "Description",
+    "Specification": "Specification",
+    "Reviews": "Reviews",
+    "Product Full Description": "Product Full Description",
+
+    "Specification 2": "Specification",
+    "Customer Reviews": "Customer Reviews",
+    "Write A Review": "Write A Review",
+    "Review Stars": "Review Stars",
+    "Stars Rating": "Stars Rating",
+
+    "Your Name": "Your Name",
+    "Email Address": "Email Address",
+    "Your Review": "Your Review",
+    "Post Your Review": "Post Your Review"
+
+   },
+   "prod-card": {
+
+    "Sale": "Sale",
+    "Hot": "Hot",
+    "New": "New",
+
+    "Reviews": "Reviews",
+    "In Stock": "In Stock",
+    "Availability": "Availability",
+
+    "Add To Cart": "Add To Cart"
+   },
+
+
  "hdr": {
   "Customer Service": "Обслуживание клиентов"
  },
@@ -9,6 +58,7 @@
   "All Categories":"Все категории",
   "Search over 10,000 products": "Найдите более 10 000 продуктов"
 },
+
  "menu": {
   "Menu": "Menu",
 

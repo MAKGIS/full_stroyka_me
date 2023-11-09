@@ -1,5 +1,5 @@
 <div class="test-border"><div class="test-name-Component">{{this.constructor.name}}</div>
-{{ 'prd.Reviews' | translate }}
+
 <div class="product product--layout--{{ layout }}" *ngIf="product">
     <div class="product__content">
         <!-- .product__gallery -->
@@ -10,12 +10,12 @@
         <!-- .product__info -->
         <div class="product__info">
             <div class="product__wishlist-compare">
-                <button type="button" class="btn btn-sm btn-light btn-svg-icon" data-toggle="tooltip" data-placement="right" title="Wishlist"
+                <button type="button" class="btn btn-sm btn-light btn-svg-icon" data-toggle="tooltip" data-placement="right" title="{{ tagLang+'Wishlist'  | translate }}"
                         appClick (click)="addToWishlist()"
                         [ngClass]="{'btn-loading': addingToWishlist}">
                     <app-icon name="wishlist-16" size="16"></app-icon>
                 </button>
-                <button type="button" class="btn btn-sm btn-light btn-svg-icon" data-toggle="tooltip" data-placement="right" title="Compare"
+                <button type="button" class="btn btn-sm btn-light btn-svg-icon" data-toggle="tooltip" data-placement="right" title="{{ tagLang+'Compare'  | translate }}"
                         appClick (click)="addToCompare()"
                         [ngClass]="{'btn-loading': addingToCompare}">
                     <app-icon name="compare-16" size="16"></app-icon>
@@ -27,11 +27,11 @@
                     <app-rating [value]="product.rating"></app-rating>
                 </div>
                 <div class="product__rating-legend">
-                    <a href="" appClick>{{ product.reviews }} Reviews</a><span>/</span><a href="" appClick>Write A Review</a>
+                    <a href="" appClick>{{ product.reviews }} {{ tagLang+'Reviews'  | translate }}</a><span>/</span><a href="" appClick>{{ tagLang+'Write A Review'  | translate }}</a>
                 </div>
             </div>
             <div class="product__description">
-                Marque: {{ product.brandName }}
+                {{ tagLang+'Brand'  | translate }}: {{ product.brandName }}
             </div>
             <div class="product__description">
                 {{ product.overview }}
@@ -46,8 +46,8 @@
             </ul>
             -->
             <ul class="product__meta">
-                <li class="product__meta-availability">Availability: <span class="text-success">In Stock</span></li>
-                <li>Brand: <a href="" appClick>{{product.brandName}}</a></li>
+                <li class="product__meta-availability">{{ tagLang+'Availability'  | translate }}: <span class="text-success">{{ tagLang+'In Stock'  | translate }}</span></li>
+                <li>{{ tagLang+'Brand'  | translate }}: <a href="" appClick>{{product.brandName}}</a></li>
                 <li>SKU: <a target="_blank" href="https://pim.socoda.fr:4343/pimalion-staging/app-v2/dist/#/mappings/{{product.id}}">{{product.sku}} <i class="footer-contacts__icon fas fa-globe-americas"></i> </a></li>
             </ul>
         </div>
@@ -55,7 +55,7 @@
         <!-- .product__sidebar -->
         <div class="product__sidebar">
             <div class="product__availability">
-                Availability: <span class="text-success">In Stock</span>
+                {{ tagLang+'Availability'  | translate }}: <span class="text-success">{{ tagLang+'In Stock'  | translate }}</span>
             </div>
 
             <div class="product__prices">
@@ -70,7 +70,7 @@
             <!-- .product__options -->
             <form class="product__options">
                 <div class="form-group product__option">
-                    <label class="product__option-label">Color</label>
+                    <label class="product__option-label">{{ tagLang+'Color'  | translate }}</label>
                     <div class="input-radio-color">
                         <div class="input-radio-color__list">
                             <label class="input-radio-color__item input-radio-color__item--white" style="color: #fff;" data-toggle="tooltip" title="White">
@@ -93,26 +93,26 @@
                     </div>
                 </div>
                 <div class="form-group product__option">
-                    <label class="product__option-label">Material</label>
+                    <label class="product__option-label">{{ tagLang+'Material'  | translate }}</label>
                     <div class="input-radio-label">
                         <div class="input-radio-label__list">
                             <label>
                                 <input type="radio" name="material">
-                                <span>Metal</span>
+                                <span>{{ tagLang+'Metal'  | translate }}</span>
                             </label>
                             <label>
                                 <input type="radio" name="material">
-                                <span>Wood</span>
+                                <span>{{ tagLang+'Wood'  | translate }}</span>
                             </label>
                             <label>
                                 <input type="radio" name="material" disabled>
-                                <span>Plastic</span>
+                                <span>{{ tagLang+'Plastic'  | translate }}</span>
                             </label>
                         </div>
                     </div>
                 </div>
                 <div class="form-group product__option">
-                    <label class="product__option-label">Quantity</label>
+                    <label class="product__option-label">{{ tagLang+'Quantity'  | translate }}</label>
                     <div class="product__actions">
                         <div class="product__actions-item">
                             <app-input-number aria-label="Quantity" class="product__quantity" size="lg" [min]="1" [formControl]="quantity"></app-input-number>
@@ -120,17 +120,18 @@
                         <div class="product__actions-item product__actions-item--addtocart">
                             <button type="button" class="btn btn-primary btn-lg"
                                     [ngClass]="{'btn-loading': addingToCart}"
-                                    appClick (click)="addToCart()">Add to cart</button>
+                                    appClick (click)="addToCart()">{{ tagLang+'Add to cart'  | translate }}</button>
                         </div>
                         <div class="product__actions-item product__actions-item--wishlist">
-                            <button type="button" class="btn btn-secondary btn-svg-icon btn-lg" data-toggle="tooltip" title="Wishlist"
+                            <button type="button" class="btn btn-secondary btn-svg-icon btn-lg" data-toggle="tooltip" title="{{ tagLang+'Wishlist'  | translate }}"
                                     [ngClass]="{'btn-loading': addingToWishlist}"
                                     appClick (click)="addToWishlist()">
                                 <app-icon name="wishlist-16" size="16"></app-icon>
                             </button>
                         </div>
+
                         <div class="product__actions-item product__actions-item--compare">
-                            <button type="button" class="btn btn-secondary btn-svg-icon btn-lg" data-toggle="tooltip" title="Compare"
+                            <button type="button" class="btn btn-secondary btn-svg-icon btn-lg" data-toggle="tooltip" title="{{ tagLang+'Compare'  | translate }}"
                                     [ngClass]="{'btn-loading': addingToCompare}"
                                     appClick (click)="addToCompare()">
                                 <app-icon name="compare-16" size="16"></app-icon>

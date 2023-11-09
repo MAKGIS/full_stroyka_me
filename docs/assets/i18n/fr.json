@@ -1,7 +1,56 @@
 {
-   "prd": {
-    "Reviews": "Reviews fr 1 prd"
+  "product": {
+
+    "Wishlist": "Liste de souhaits",
+    "Compare": "Comparer",
+    "Reviews": "Avis",
+    "Write A Review": "Écrire une critique",
+
+    "Brand": "Marque",
+    "Availability": "Disponibilité",
+    "In Stock": "En stock",
+
+    "Color": "Couleur",
+    "Material": "Matériau",
+    "Metal": "Métal",
+    "Wood": "Bois",
+    "Plastic": "Plastique",
+    "Quantity": "Quantité",
+
+    "Add to cart": "Ajouter au panier"
    },
+   "prod-tabs": {
+
+    "Description": "Description",
+    "Specification": "Spécification",
+    "Reviews": "Avis",
+    "Product Full Description": "Description complète du produit",
+
+    "Specification 2": "Spécification",
+    "Customer Reviews": "Avis clients",
+    "Write A Review": "Écrire une critique",
+    "Review Stars": "Étoiles de la critique",
+    "Stars Rating": "Classement en étoiles",
+
+    "Your Name": "Votre nom",
+    "Email Address": "Adresse email",
+    "Your Review": "Votre avis",
+    "Post Your Review": "Publiez votre avis"
+
+   },
+   "prod-card": {
+
+    "Sale": "Vente",
+    "Hot": "Chaud",
+    "New": "Nouveau",
+
+    "Reviews": "Avis",
+    "In Stock": "En stock",
+    "Availability": "Disponibilité",
+
+    "Add To Cart": "Ajouter au panier"
+   },
+
    "hdr": {
     "Customer Service": "Service client"
    },
@@ -9,14 +58,15 @@
     "All Categories":"Toutes Catégories",
     "Search over 10,000 products": "Recherchez plus de 10 000 produits"
   },
+
    "menu": {
     "Menu": "Menu",
 
-    "Categories": "Categories",
-        "Power Tools": "Power Tools",
-        "Machine Tools": "Machine Tools",
+    "Categories": "Catégories",
+        "Power Tools": "Outils électroportatifs",
+        "Machine Tools": "Des machines-outils",
 
-        "Currency": "Devise",
+        "Currency": "Concevoir",
         "Language": "Langue",
 
         "€ Euro":  "€ Euros",
@@ -38,49 +88,49 @@
     "Megamenu": "Megamenu",
 
     "Shop": "Boutique",
-            "Shop Grid": "Shop Grid",
-                "3 Columns Sidebar": "3 Columns Sidebar",
-                "4 Columns Full": "4 Columns Full",
-                "5 Columns Ful": "5 Columns Ful",
-            "Shop List": "Shop list",
-            "Shop Right Sidebar": "Shop Right Sidebar",
-            "Product": "Product",
-                "Product Alt": "Product Alt",
-                "Product Sidebar":"Product Sidebar",
-            "Cart":"Cart",
-            "Checkout":"Checkout",
-            "Order Success":"Order Success",
-            "Wishlist":"Wishlist",
-            "Compare":"Compare",
-            "Track Order":"Track Order",
+            "Shop Grid": "Grille de magasin",
+                "3 Columns Sidebar": "3 Barre latérale des colonnes",
+                "4 Columns Full": "4 Colonnes pleines",
+                "5 Columns Ful": "5 Colonnes pleines",
+            "Shop List": "Liste des boutiques",
+            "Shop Right Sidebar": "Acheter dans la barre latérale droite",
+            "Product": "Produit",
+                "Product Alt": "Alt du produit",
+                "Product Sidebar":"Barre latérale du produit",
+            "Cart":"Chariot",
+            "Checkout":"Vérifier",
+            "Order Success":"Succès de la commande",
+            "Wishlist":"Liste de souhaits",
+            "Compare":"Comparer",
+            "Track Order":"Suivi de commande",
 
     "Account": "Compte",
-            "Login":"Login",
-            "Dashboard":"Dashboard",
-            "Edit Profile":"Edit Profile",
-            "Order History":"Order History",
-            "Order Details":"Order Details",
-            "Address Book":"Address Book",
-            "Edit Address":"Edit Address",
-            "Change Password":"Change Password",
+            "Login":"Se connecter",
+            "Dashboard":"Tableau de bord",
+            "Edit Profile":"Editer le profil",
+            "Order History":"Historique des commandes",
+            "Order Details":"détails de la commande",
+            "Address Book":"Carnet d'adresses",
+            "Edit Address":"Modifier l'adresse",
+            "Change Password":"Changer le mot de passe",
 
     "Blog": "Blog",
-            "Blog Classic": "Blog Classic",
-            "Blog Grid": "Blog Grid",
-            "Blog List": "Blog List",
+            "Blog Classic": "Blogue Classique",
+            "Blog Grid": "Grille de blog",
+            "Blog List": "Liste des blogs",
             "Blog Left Sidebar": "Blog Left Sidebar",
-            "Post Page": "Post Page",
-            "Post Without Sidebar": "Post Without Sidebar",
+            "Post Page": "Barre latérale gauche du blog",
+            "Post Without Sidebar": "Publier sans barre latérale",
 
     "Pages": "Pages",
-            "About Us": "About Us",
-            "Contact Us": "Contact Us",
-            "Contact Us Alt": "Contact Us Alt",
+            "About Us": "À propos de nous",
+            "Contact Us": "Contactez-nous",
+            "Contact Us Alt": "Contactez-nous Alt",
             "404": "404",
-            "Terms And Conditions": "Terms And Conditions",
+            "Terms And Conditions": "Termes et conditions",
             "FAQ": "FAQ",
-            "Components": "Components",
-            "Typography": "Typography",
+            "Components": "Composantes",
+            "Typography": "Typographie",
 
 
     "Buy Theme": "Acheter un thème"
@@ -112,6 +162,7 @@
       "Brush Cutters": "Brush Cutters"
 
    },
+
    "tbr": {
     "About Us": "À propos de nous",
     "Contacts": "Contacts",

@@ -13443,12 +13443,16 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
   padding: 28px;
 }
 .test-name-Component {
-  /* display: block; */
+  /*  display: block; */
   display: none;
   color: brown;
 }
 .test-border {
   /* border: 1px dashed red; */
+  height: 100%; /*  !!!  use alredy !!! */
+}
+.test-border-red {
+  border: 1px dashed red;
   height: 100%; /*  !!!  use alredy !!! */
 }
 
