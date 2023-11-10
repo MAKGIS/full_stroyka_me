@@ -1,0 +1,23 @@
+[
+  {
+      "title": "Большой выбор<br>Сантехнических товаров",
+      "text": "py Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Etiam pharetra laoreet dui quis molestie.",
+      "image_classic": "assets/images/slides/slide-1.jpg",
+      "image_full": "assets/images/slides/slide-1-full.jpg",
+      "image_mobile": "assets/images/slides/slide-1-mobile.jpg"
+  },
+  {
+      "title": "Отвертки<br>Профессиональные инструменты",
+      "text": "py Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Etiam pharetra laoreet dui quis molestie.",
+      "image_classic": "assets/images/slides/slide-2.jpg",
+      "image_full": "assets/images/slides/slide-2-full.jpg",
+      "image_mobile": "assets/images/slides/slide-2-mobile.jpg"
+  },
+  {
+      "title": "Еще один<br>уникальный заголовок",
+      "text": "ру Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Etiam pharetra laoreet dui quis molestie.",
+      "image_classic": "assets/images/slides/slide-3.jpg",
+      "image_full": "assets/images/slides/slide-3-full.jpg",
+      "image_mobile": "assets/images/slides/slide-3-mobile.jpg"
+  }
+]

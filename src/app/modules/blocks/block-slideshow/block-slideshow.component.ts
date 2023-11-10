@@ -1,6 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { DirectionService } from '../../../shared/services/direction.service';
+import { ShopService } from 'src/app/shared/api/shop.service';
+import { BlockSlide } from 'src/app/shared/interfaces/block-header-group';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-block-slideshow',
@@ -9,6 +12,10 @@ import { DirectionService } from '../../../shared/services/direction.service';
 })
 export class BlockSlideshowComponent {
     @Input() withDepartments = false;
+
+     @Input() slides: BlockSlide[] = [];
+
+    tagLang = 'block-slideshow.';
 
     options = {
         nav: false,
@@ -19,8 +26,8 @@ export class BlockSlideshowComponent {
         },
         rtl: this.direction.isRTL()
     };
-
-    slides = [
+/*  see assets/i18n/data/blockslides_en.json ...
+    slides_ = [
         {
             title: 'Big choice of<br>Plumbing products',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Etiam pharetra laoreet dui quis molestie.',
@@ -43,9 +50,11 @@ export class BlockSlideshowComponent {
             image_mobile: 'assets/images/slides/slide-3-mobile.jpg'
         }
     ];
-
+*/
     constructor(
         public sanitizer: DomSanitizer,
-        private direction: DirectionService
+        private direction: DirectionService,
+        public translate: TranslateService
     ) { }
+
 }

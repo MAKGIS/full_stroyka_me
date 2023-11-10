@@ -5,6 +5,9 @@ import { TranslateService } from '@ngx-translate/core';
 // import { LanguageService } from 'src/app/shared/services/language.service';
 import { environment } from 'src/environments/environment';
 import { Observable, of } from 'rxjs';
+import { LanguageService } from 'src/app/shared/services/language.service';
+import { ShopService } from 'src/app/shared/api/shop.service';
+import { take } from 'rxjs/operators';
 
 interface Currency {
     name: string;
@@ -61,7 +64,7 @@ export class TopbarComponent {
 
     isLog = true;
 
-   // lang = 'fr';
+    tagLang = 'topbar.';
 
     languages: LanguageType[] = [
         {name: 'English', image: 'language-1', key: 'en'},
@@ -90,7 +93,8 @@ export class TopbarComponent {
     constructor(
         public currencyService: CurrencyService,
         public translate: TranslateService,
-        // public languageService: LanguageService
+        public languageService: LanguageService,
+        public shopService: ShopService
     ) {
         translate.addLangs(this.languages.map(item => item.key));
 
@@ -98,7 +102,7 @@ export class TopbarComponent {
 
        translate.setDefaultLang(currentLang);
        this.translate.use(currentLang);
-       // this.languageService.options = currentLang;
+       this.languageService.options = currentLang;
      }
 
     setCurrency(currency: Currency): void {
@@ -111,7 +115,10 @@ export class TopbarComponent {
     switchLang(lang: string): void {
 
         this.translate.use(lang);
-        // this.languageService.options = lang;
+        this.languageService.options = lang;
+
+        // ???
+        this.shopService.getBlockSlides(lang).pipe(take(1)).subscribe();
 
         if (this.isLog) {
             console.log('- cmp -- TopbarComponent.switchLang() currentLang -> %o ', this.translate.currentLang);

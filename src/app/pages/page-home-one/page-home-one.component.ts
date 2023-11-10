@@ -5,11 +5,14 @@ import { Observable, Subject, merge } from 'rxjs';
 import { ShopService } from 'src/app/shared/api/shop.service';
 import { Product } from '../../shared/interfaces/product';
 import { Category } from '../../shared/interfaces/category';
-import { BlockHeaderGroup } from '../../shared/interfaces/block-header-group';
+import { BlockHeaderGroup, BlockSlide } from '../../shared/interfaces/block-header-group';
 import { takeUntil, tap } from 'rxjs/operators';
 
 import { getCategoriesName, getCategoriesSlug, getModeSource } from 'src/fake-server/database/brands';
 import { CategoriesService } from 'src/app/shared/api/categories.service';
+import { TranslateService } from '@ngx-translate/core';
+import { LanguageService } from 'src/app/shared/services/language.service';
+import { LanguageChangedService } from 'src/app/shared/services/language-changed.service';
 
 // const mode: string = getModeSource();
 
@@ -49,10 +52,13 @@ export class PageHomeOneComponent implements OnInit, OnDestroy {
 
     constructor(
         private shop: ShopService,
-        private categoriesService: CategoriesService
+        public translate: TranslateService,
+        private categoriesService: CategoriesService,
+        public languageService: LanguageService
     ) { }
 
     ngOnInit(): void {
+
         this.bestsellers$ = this.shop.getBestsellers(7);
         this.brands$ = this.shop.getPopularBrands();
 /*
@@ -66,6 +72,7 @@ export class PageHomeOneComponent implements OnInit, OnDestroy {
         ], 1);
         */
         const categories = this.categoriesService.CategoriesChangedSub$.getValue();
+
 
         if (this.isLog) {
             console.log('- cmp -- PageHomeOneComponent.ngOnInit() categories -> %o', categories);

@@ -9,5 +9,7 @@ import { StoreService } from '../../shared/services/store.service';
 export class HeaderComponent {
     @Input() layout: 'classic'|'compact' = 'classic';
 
+    tagLang = 'header.';
+
     constructor(public store: StoreService) { }
 }

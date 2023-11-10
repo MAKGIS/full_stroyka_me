@@ -51,7 +51,7 @@
     "Add To Cart": "Ajouter au panier"
    },
 
-   "hdr": {
+   "header": {
     "Customer Service": "Service client"
    },
    "search": {
@@ -163,7 +163,7 @@
 
    },
 
-   "tbr": {
+   "topbar": {
     "About Us": "À propos de nous",
     "Contacts": "Contacts",
     "Store Location": "Emplacement du magasin",
@@ -225,6 +225,29 @@
     "Gift Cards": "Cartes cadeaux",
     "Affiliate": "Affilier"
 
-  }
+  },
 
+  "block-banner": {
+    "title": "Outils à main",
+    "text": "Marteaux, burins, pinces universelles, pinces, scies sauteuses, scies",
+    "Shop Now": "Acheter maintenant"
+  },
+  "block-features": {
+
+    "Free Shipping": "Livraison gratuite",
+    "For orders from $50": "Pour les commandes à partir de 50€",
+
+    "Support 24/7": "Assistance 24h/7",
+    "Call us anytime": "Appelez-nous à tout moment",
+
+    "100% Safety": "100% Sécurité",
+    "Only secure payments": "Paiements sécurisés uniquement",
+
+    "Hot Offers": "Offres chaudes",
+    "Discounts up to 90%": "Réductions jusqu'à 90 %"
+
+  },
+  "block-slideshow": {
+    "Shop Now": "Achetez maintenant"
+  }
 }

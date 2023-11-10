@@ -13443,7 +13443,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
   padding: 28px;
 }
 .test-name-Component {
-  /*  display: block; */
+  /* display: block;*/
   display: none;
   color: brown;
 }

@@ -51,7 +51,9 @@ import { BrandsService } from './brands.service';
 import { IFilterOption } from './filter-option.service';
 import { getCategoriesTree_ } from 'src/fake-server/database/categories';
 import { CurrencyResponce, RateValue } from '../interfaces/currency';
-import { CurrencyService } from '../services/currency.service';
+// import { CurrencyService } from '../services/currency.service';
+import { BlockSlide } from '../interfaces/block-header-group';
+import { LanguageChangedService } from '../services/language-changed.service';
 
 // [{"key": "brandName.keyword", "value": "NICOLL"}]
 export interface FilterValue {
@@ -89,7 +91,8 @@ export class ShopService {
         private pimalionCloudService: PimalionCloudService,
         private brandsService: BrandsService,
         private categoriesService: CategoriesService,
-        private currencyService: CurrencyService
+        // private currencyService: CurrencyService,
+        // private languageChangedService: LanguageChangedService
     ) { }
 
 
@@ -1085,6 +1088,32 @@ export class ShopService {
              default:
 
              return this.pimalionCloudService.getRateValues(baseCode);
+          }
+    }
+
+    getBlockSlides(tagLang: string): Observable<BlockSlide[]> {
+
+        switch (getModeSource()) {
+
+            case 'fake-server':
+            case 'jsoncategories':
+            case 'demo.sourcing.pm':
+                return this.http.get<BlockSlide[]>('assets/i18n/data/blockslides_'+ tagLang+'.json')
+                .pipe(
+                   tap( data =>
+                    {
+                        if (this.isLog)  {
+                            console.log('- srv -- ShopService.getBlockSlides() blockslides -> %o', data)
+                        }
+                      //  this.languageChangedService.optionsBlockSlides = data;
+                    })//,
+                   //delay(this.delayTest)
+               );
+            break;
+
+             default:
+
+                return of([]);
           }
     }
 

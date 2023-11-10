@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
     styleUrls: ['./block-banner.component.scss']
 })
 export class BlockBannerComponent {
+
+    tagLang = 'block-banner.';
+
     constructor() { }
 }

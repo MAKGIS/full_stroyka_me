@@ -52,7 +52,7 @@
    },
 
 
-   "hdr": {
+   "header": {
     "Customer Service": "Customer Service"
    },
    "search": {
@@ -164,7 +164,7 @@
       "Brush Cutters": "Brush Cutters"
 
    },
-    "tbr": {
+    "topbar": {
       "About Us": "About Us",
       "Contacts": "Contacts",
       "Store Location": "Store Location",
@@ -225,6 +225,30 @@
       "Gift Cards": "Gift Cards",
       "Affiliate": "Affiliate"
 
-    }
+    },
 
+    "block-banner": {
+      "title": "Hand Tools",
+      "text": "Hammers, Chisels, Universal Pliers, Nippers, Jigsaws, Saws",
+      "Shop Now": "Shop Now"
+    },
+
+    "block-features": {
+
+      "Free Shipping": "Free Shipping",
+      "For orders from $50": "For orders from $50",
+
+      "Support 24/7": "Support 24/7",
+      "Call us anytime": "Call us anytime",
+
+      "100% Safety": "100% Safety",
+      "Only secure payments": "Only secure payments",
+
+      "Hot Offers": "Hot Offers",
+      "Discounts up to 90%": "Discounts up to 90%"
+
+    },
+    "block-slideshow": {
+      "Shop Now": "Shop Now"
+    }
 }

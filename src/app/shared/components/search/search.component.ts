@@ -77,6 +77,8 @@ export class SearchComponent implements OnChanges, OnInit, OnDestroy {
 
     get inputElement(): HTMLElement { return this.inputElementRef.nativeElement; }
 
+    tagLang = 'search.';
+
     constructor(
         @Inject(DOCUMENT) private document: Document,
         private fb: FormBuilder,

@@ -1,6 +1,6 @@
 <div class="test-border"><div class="test-name-Component">{{this.constructor.name}}</div>
 
-<app-block-slideshow></app-block-slideshow>
+<app-block-slideshow  [slides]="(languageService.blockSlides$ | async)" ></app-block-slideshow>
 
 <app-block-features layout="boxed"></app-block-features>
 

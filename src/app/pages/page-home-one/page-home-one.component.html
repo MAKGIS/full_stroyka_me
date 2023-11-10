@@ -1,6 +1,7 @@
 <div class="test-border"><div class="test-name-Component">{{this.constructor.name}}</div>
 
-<app-block-slideshow [withDepartments]="true"></app-block-slideshow>
+
+<app-block-slideshow [withDepartments]="true" [slides]="(languageService.blockSlides$ | async)" ></app-block-slideshow>
 
 <app-block-features></app-block-features>
 

@@ -397,10 +397,4 @@ export class DepartmentsComponent implements OnInit, OnDestroy, AfterViewInit, A
 
         return elements[index].nativeElement as HTMLDivElement;
     }
-
-    getItemLabel(label: string): string {
-
-        return this.tagLang + label;
-    }
-
 }

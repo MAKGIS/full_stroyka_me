@@ -5,19 +5,19 @@
     <div class="topbar__container container">
         <div class="topbar__row">
             <div class="topbar__item topbar__item--link">
-                <a class="topbar-link" routerLink="/site/about-us">{{ 'tbr.About Us' | translate }}</a>
+                <a class="topbar-link" routerLink="/site/about-us">{{ tagLang+'About Us' | translate }}</a>
             </div>
             <div class="topbar__item topbar__item--link">
-                <a class="topbar-link" routerLink="/site/contact-us">{{ 'tbr.Contacts'  | translate }}</a>
+                <a class="topbar-link" routerLink="/site/contact-us">{{ tagLang+'Contacts'  | translate }}</a>
             </div>
             <div class="topbar__item topbar__item--link">
-                <a class="topbar-link" routerLink="">{{ 'tbr.Store Location'  | translate }}</a>
+                <a class="topbar-link" routerLink="">{{ tagLang+'Store Location'  | translate }}</a>
             </div>
             <div class="topbar__item topbar__item--link">
-                <a class="topbar-link" routerLink="/shop/track-order">{{ 'tbr.Track Order'  | translate }}</a>
+                <a class="topbar-link" routerLink="/shop/track-order">{{ tagLang+'Track Order'  | translate }}</a>
             </div>
             <div class="topbar__item topbar__item--link">
-                <a class="topbar-link" routerLink="/blog">{{ 'tbr.Blog'  | translate }}</a>
+                <a class="topbar-link" routerLink="/blog">{{ tagLang+'Blog'  | translate }}</a>
             </div>
             <div class="topbar__spring"></div>
 
@@ -25,13 +25,13 @@
             <div class="topbar__item">
                 <div class="topbar-dropdown" appDropdown="topbar-dropdown--opened" #accountDropdown="appDropdown">
                     <button class="topbar-dropdown__btn" type="button" (click)="accountDropdown.toggle()">
-                        {{ 'tbr.My Account'  | translate }}
+                        {{ tagLang+'My Account'  | translate }}
                         <app-icon name="arrow-rounded-down-7x5" size="7x5"></app-icon>
                     </button>
 
                     <div class="topbar-dropdown__body">
                         <app-header-menu layout="topbar" (itemClick)="accountDropdown.close()"
-                        [items]=myAccount  [tagLang]="'tbr.'"
+                        [items]=myAccount  [tagLang]="tagLang+''"
                         ></app-header-menu>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
             <div class="topbar__item">
                 <div class="topbar-dropdown" appDropdown="topbar-dropdown--opened" #currencyDropdown="appDropdown">
                     <button class="topbar-dropdown__btn" type="button" (click)="currencyDropdown.toggle()">
-                        {{ 'tbr.Currency'  | translate }}: <span class="topbar__item-value">{{ currencyService.options.code }}</span>
+                        {{ tagLang+'Currency'  | translate }}: <span class="topbar__item-value">{{ currencyService.options.code }}</span>
                         <app-icon name="arrow-rounded-down-7x5" size="7x5"></app-icon>
                     </button>
 
@@ -56,7 +56,7 @@
                                     #menuItem
                                 >
                                     <button class="menu__item-link" type="button" (click)="setCurrency(currency); currencyDropdown.close();">
-                                        {{ 'tbr.'+currency.name  | translate }}
+                                        {{ tagLang+''+currency.name  | translate }}
                                     </button>
                                 </li>
                             </ul>
@@ -69,7 +69,7 @@
 
                 <div class="topbar-dropdown" appDropdown="topbar-dropdown--opened" #languageDropdown="appDropdown">
                     <button class="topbar-dropdown__btn" type="button" (click)="languageDropdown.toggle()">
-                        {{ 'tbr.Language'  | translate }}: <span class="topbar__item-value">{{translate.currentLang}}</span>
+                        {{ tagLang+'Language'  | translate }}: <span class="topbar__item-value">{{translate.currentLang}}</span>
                         <app-icon name="arrow-rounded-down-7x5" size="7x5"></app-icon>
                     </button>
 
@@ -89,7 +89,7 @@
                                                  [srcset]="'assets/images/languages/'+language.image+'.png 1x,' +
                                                            'assets/images/languages/'+language.image+'@2x.png 2x'" alt="">
                                         </span>
-                                        {{ 'tbr.'+language.name  | translate }}
+                                        {{ tagLang+''+language.name  | translate }}
                                     </button>
                                 </li>
                             </ul>

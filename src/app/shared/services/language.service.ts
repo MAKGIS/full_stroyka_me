@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
-import { Observable, Subject } from 'rxjs';
+import { BehaviorSubject, Observable, Subject } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { BlockSlide } from '../interfaces/block-header-group';
+import { ShopService } from '../api/shop.service';
+import { take, takeUntil } from 'rxjs/operators';
 
 @Injectable({
     providedIn: 'root'
@@ -12,8 +15,11 @@ export class LanguageService {
     isLog = true;
 
     private changesSubject$: Subject<string> = new Subject();
-
     changes$: Observable<string> = this.changesSubject$.asObservable();
+
+    // slides: BlockSlide[] = [];
+    private changesBlockSlides$: BehaviorSubject<BlockSlide[]> = new BehaviorSubject([]);
+    public blockSlides$ = this.changesBlockSlides$.asObservable();
 
     get options(): string {
         return this.name_;
@@ -27,7 +33,12 @@ export class LanguageService {
         }
 
         this.changesSubject$.next(value);
+
+       this.shopService.getBlockSlides(value).pipe(take(1))
+       .subscribe(data => { this.changesBlockSlides$.next(data); });
     }
 
-    constructor() { }
+    constructor(
+        private shopService: ShopService,
+    ) { }
 }

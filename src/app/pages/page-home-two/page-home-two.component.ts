@@ -6,11 +6,13 @@ import { merge, Observable, Subject } from 'rxjs';
 import { Brand } from '../../shared/interfaces/brand';
 import { Product } from '../../shared/interfaces/product';
 import { Category } from '../../shared/interfaces/category';
-import { BlockHeaderGroup } from '../../shared/interfaces/block-header-group';
+import { BlockHeaderGroup, BlockSlide } from '../../shared/interfaces/block-header-group';
 
 import { ShopService } from '../../shared/api/shop.service';
 import { getCategoriesName, getCategoriesSlug, getModeSource } from 'src/fake-server/database/brands';
 import { CategoriesService } from 'src/app/shared/api/categories.service';
+import { TranslateService } from '@ngx-translate/core';
+import { LanguageService } from 'src/app/shared/services/language.service';
 
 // const mode: string = getModeSource();
 
@@ -52,10 +54,13 @@ export class PageHomeTwoComponent implements OnInit, OnDestroy {
 
     constructor(
         private shop: ShopService,
-        private categoriesService: CategoriesService
+        public translate: TranslateService,
+        private categoriesService: CategoriesService,
+        public languageService: LanguageService
     ) { }
 
     ngOnInit(): void {
+
         this.bestsellers$ = this.shop.getBestsellers(7);
         this.brands$ = this.shop.getPopularBrands();
         /*
