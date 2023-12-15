@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'ng-stroyka-github'
           slot-name: 'Production'
-          package: ./docs
+          package: .
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4628F9DFFE98448DAC972F2DD3FE8089 }}
