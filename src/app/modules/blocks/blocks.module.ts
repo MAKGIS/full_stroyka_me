@@ -23,6 +23,10 @@ import { BlockProductsCarouselComponent } from './block-products-carousel/block-
 import { BlockProductsComponent } from './block-products/block-products.component';
 import { BlockSlideshowComponent } from './block-slideshow/block-slideshow.component';
 
+//
+import { BlockBrandsGridComponent } from './block-brands-grid/block-brands-grid.component';
+import { BlockCategoriesGridComponent } from './block-categories-grid/block-categories-grid.component';
+
 // components
 import { BlockHeaderComponent } from './components/block-header/block-header.component';
 
@@ -37,6 +41,8 @@ import { createTranslateLoader } from 'src/app/app.module';
         // blocks
         BlockBannerComponent,
         BlockBrandsComponent,
+        BlockBrandsGridComponent,
+        BlockCategoriesGridComponent,
         BlockCategoriesComponent,
         BlockFeaturesComponent,
         BlockMapComponent,
@@ -70,6 +76,8 @@ import { createTranslateLoader } from 'src/app/app.module';
         // blocks
         BlockBannerComponent,
         BlockBrandsComponent,
+        BlockBrandsGridComponent,
+        BlockCategoriesGridComponent,
         BlockCategoriesComponent,
         BlockFeaturesComponent,
         BlockMapComponent,

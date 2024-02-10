@@ -5,7 +5,7 @@
 <app-block-features layout="boxed"></app-block-features>
 
 <app-block-products-carousel
-    header="Featured Products"
+    header="{{ tagLang+'Featured Products' | translate }}"
     layout="grid-5"
     [rows]="2"
     [loading]="featuredProducts.loading"
@@ -16,12 +16,12 @@
 
 <app-block-banner></app-block-banner>
 
-<app-block-products header="Bestsellers" layout="large-last" [products]="(bestsellers$|async) || []"></app-block-products>
+<app-block-products header="{{ tagLang+'Bestsellers' | translate }}" layout="large-last" [products]="(bestsellers$|async) || []"></app-block-products>
 
-<app-block-categories header="Popular Categories" layout="compact" [categories]="(popularCategories$|async) || []"></app-block-categories>
+<app-block-categories header="{{ tagLang+'Popular Categories' | translate }}" layout="compact" [categories]="(popularCategories$|async) || []"></app-block-categories>
 
 <app-block-products-carousel
-    header="New Arrivals"
+    header="{{ tagLang+'New Arrivals' | translate }}"
     layout="grid-5"
     [rows]="1"
     [loading]="latestProducts.loading"
@@ -30,14 +30,15 @@
     (groupChange)="groupChange(latestProducts, $event)"
 ></app-block-products-carousel>
 
-<app-block-posts header="Latest News" layout="grid-nl" [posts]="posts"></app-block-posts>
+<app-block-posts header="{{ tagLang+'Latest News' | translate }}" layout="grid-nl" [posts]="posts"></app-block-posts>
 
 <app-block-brands [brands]="(brands$|async) || []"></app-block-brands>
 
 <app-block-product-columns>
-    <app-block-product-columns-item header="Top Rated Products" [products]="(columnTopRated$|async) || []"></app-block-product-columns-item>
-    <app-block-product-columns-item header="Special Offers" [products]="(columnSpecialOffers$|async) || []"></app-block-product-columns-item>
-    <app-block-product-columns-item header="Bestsellers" [products]="(columnBestsellers$|async) || []"></app-block-product-columns-item>
+    <app-block-product-columns-item header="{{ tagLang+'Top Rated Products' | translate }}" [products]="(columnTopRated$|async) || []"></app-block-product-columns-item>
+    <app-block-product-columns-item header="{{ tagLang+'Special Offers' | translate }}" [products]="(columnSpecialOffers$|async) || []"></app-block-product-columns-item>
+    <app-block-product-columns-item header="{{ tagLang+'Bestsellers' | translate }}" [products]="(columnBestsellers$|async) || []"></app-block-product-columns-item>
 </app-block-product-columns>
+
 
 </div>

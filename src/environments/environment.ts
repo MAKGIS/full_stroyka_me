@@ -4,13 +4,15 @@
 
 export const environment = {
     production: false,
-    pimalionCloudUrl: 'https://demo.sourcing.pm/backend',
+    pimalionCloudUrl: 'https://pim.socoda.fr:4343/pimalion_socoda_staging_api', // 'http://pimsoushasvr01.dev.pimalion.cloud',
+    // pimalionCloudUrl: 'https://demo.sourcing.pm/backend',
     modeApp: 'demo.sourcing.pm',  // 'fake-server'; 'json'; 'demo.sourcing.pm',
     currencyCodePrice: 'EUR', // 'USD', 'EUR', 'GBP',
     rates:  {'EUR': 1, 'USD': 1.01},
-    currentLang: 'fr'
-};
-
+    currentLang: 'fr',
+    menuFile:  'full-menu.json', // 'full-menu.json'  // 'belg-menu.json',
+    mobileMenuFile:  'mobile-menu.json', // 'mobile-menu.json'  // 'mobile-belg-menu.json'
+}
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.

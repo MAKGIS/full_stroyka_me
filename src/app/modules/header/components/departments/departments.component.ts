@@ -8,7 +8,7 @@ import {
     PLATFORM_ID, QueryList,
     Renderer2, ViewChild, ViewChildren
 } from '@angular/core';
-import { fromEvent, merge, Subject } from 'rxjs';
+import { fromEvent, merge, Observable, of, Subject } from 'rxjs';
 import { filter, takeUntil } from 'rxjs/operators';
 import { NavigationLink } from '../../../../shared/interfaces/navigation-link';
 import { isPlatformBrowser } from '@angular/common';
@@ -28,14 +28,14 @@ import { DepartmentsService } from 'src/app/shared/api/departments.service';
 export class DepartmentsComponent implements OnInit, OnDestroy, AfterViewInit, AfterViewChecked {
     private destroy$: Subject<void> = new Subject();
 
-    @Input() tagLang: string = '';
-
     @ViewChild('bodyElement') bodyElementRef!: ElementRef;
     @ViewChild('containerElement') containerElementRef!: ElementRef;
     @ViewChildren('submenuElement') submenuElements!: QueryList<ElementRef>;
     @ViewChildren('itemElement') itemElements!: QueryList<ElementRef>;
 
     items: NavigationLink[] = []; // departments;  const !!!
+    // items$: Observable<NavigationLink[]>;
+
     hoveredItem: NavigationLink|null = null;
 
     isOpen = false;
@@ -45,6 +45,7 @@ export class DepartmentsComponent implements OnInit, OnDestroy, AfterViewInit, A
     reCalcSubmenuPosition = false;
 
     isLog = true;
+    tagLang = 'menu.';
 
     private get element(): HTMLElement {
         return this.el.nativeElement;
@@ -64,6 +65,7 @@ export class DepartmentsComponent implements OnInit, OnDestroy, AfterViewInit, A
         const content = this.element.querySelector('.departments__links-wrapper') as HTMLElement;
 
         this.items = this.departmentsService.DepartmentsChangedSub$.getValue();
+
         if (this.isLog) {
             console.log('- cmp -- DepartmentsComponent.ngOnInit() items -> %o', this.items);
         }

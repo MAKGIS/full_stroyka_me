@@ -1,70 +1,275 @@
 {
   "product": {
 
-    "Wishlist": "Wishlist",
-    "Compare": "Compare",
-    "Reviews": "Reviews",
-    "Write A Review": "Write A Review",
+    "Wishlist": "Список желаний",
+    "Compare": "Сравнить",
+    "Reviews": "Отзывы",
+    "Write A Review": "Написать отзыв",
 
     "Brand": "Бренд",
-    "Availability": "Availability",
-    "In Stock": "In Stock",
+    "Availability": "Наличие",
+    "In Stock": "В наличии",
 
-    "Color": "Color",
-    "Material": "Material",
-    "Metal": "Metal",
-    "Wood": "Wood",
-    "Plastic": "Plastic",
-    "Quantity": "Quantity"
+    "Color": "Цвет",
+    "Material": "Материал",
+    "Metal": "Металл",
+    "Wood": "Дерево",
+    "Plastic": "Пластик",
+    "Quantity": "Количество",
 
+    "Add to Cart": "В корзину"
    },
    "prod-tabs": {
 
-    "Description": "Description",
-    "Specification": "Specification",
-    "Reviews": "Reviews",
-    "Product Full Description": "Product Full Description",
+    "Description": "Описание",
+    "Specification": "Спецификация",
+    "Reviews": "Отзывы",
+    "Product Full Description": "Полное описание продукта",
 
-    "Specification 2": "Specification",
-    "Customer Reviews": "Customer Reviews",
-    "Write A Review": "Write A Review",
-    "Review Stars": "Review Stars",
-    "Stars Rating": "Stars Rating",
+    "Specification 2": "Спецификация",
+    "Customer Reviews": "Отзывы клиентов",
+    "Write A Review": "Написать отзыв",
+    "Review Stars": "Звезды обзора",
+    "Stars Rating": "Рейтинг звезд",
 
-    "Your Name": "Your Name",
-    "Email Address": "Email Address",
-    "Your Review": "Your Review",
-    "Post Your Review": "Post Your Review"
+    "Your Name": "Ваше имя",
+    "Email Address": "Адрес электронной почты",
+    "Your Review": "Ваш отзыв",
+    "Post Your Review": "Опубликовать свой отзыв"
+
+   },
+   "prod-tabs-belgium": {
+
+    "Description": "Описание",
+    "Specification": "Спецификация",
+    "Reviews": "Отзывы",
+    "Documents": "Документы",
+    "SEO": "CEO",
+    "Price comparison": "Сравнение цен",
+    "Product Description": "Описание продукта",
+    "Product Full Description": "Полное описание продукта",
+
+    "Generate a title": "Создать заголовок",
+    "Loading...": "Загрузка...",
+    "Generate a description": "Создать описание",
+    "Save description": "Сохранить описание",
+
+    "Add a Characteristic": "Добавьте характеристику в модель данных",
+    "Generate keywords": "Генерация ключевых слов",
+    "Keywords": "Ключевые слова",
+    "Search on Google": "Search on Google",
+    "No products loaded": "Товары не загружены",
+    "Notice": "Уведомление",
+    "Generate content": "Генерировать контент",
+
+    "Specification 2": "Спецификация",
+    "Customer Reviews": "Отзывы клиентов",
+    "Write A Review": "Написать отзыв",
+    "Review Stars": "Звезды обзора",
+    "Stars Rating": "Рейтинг звезд",
+
+    "Your Name": "Ваше имя",
+    "Email Address": "Адрес электронной почты",
+    "Your Review": "Ваш отзыв",
+    "Post Your Review": "Опубликовать свой отзыв"
 
    },
    "prod-card": {
 
-    "Sale": "Sale",
-    "Hot": "Hot",
-    "New": "New",
+    "Sale": "Продажа",
+    "Hot": "Горячо",
+    "New": "Новый",
 
-    "Reviews": "Reviews",
-    "In Stock": "In Stock",
-    "Availability": "Availability",
+    "Reviews": "Отзывы",
+    "In Stock": "В наличии",
+    "Availability": "Наличие",
 
-    "Add To Cart": "Add To Cart"
+    "Add To Cart": "В корзину"
+   },
+   "product-sidebar": {
+      "Latest Products": "Последние продукты"
    },
 
-
  "header": {
-  "Customer Service": "Обслуживание клиентов"
+  "Customer Service": "Обслуживание клиентов",
+  "primaryPhone": "(800) 060-0730"
  },
  "search": {
   "All Categories":"Все категории",
-  "Search over 10,000 products": "Найдите более 10 000 продуктов"
+  "Search over 10,000 products": "Найдите более 10 000 продуктов",
+
+  "Add to cart": "В корзину"
 },
 
- "menu": {
-  "Menu": "Menu",
+"page-home": {
+  "Featured Products": "Рекомендуемые продукты",
+  "Bestsellers": "Бестселлеры",
+  "Popular Categories": "Популярные категории",
+  "New Arrivals": "Новые поступления",
+  "Latest News": "Последние новости",
 
-  "Categories": "Categories",
-      "Power Tools": "Power Tools",
-      "Machine Tools": "Machine Tools",
+  "Top Rated Products": "Товары с самым высоким рейтингом",
+  "Special Offers": "Специальные предложения"
+},
+"page-brands": {
+  "Brands": "Бренды"
+ },
+ "page-categories": {
+  "Categories": "Категории"
+ },
+"page-product": {
+  "Related Products": "Cопутствующие товары"
+},
+"page-product-belgium": {
+  "Related Products": "Cопутствующие товары"
+ },
+"page-cart": {
+  "Your shopping cart is empty!": "Ваша корзина пуста!",
+  "Continue": "Продолжить",
+  "Image": "Изображение",
+  "Product": "Продукт",
+  "Price": "Цена",
+  "Quantity": "Количество",
+  "Total": "Итого",
+  "Password": "Пароль",
+  "Coupon Code": "Код купона",
+  "Apply Coupon": "Применить купон",
+  "Continue Shopping": "Продолжить покупки",
+  "Update Cart": "Обновить корзину",
+  "Cart Totals": "Итоги корзины",
+  "Subtotal": "Промежуточный итог",
+  "Calculate Shipping": "Рассчитать доставку",
+  "Proceed to checkout": "Перейти к оформлению",
+
+  "Shipping": "доставка",
+  "Fee": "плата",
+  "Tax": "налог",
+  "Other": "другое"
+ },
+ "page-checkout": {
+
+  "Checkout": "Оформить заказ",
+  "Returning customer?": "Вернувшийся клиент?",
+  "Click here to login": "Нажмите здесь, чтобы войти",
+
+  "Billing details": "Платежные данные",
+  "First Name": "Имя",
+  "Last Name": "Фамилия",
+  "Company Name": "Название компании",
+  "Country": "Страна",
+
+  "Select a country...": "Выберите страну...",
+  "United States": "Соединенные Штаты",
+  "France": "Франция",
+  "Russia": "Россия",
+  "England": "Англия",
+
+  "Street Address": "Адрес",
+
+  "Apartment, suite, unit etc.": "Апартамент, люкс, блок и т. д.",
+  "(Optional)": "(Необязательно)",
+  "Town / City": "Город/Город",
+  "State / County": "Штат/Округ",
+  "Postcode / ZIP": "Почтовый индекс/ZIP",
+
+  "Email address": "Адрес электронной почты",
+  "Phone": "Телефон",
+
+  "Create an account?": "Создать учетную запись?",
+  "Shipping Details": "Сведения о доставке",
+  "Ship to a different address?": "Отправить на другой адрес?",
+
+  "Order notes": "Примечания к заказу",
+  "Your Order": "Ваш заказ",
+  "Product": "Продукт",
+  "Total": "Итого",
+
+  "Subtotal": "Промежуточный итог",
+  "Direct bank transfer": "Прямой банковский перевод",
+  "Check payments": "Проверить платежи",
+  "Cash on delivery": "Наложенный платеж",
+  "Pay with cash upon delivery.": "Оплата наложенным платежом при доставке.",
+  "PayPal": "PayPal",
+  "Pay via PayPal": "Оплата через PayPal; вы можете оплатить с помощью кредитной карты, если у вас нет учетной записи PayPal.",
+
+   "I have read and agree to the website": "Я прочитал и согласен с сайтом",
+   "terms and conditions": "Правила и условия",
+   "Place Order": "Разместить заказ",
+
+   "payment-methods__item-description": "Отправьте чек на название магазина, улицу магазина, город магазина, штат/округ магазина, почтовый индекс магазина.",
+
+   "Shipping": "доставка",
+   "Fee": "плата",
+   "Tax": "налог",
+   "Other": "другое"
+
+},
+"page-order-success": {
+  "Thank you": "Спасибо",
+  "Your order has been received": "Ваш заказ получен",
+  "Go To Homepage": "Перейти на домашнюю страницу",
+
+  "Order number": "Номер заказа",
+  "Created at": "Создано в",
+  "Total": "Итого",
+  "Payment method": "Способ оплаты",
+  "Product": "Продукт",
+  "Qty": "Кол-во",
+
+  "Subtotal": "Промежуточный итог",
+  "Shipping Address": "Адрес доставки",
+  "Phone Number": "Номер телефона",
+  "Email Address": "Адрес электронной почты",
+
+  "Billing Address": "Адрес для выставления счетов",
+
+  "Store Credit": "Кредит магазина",
+  "Shipping": "Доставка"
+ },
+ "page-wishlist": {
+
+  "Wish List": "Список желаний",
+
+  "Your wish list is empty!": "Ваш список желаний пуст!",
+  "Continue": "Продолжить",
+
+  "Image": "Изображение",
+  "Product": "Продукт",
+  "Stock Status": "Состояние запасов",
+  "Price": "Цена",
+  "Reviews": "Отзывы",
+  "In Stock": "В наличии",
+  "Add To Cart": "Добавить в корзину"
+ },
+ "page-compare": {
+
+  "Comparison": "Сравнение",
+
+  "block-empty__message": "Вы не выбрали ни одного товара для сравнения!",
+  "Continue": "Продолжить",
+  "Product": "Продукт",
+  "Rating": "Рейтинг",
+  "Reviews": "Отзывы",
+  "Availability": "Наличие",
+  "In Stock": "В наличии",
+  "Price": "Цена",
+  "Remove": "Удалить"
+ },
+ "page-track-order": {
+
+  "Track Order": "Отслеживать заказ",
+  "Track Order text": "Vestibulum sem odio, ullamcorper a imperdiet tincidunt sed magna felis, consequat a erat ut, rutrum finibus odio.",
+  "Order ID": "Идентификатор заказа",
+  "Email address": "Адрес электронной почты",
+  "Track": "Трек"
+ },
+
+ "menu": {
+  "Menu": "Меню",
+
+  "Categories": "Категории",
+      "Power Tools": "Электроинструменты",
+      "Machine Tools": "Станки",
 
       "Currency": "Валюта",
       "Language": "Язык",
@@ -84,82 +289,89 @@
   "Home": "Дом",
        "Home 1": "Дом 1",
        "Home 2": "Дом 2",
+       "Brands": "Бренды",
+       "Categories grid": "Категории",
        "Offcanvas Cart": "Корзина",
+       "Browse": "Просматривать",
 
   "Megamenu": "Мегаменю",
   "Shop": "Магазин",
-      "Shop Grid": "Shop Grid",
-        "3 Columns Sidebar": "3 Columns Sidebar",
-        "4 Columns Full": "4 Columns Full",
-        "5 Columns Ful": "5 Columns Ful",
-      "Shop List": "Shop list",
-      "Shop Right Sidebar": "Shop Right Sidebar",
-      "Product": "Product",
-          "Product Alt": "Product Alt",
-          "Product Sidebar":"Product Sidebar",
-      "Cart":"Cart",
-      "Checkout":"Checkout",
-      "Order Success":"Order Success",
-      "Wishlist":"Wishlist",
-      "Compare":"Compare",
-      "Track Order":"Track Order",
+      "Shop Grid": "Сетка магазина",
+        "3 Columns Sidebar": "3 Боковая панель",
+        "4 Columns Full": "4 Столбца",
+        "5 Columns Full": "5 Столбца",
+      "Shop List": "Список",
+      "Shop Right Sidebar": "Панель магазина справа",
+      "Product group": "Продукт",
+          "Product standard": "Продукт стандарт",
+          "Product": "Продукт",
+          "Product Alt": "Альтернативный продукт",
+          "Product Sidebar":"Боковая панель",
+      "Products": "Продукты",
+
+      "Cart":"Заказ",
+      "Checkout":"Оформить заказ",
+      "Order Success":"Успешный заказ",
+      "Wishlist":"Список желаний",
+      "Compare":"Сравнить",
+      "Track Order":"Отследить заказ",
 
   "Account": "Аккаунт",
-        "Login":"Login",
-        "Dashboard":"Dashboard",
-        "Edit Profile":"Edit Profile",
-        "Order History":"Order History",
-        "Order Details":"Order Details",
-        "Address Book":"Address Book",
-        "Edit Address":"Edit Address",
-        "Change Password":"Change Password",
+        "Login":"Войти",
+        "Dashboard":"Панель мониторинга",
+        "Edit Profile":"Редактировать профиль",
+        "Order History":"История заказов",
+        "Order Details":"Детали заказа",
+        "Address Book":"Адресная книга",
+        "Edit Address":"Изменить адрес",
+        "Change Password":"Изменить пароль",
 
   "Blog": "Блог",
-        "Blog Classic": "Blog Classic",
-        "Blog Grid": "Blog Grid",
-        "Blog List": "Blog List",
-        "Blog Left Sidebar": "Blog Left Sidebar",
-        "Post Page": "Post Page",
-        "Post Without Sidebar": "Post Without Sidebar",
+        "Blog Classic": "Классический блог",
+        "Blog Grid": "Блог Сетка",
+        "Blog List": "Блог Список",
+        "Blog Left Sidebar": "Блог Правая панель",
+        "Post Page": "Страница публикации",
+        "Post Without Sidebar": "Публикация без боковой панели",
 
   "Pages": "Страницы",
-        "About Us": "About Us",
-        "Contact Us": "Contact Us",
-        "Contact Us Alt": "Contact Us Alt",
+        "About Us": "О нас",
+        "Contact Us": "Свяжитесь с нами",
+        "Contact Us Alt": "Свяжитесь с нами 2",
         "404": "404",
-        "Terms And Conditions": "Terms And Conditions",
+        "Terms And Conditions": "Правила и условия",
         "FAQ": "FAQ",
-        "Components": "Components",
-        "Typography": "Typography",
+        "Components": "Компоненты",
+        "Typography": "Типография",
 
 
   "Buy Theme": "Купить тему"
  },
  "megamenu": {
-  "Power Tools": "Power Tools",
-    "Engravers": "Engravers",
-    "Wrenches": "Wrenches",
-    "Wall Chaser": "Wall Chaser",
-    "Pneumatic Tools": "Pneumatic Tools",
-"Machine Tools": "Machine Tools",
-    "Thread Cutting": "Thread Cutting",
-    "Chip Blowers": "Chip Blowers",
-    "Sharpening Machines": "Sharpening Machines",
-    "Pipe Cutters": "Pipe Cutters",
-    "Slotting machines": "Slotting machines",
-    "Lathes": "Lathes",
-"Hand Tools": "Hand Tools",
-    "Screwdrivers": "Screwdrivers",
-    "Handsaws": "Handsaws",
-    "Knives": "Knives",
-    "Axes": "Axes",
-    "Multitools": "Multitools",
-    "Paint Tools": "Paint Tools",
-"Garden Equipment": "Garden Equipment",
-    "Motor Pumps": "Motor Pumps",
-    "Chainsaws": "Chainsaws",
-    "Electric Saws": "Electric Saws",
-    "Brush Cutters": "Brush Cutters"
+  "Power Tools": "Электроинструменты",
+    "Engravers": "Гравёры",
+    "Wrenches": "Гаечные ключи",
+    "Wall Chaser": "Пробоотборник",
+    "Pneumatic Tools": "Пневматический инструмент",
+"Machine Tools": "Станки",
+    "Thread Cutting": "Нарезание резьбы",
+    "Chip Blowers": "Чип воздуходувки",
+    "Sharpening Machines": "Заточные станки",
+    "Pipe Cutters": "Труборезы",
+    "Slotting machines": "Машины долбежные",
+    "Lathes": "Токарные станки",
+"Hand Tools": "Ручной инструмент",
+    "Screwdrivers": "Отвертки",
+    "Handsaws": "Рожки",
+    "Knives": "Ножи",
+    "Axes": "Топоры",
+    "Multitools": "Мультиинструменты",
+    "Paint Tools": "Инструменты рисования",
+"Garden Equipment": "Садовая техника",
+    "Motor Pumps": "Мотопомпы",
+    "Chainsaws": "Бензопилы",
+    "Electric Saws": "Электрические пилы",
+    "Brush Cutters": "Кусторезы"
 
  },
  "topbar": {
@@ -189,7 +401,7 @@
 },
 "footer": {
 
-  "footer-contacts-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in feugiat lorem. Pellentque ac placerat tellus.",
+  "footer-contacts-text": "нижний колонтитул-контакты-текст.",
   "store": {
       "address": "715 Fake Street, New York 10021 USA",
       "email": "stroyka@example.com",
@@ -197,29 +409,29 @@
       "hours": "Mon-Sat 10:00pm - 7:00pm"
   },
 
-  "footer-newsletter-text": "Praesent pellentesque volutpat ex, vitae auctor lorem pulvinar mollis felis at lacinia.",
-  "Email Address": "Email Address",
-  "Subscribe": "Subscribe",
-  "footer-newsletter-text-social": "Follow us on social networks",
+  "footer-newsletter-text": "текст-информационного бюллетеня.",
+  "Email Address": "Адрес электронной почты",
+  "Subscribe": "Подписаться",
+  "footer-newsletter-text-social": "Следуйте за нами в социальных сетях",
 
-  "Information": "Information",
-  "My Account": "My Account",
+  "Information": "Информация",
+  "My Account": "Мой аккаунт",
 
-  "About Us": "About Us",
-  "Delivery Information": "Delivery Information",
-  "Privacy Policy": "Privacy Policy",
-  "Brands": "Brands",
-  "Contact Us": "Contact Us",
-  "Returns": "Returns",
-  "Site Map": "Site Map",
+  "About Us": "О нас",
+  "Delivery Information": "Информация о доставке",
+  "Privacy Policy": "Политика конфиденциальности",
+  "Brands": "Бренды",
+  "Contact Us": "Свяжитесь с нами",
+  "Returns": "Вернуться",
+  "Site Map": "Карта сайта",
 
-  "Store Location": "Store Location",
-  "Order History": "Order History",
-  "Wish List": "Wish List",
-  "Newsletter": "Newsletter",
-  "Specials": "Specials",
-  "Gift Cards": "Gift Cards",
-  "Affiliate": "Affiliate"
+  "Store Location": "Местоположение магазина",
+  "Order History": "История заказов",
+  "Wish List": "Список желаний",
+  "Newsletter": "Информационный бюллетень",
+  "Specials": "Специальные предложения",
+  "Gift Cards": "Подарочные карты",
+  "Affiliate": "Партнер"
 
 },
 
@@ -227,6 +439,10 @@
   "title": "Ручные инструменты",
   "text": "Молотки, долота, универсальные плоскогубцы, кусачки, лобзики, пилы",
   "Shop Now": "Купить сейчас"
+},
+"block-categories": {
+  "Show All": "Показать все",
+  "Products": "Продукты"
 },
 "block-features": {
 
@@ -245,5 +461,350 @@
 },
 "block-slideshow": {
   "Shop Now": "Купить сейчас"
+},
+"block-brands-grid": {
+  "Products": "Продуктов"
+},
+"block-categories-grid": {
+  "Products": "Продуктов"
+},
+"products-view": {
+  "Grid": "Сетка",
+  "Grid With Features": "Сетка с элементами",
+  "List": "Список",
+
+  "Filters": "Фильтры",
+  "Sort By": "Сортировать по",
+  "Showing": "Показать",
+  "of": "из",
+  "results": "результата",
+  "Default": "По умолчанию",
+  "Name (A-Z)": "(A-Z)",
+  "Name (Z-A)": "(Z-A)",
+  "Show": "Покажи",
+  "No matching items": "Нет подходящих элементов",
+  "Try resetting the filters": "Попробуйте сбросить фильтры",
+  "Reset filters": "Сбросить фильтры"
+},
+
+"widget-aboutus": {
+  "About Blog": "О блоге",
+  "aboutus-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus, eget viverra nulla sem vitae neque. Quisque id sodales libero."
+},
+"widget-categories": {
+  "Categories": "Категории"
+},
+"widget-filters": {
+  "Filters": "Фильтры",
+  "Reset": "Сброс",
+  "All Products": "Все продукты",
+
+  "Categories": "Категории",
+  "Marques": "Бренды",
+  "Price": "Цена",
+  "Color": "Цвет",
+
+  "With Discount": "Со скидкой",
+  "Any": "Любой",
+  "No": "Нет",
+  "Yes": "Да"
+},
+"widget-newsletter": {
+  "Our Newsletter": "Наш информационный бюллетень",
+  "Email Address": "Адрес электронной почты",
+  "Subscribe": "Подписаться"
+},
+"widget-posts": {
+  "Latest Posts": "Последние сообщения"
+},
+"widget-search": {
+  "Blog search...": "Blog search..."
+},
+"widget-tags": {
+  "Tags Cloud": "Облако тегов",
+  "Promotion": "Акция",
+        "Power Tool": "Электроинструмент",
+        "New Arrivals": "Новые поступления",
+        "Screwdriver": "Инструменты ручные",
+        "Wrench": "Гаечный ключ",
+        "Mounts": "Маунты",
+        "Electrodes": "Электроды",
+        "Chainsaws": "Бензопилы",
+        "Manometers": "Манометры",
+        "Nails": "Ногти",
+        "Air Guns": "Пневматические пушки",
+        "Cutting Discs": "Режущие диски"
+},
+"widget-comments": {
+  "Latest Comments": "Последние комментарии"
+},
+
+"comments-list": {
+  "Reply": "Ответить"
+},
+
+"pc": {
+  "Home": "Дом",
+  "Shop": "Магазин"
+
+},
+"shop-sidebar": {
+  "Latest Products": "Последние продукты"
+},
+
+"dropcart": {
+  "Shopping Cart": "Корзина",
+  "Your shopping cart is empty!": "Ваша корзина пуста!",
+  "View Cart": "Просмотреть",
+  "Checkout": "Оформить",
+
+  "Subtotal": "Промежуточный итог",
+  "Total": "Итого",
+
+  "Shipping": "доставка",
+  "Fee": "плата",
+  "Tax": "налог",
+  "Other": "другое"
+},
+
+"about-us": {
+  "About Us": "О нас",
+  "About Us text 1": "О нас 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacus metus, convallis ut leo nec, tincidunt eleifend justo. Ut felis orci, hendrerit a pulvinar et, gravida ac lorem. Sed vitae molestie sapien, at sollicitudin tortor.",
+  "About Us text 2": "О нас 2 Duis id volutpat libero, id vestibulum purus.Donec euismod accumsan felis,egestas lobortis velit tempor vitae. Integer eget velit fermentum, dignissim odio non, bibendum velit.",
+
+  "Meat Our Team": "Наша команда",
+  "Want to work in our friendly team?": "Хотишь работать в нашем дружном коллективе?",
+  "Contact us": "Свяжитесь с нами",
+  "and we will consider your candidacy.": "и мы рассмотрим вашу кандидатуру.",
+  "Michael Russo": "Michael Russo",
+  "Chief Executive Officer": "Генеральный директор",
+  "Katherine Miller": "Katherine Miller",
+  "Marketing Officer": "Сотрудник по маркетингу",
+
+  "Anthony Harris": "Anthony Harris",
+  "Finance Director": "Финансовый директор"
+},
+"page-contact-us": {
+
+  "Contact Us": "Свяжитесь с нами",
+  "Our Address": "Наш адрес",
+  "contact-us__address 1": " 715 Fake Ave, Apt. 34, New York, NY 10021 USA",
+  "contact-us__address 2": "Электронная почта: stroyka@example.com",
+  "contact-us__address 3": "Номер телефона: +1 754 000-00-00",
+
+  "Opening Hours": "Часы работы",
+  "Opening Hours 1": "С понедельника по пятницу: 8-20",
+  "Opening Hours 2": "Суббота: с 8:00 до 18:00",
+  "Opening Hours 3": "Воскресенье: с 10:00 до 16:00",
+
+  "Comment": "Комментарий",
+  "Comment 2": "Комментарий 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit suscipit mi, non tempor nulla finibus eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "Leave us a Message": "Оставьте нам сообщение",
+  "Your Name": "Ваше имя",
+  "Email": "Электронная почта",
+  "Email Address": "Адрес электронной почты",
+  "Subject": "Тема",
+  "Message": "Сообщение",
+  "Send Message": "Отправить сообщение"
+},
+"page-not-found": {
+  "Oops! Error 404": "Ой! Ошибка 404",
+  "Page Not Found": "Страница не найдена",
+  "not-found__text": "Кажется, мы не можем найти страницу, которую вы ищете.",
+  "Try to use the search.": "Попробуйте воспользоваться поиском.",
+  "Search Query...": "Поисковый запрос...",
+  "Search": "Поиск",
+  "Or go to the home page to start over.": "Или перейдите на домашнюю страницу, чтобы начать заново.",
+  "Go To Home Page": "Перейти на домашнюю страницу"
+},
+"page-terms": {
+  "Terms And Conditions": "Правила и условия",
+  "This Agreement was last modified on 27 May 2018.": "Последний раз в данное Соглашение вносились изменения 27 мая 2018 г.",
+
+  "document__content 1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac pretium nibh facilisis.",
+  "Definitions": "Определения",
+
+  "Risus": "Risus",
+  "document__content Risus": "— Morbi posuere eleifend sollicitudin. Praesent eget ante in enim scelerisque scelerisque. Donec mi lorem, molestie a sapien non, laoreet convallis felis. In semper felis in lacus",
+  "Praesent": "Praesent",
+  "document__content Praesent": " — Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla orci ante, viverra in imperdiet in, pharetra et leo",
+  "Vestibulum": "Vestibulum",
+  "document__content Vestibulum": " — Vestibulum arcu tellus, aliquam vel fermentum vestibulum, lacinia pulvinaripsum. In hac habitasse platea dictumst. Integer felis libero, blandit scelerisque mauris eget, porta",
+
+  "Ornare dolor": "Ornare dolor",
+  "Ornare dolor 2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac pretium nibh facilisis. ",
+
+  "For information about how to contact us, please visit our": "Для получения информации о том, как с нами связаться, пожалуйста, посетите наш",
+  "contact page": "страница контактов"
+},
+"page-faq": {
+  "Frequently Asked Questions": "Часто задаваемые вопросы",
+  "Shipping Information": "Информация о доставке",
+  "What shipping methods are available?": "Какие способы доставки доступны?",
+
+  "faq__section 1": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "Do you ship internationally?": "Вы осуществляете международную отправку?",
+  "faq__section 2": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "What shipping methods are available? 2": "Какие способы доставки доступны?",
+  "faq__section 3": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "Do you ship internationally? 3": "Вы осуществляете международную отправку",
+  "faq__section 4": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+  "Payment Information": "Платежная информация",
+  "What shipping methods are available? 4": "What shipping methods are available?",
+
+  "What shipping methods are available? 5": "What shipping methods are available? 5",
+  "faq__section 5": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "What shipping methods are available? 6": "What shipping methods are available? 6",
+  "faq__section 6": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+  "Orders and Returns": "Заказы и возвраты",
+  "What shipping methods are available? 7": "What shipping methods are available?",
+
+  "faq__section 7": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "faq__section 8": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+  "What shipping methods are available? 8": "What shipping methods are available?"
+},
+"page-category": {
+  "Latest News": "Последние новости"
+},
+"page-login": {
+  "My Account": "Мой аккаунт",
+  "Login": "Логин",
+
+  "Email address": "Адрес электронной почты",
+  "Enter email": "Введите адрес электронной почты",
+  "Password": "Пароль",
+  "Forgotten Password": "Забыли пароль",
+  "Remember Me": "Запомнить",
+  "Register": "Зарегистрироваться",
+  "Repeat Password": "Повторить пароль"
+},
+"layout": {
+  "My Account": "Мой аккаунт",
+  "Navigation": "Навигация",
+
+  "Login":"Логин",
+  "Dashboard":"Панель мониторинга",
+  "Edit Profile":"Редактировать профиль",
+  "Order History":"История заказов",
+  "Order Details":"Детали заказа",
+  "Addresses":"Адреса",
+  "Edit Address":"Изменить адрес",
+  "Password":"Пароль",
+  "Logout": "Выход"
+},
+"page-dashboard": {
+  "Edit Profile": "Редактировать профиль",
+  "Default Address": "Адрес по умолчанию",
+  "Phone Number": "Номер телефона",
+  "Email Address": "Адрес электронной почты",
+  "Edit Address": "Редактировать адрес",
+  "Recent Orders": "Последние заказы",
+  "Order": "Заказ",
+  "Date": "Дата",
+  "Status": "Статус",
+  "Total": "Итого",
+  "for": "за",
+  "item(s)": "предметов"
+},
+"page-addresses-list": {
+  "Add New": "Добавить новое",
+  "Default": "По умолчанию",
+  "Phone Number": "Номер телефона",
+  "Email Address": "Адрес электронной почты",
+  "Edit": "Редактировать",
+  "Remove": "Удалить"
+},
+"page-edit-address": {
+  "Edit Address": "Редактировать адрес",
+  "First Name": "Имя",
+  "Last Name": "Фамилия",
+  "Company Name": "Название компании",
+
+  "Country": "Страна",
+
+  "Select a country...": "Выберите страну...",
+  "United States": "Соединенные Штаты",
+  "France": "Франция",
+  "Russia": "Россия",
+  "England": "Англия",
+
+  "Street Address": "Адрес",
+
+  "Apartment, suite, unit etc.": "Апартамент, люкс, блок и т. д.",
+  "(Optional)": "(Необязательно)",
+  "Town / City": "Город/Город",
+  "State / County": "Штат/Округ",
+  "Postcode / ZIP": "Почтовый индекс/ZIP",
+
+  "Email address": "Адрес электронной почты",
+  "Phone": "Телефон",
+
+  "Save": "Сохранить"
+},
+"page-profile": {
+  "Edit Profile": "Редактировать профиль",
+  "First Name": "Имя",
+  "Last Name": "Фамилия",
+  "Email Address": "Адрес электронной почты",
+  "Phone Number": "Номер телефона",
+  "Save": "Сохранить"
+},
+"page-password": {
+  "Change Password": "Изменить пароль",
+  "Current Password": "Текущий пароль",
+  "New Password": "Новый пароль",
+  "Reenter New Password": "Ввести новый пароль",
+  "Change": "Изменить"
+},
+"page-order-details": {
+  "Order": "Заказ",
+  "Was placed on": "Размещен",
+  "and is currently": "и есть в настоящее время",
+  "Product": "Продукт",
+  "Total": "Итого",
+  "Subtotal": "Промежуточный итог",
+  "Shipping Address": "Адрес доставки",
+  "Phone Number": "Номер телефона",
+  "Email Address": "Адрес электронной почты",
+  "Billing Address": "Адрес для выставления счетов",
+
+  "Store Credit": "Кредит магазина",
+  "Shipping": "Доставка",
+  "Back to list": "Вернуться к списку"
+},
+"page-orders-list": {
+  "Order History": "История заказов",
+  "Order": "Заказ",
+  "Date": "Дата",
+  "Status": "Статус",
+  "Total": "Итого",
+  "for": "за",
+  "item(s)": "предмет(ов)"
+},
+
+"post.component": {
+  "Latest news": "Последние новости",
+  "Related Posts": "Похожие сообщения",
+  "Comments": "Комментарии",
+  "Write A Comment": "Написать комментарий",
+  "First Name": "Имя",
+  "Last Name": "Фамилия",
+  "Email Address": "Адрес электронной почты",
+  "Comment": "Комментарий",
+  "Post Comment": "Опубликовать комментарий",
+
+  "Promotion": "Продвижение",
+  "Power Tool": "Электроинструмент",
+  "Wrench": "Гаечный ключ",
+  "Electrodes": "Электроды"
+},
+"post-card": {
+  "Read More": "Читать дальше",
+  "post-card__content": "В общем смысле философия связана с мудростью, интеллектуальной культурой и поиском знаний. В этом смысле все культуры..."
+
 }
+
 }

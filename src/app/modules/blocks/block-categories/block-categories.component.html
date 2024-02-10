@@ -21,10 +21,10 @@
                             </li>
                         </ul>
                         <div class="category-card__all">
-                            <a [routerLink]="root.category(category)">Show All</a>
+                            <a [routerLink]="root.category(category)">{{ tagLang+'Show All' | translate }}</a>
                         </div>
                         <div class="category-card__products">
-                            {{ category.items }} Products
+                            {{ category.items }} {{ tagLang+'Products' | translate }}
                         </div>
                     </div>
                 </div>

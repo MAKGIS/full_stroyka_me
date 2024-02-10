@@ -1,7 +1,7 @@
 <div class="block post post--layout--{{ layout }}">
     <div class="post__header post-header post-header--layout--{{ layout }}">
         <div class="post-header__categories">
-            <a routerLink="../">Latest news</a>
+            <a routerLink="../">{{ tagLang+'Latest news' | translate }}</a>
         </div>
         <h1 class="post-header__title">Morbi Interdum Velit Quis Magna Placerat Lobortis Eget</h1>
         <div class="post-header__meta">
@@ -92,10 +92,10 @@
         <div class="post__tags-share-buttons">
             <div class="post__tags tags">
                 <div class="tags__list">
-                    <a href="">Promotion</a>
-                    <a href="">Power Tool</a>
-                    <a href="">Wrench</a>
-                    <a href="">Electrodes</a>
+                    <a href="">{{ tagLang+'Promotion' | translate }}</a>
+                    <a href="">{{ tagLang+'Power Tool' | translate }}</a>
+                    <a href="">{{ tagLang+'Wrench' | translate }}</a>
+                    <a href="">{{ tagLang+'Electrodes' | translate }}</a>
                 </div>
             </div>
             <app-share-buttons class="post__share-buttons" buttons="facebook,twitter,pinterest"></app-share-buttons>
@@ -118,7 +118,7 @@
 
 
     <section class="post__section">
-        <h4 class="post__section-title">Related Posts</h4>
+        <h4 class="post__section-title">{{ tagLang+'Related Posts' | translate }}</h4>
 
         <div class="related-posts">
             <div class="related-posts__list">
@@ -141,36 +141,36 @@
 
 
     <section class="post__section">
-        <h4 class="post__section-title">Comments ({{ comments.count }})</h4>
+        <h4 class="post__section-title">{{ tagLang+'Comments' | translate }} ({{ comments.count }})</h4>
 
         <app-comments-list [comments]="comments.items"></app-comments-list>
     </section>
 
 
     <section class="post__section">
-        <h4 class="post__section-title">Write A Comment</h4>
+        <h4 class="post__section-title">{{ tagLang+'Write A Comment' | translate }}</h4>
 
         <form>
             <div class="form-row">
                 <div class="form-group col-md-4">
-                    <label for="comment-first-name">First Name</label>
-                    <input type="text" class="form-control" id="comment-first-name" placeholder="First Name">
+                    <label for="comment-first-name">{{ tagLang+'First Name' | translate }}</label>
+                    <input type="text" class="form-control" id="comment-first-name" placeholder="{{ tagLang+'First Name' | translate }}">
                 </div>
                 <div class="form-group col-md-4">
-                    <label for="comment-last-name">Last Name</label>
-                    <input type="text" class="form-control" id="comment-last-name" placeholder="Last Name">
+                    <label for="comment-last-name">{{ tagLang+'Last Name' | translate }}</label>
+                    <input type="text" class="form-control" id="comment-last-name" placeholder="{{ tagLang+'Last Name' | translate }}">
                 </div>
                 <div class="form-group col-md-4">
-                    <label for="comment-email">Email Address</label>
-                    <input type="email" class="form-control" id="comment-email" placeholder="Email Address">
+                    <label for="comment-email">{{ tagLang+'Email Address' | translate }}</label>
+                    <input type="email" class="form-control" id="comment-email" placeholder="{{ tagLang+'Email Address' | translate }}">
                 </div>
             </div>
             <div class="form-group">
-                <label for="comment-content">Comment</label>
+                <label for="comment-content">{{ tagLang+'Comment' | translate }}</label>
                 <textarea class="form-control" id="comment-content" rows="6"></textarea>
             </div>
             <div class="form-group mt-4">
-                <button type="submit" class="btn btn-primary btn-lg">Post Comment</button>
+                <button type="submit" class="btn btn-primary btn-lg">{{ tagLang+'Post Comment' | translate }}</button>
             </div>
         </form>
     </section>

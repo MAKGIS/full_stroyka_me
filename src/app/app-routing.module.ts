@@ -8,6 +8,8 @@ import { PageOffcanvasCartComponent } from './pages/page-offcanvas-cart/page-off
 import { CategoryResolverService } from './modules/shop/resolvers/category-resolver.service';
 import { ProductsListResolverService } from './modules/shop/resolvers/products-list-resolver.service';
 import { CurrencyResolverService } from './modules/shop/resolvers/currency-resolver.service';
+import { PageBrandsComponent } from './pages/page-brands/page-brands.component';
+import { PageCategoriesComponent } from './pages/page-categories/page-categories.component';
 
 
 const routes: Routes = [
@@ -72,6 +74,22 @@ const routes: Routes = [
                 path: 'home',
                 pathMatch: 'full',
                 component: PageHomeOneComponent,
+                resolve: {
+                    products: ProductsListResolverService
+                }
+            },
+            {
+                path: 'categories',
+                pathMatch: 'full',
+                component: PageCategoriesComponent,
+                resolve: {
+                    products: ProductsListResolverService
+                }
+            },
+            {
+                path: 'brands',
+                pathMatch: 'full',
+                component: PageBrandsComponent,
                 resolve: {
                     products: ProductsListResolverService
                 }

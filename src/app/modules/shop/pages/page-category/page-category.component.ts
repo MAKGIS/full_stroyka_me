@@ -5,12 +5,13 @@ import { PageCategoryService } from '../../services/page-category.service';
 import { Link } from '../../../../shared/interfaces/link';
 import { RootService } from '../../../../shared/services/root.service';
 import { of, Subject, timer } from 'rxjs';
-import { debounce, mergeMap, takeUntil } from 'rxjs/operators';
+import { debounce, mergeMap, take, takeUntil } from 'rxjs/operators';
 import { Location } from '@angular/common';
 import { parseProductsListParams } from '../../resolvers/products-list-resolver.service';
 import { ShopService } from '../../../../shared/api/shop.service';
 import { parseFilterValue } from '../../../../shared/helpers/filter';
 import { Category } from '../../../../shared/interfaces/category';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-grid',
@@ -30,6 +31,10 @@ export class PageCategoryComponent implements OnDestroy {
     breadcrumbs: Link[] = [];
     pageHeader = '';
 
+    tagLang = 'pc.';
+
+    isLog = true;
+    vv = ['pc.Shop'];
     constructor(
         private root: RootService,
         private router: Router,
@@ -37,6 +42,7 @@ export class PageCategoryComponent implements OnDestroy {
         private pageService: PageCategoryService,
         private shop: ShopService,
         private location: Location,
+        public translate: TranslateService,
     ) {
         this.route.data.subscribe(data => {
             this.breadcrumbs = [
@@ -46,7 +52,7 @@ export class PageCategoryComponent implements OnDestroy {
 
             // If categorySlug is undefined then this is a root catalog page.
             if (!this.getCategorySlug()) {
-                this.pageHeader = 'Shop';
+               this.pageHeader = 'Shop';
             } else {
                 // mak ???
                 if (data['category'])

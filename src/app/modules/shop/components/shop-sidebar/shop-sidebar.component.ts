@@ -24,6 +24,8 @@ export class ShopSidebarComponent implements OnInit, OnDestroy {
     bestsellers$!: Observable<Product[]>;
     isOpen = false;
 
+    tagLang = 'shop-sidebar.';
+
     constructor(
         private shop: ShopService,
         public sidebar: ShopSidebarService,

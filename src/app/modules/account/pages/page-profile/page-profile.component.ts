@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
     styleUrls: ['./page-profile.component.sass']
 })
 export class PageProfileComponent {
+
+    tagLang = 'page-profile.';
+
     constructor() { }
 }

@@ -10,6 +10,8 @@ import { RootService } from '../../../shared/services/root.service';
 export class WidgetPostsComponent {
     @Input() posts: Post[] = [];
 
+    tagLang = 'widget-posts.';
+
     constructor(public root: RootService) { }
 
     postImage(post: Post): string {

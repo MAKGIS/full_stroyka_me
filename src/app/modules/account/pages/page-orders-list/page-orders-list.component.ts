@@ -10,5 +10,7 @@ import { orders } from '../../../../../data/account-orders';
 export class PageOrdersListComponent {
     orders: Partial<Order>[] = orders;
 
+    tagLang = 'page-orders-list.';
+
     constructor() { }
 }

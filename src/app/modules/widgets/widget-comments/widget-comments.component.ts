@@ -9,5 +9,7 @@ import { PostComment } from '../../../shared/interfaces/post-comment';
 export class WidgetCommentsComponent {
     @Input() comments: PostComment[] = [];
 
+    tagLang = 'widget-comments.';
+
     constructor() { }
 }

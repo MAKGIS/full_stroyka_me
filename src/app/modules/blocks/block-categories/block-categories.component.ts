@@ -12,6 +12,8 @@ export class BlockCategoriesComponent {
     @Input() layout: 'classic'|'compact' = 'classic';
     @Input() categories: Category[] = [];
 
+    tagLang = 'block-categories.';
+
     constructor(
         public root: RootService,
     ) { }

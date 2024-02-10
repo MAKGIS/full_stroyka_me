@@ -1,10 +1,11 @@
 <div class="test-border"><div class="test-name-Component">{{this.constructor.name}}</div>
 
-<app-page-header [header]="'Latest News'" [breadcrumbs]="[
+<app-page-header [header]="getLang('Latest News')" [breadcrumbs]="[
     {label: 'Home',        url: '../../'},
     {label: 'Blog',        url: '../'},
     {label: 'Latest News', url: ''}
 ]"></app-page-header>
+
 
 <div class="container">
     <div class="row">

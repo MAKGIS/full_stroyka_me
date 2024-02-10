@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
     styleUrls: ['./page-terms.component.scss']
 })
 export class PageTermsComponent {
+
+    tagLang = 'page-terms.';
+
     constructor() { }
 }

@@ -11,6 +11,8 @@ import { RootService } from '../../../../shared/services/root.service';
 export class PageOrderSuccessComponent {
     order: Order = order;
 
+    tagLang = 'page-order-success.';
+
     constructor(
         public root: RootService,
     ) { }

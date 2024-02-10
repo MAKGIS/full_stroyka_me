@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
     styleUrls: ['./page-edit-address.component.scss']
 })
 export class PageEditAddressComponent {
+
+    tagLang = 'page-edit-address.';
+
     constructor() { }
 }

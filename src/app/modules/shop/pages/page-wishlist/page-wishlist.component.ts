@@ -3,6 +3,7 @@ import { WishlistService } from '../../../../shared/services/wishlist.service';
 import { Product } from '../../../../shared/interfaces/product';
 import { CartService } from '../../../../shared/services/cart.service';
 import { RootService } from '../../../../shared/services/root.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-wishlist',
@@ -13,8 +14,11 @@ export class PageWishlistComponent {
     constructor(
         public root: RootService,
         public wishlist: WishlistService,
-        public cart: CartService
+        public cart: CartService,
+        public translate: TranslateService
     ) { }
+
+    tagLang = 'page-wishlist.';
 
     addedToCartProducts: Product[] = [];
     removedProducts: Product[] = [];
@@ -43,5 +47,10 @@ export class PageWishlistComponent {
                 this.removedProducts = this.removedProducts.filter(eachProduct => eachProduct !== product);
             }
         });
+    }
+
+    getLang(text: string): string {
+
+        return this.translate.instant(this.tagLang + text);
     }
 }

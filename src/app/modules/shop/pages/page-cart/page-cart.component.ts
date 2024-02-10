@@ -5,6 +5,7 @@ import { CartItem } from '../../../../shared/interfaces/cart-item';
 import { Subject } from 'rxjs';
 import { map, takeUntil } from 'rxjs/operators';
 import { RootService } from '../../../../shared/services/root.service';
+import { TranslateService } from '@ngx-translate/core';
 
 interface Item {
     cartItem: CartItem;
@@ -20,13 +21,16 @@ interface Item {
 export class PageCartComponent implements OnInit, OnDestroy {
     private destroy$: Subject<void> = new Subject();
 
+    tagLang = 'page-cart.';
+
     removedItems: CartItem[] = [];
     items: Item[] = [];
     updating = false;
 
     constructor(
         public root: RootService,
-        public cart: CartService
+        public cart: CartService,
+        public translate: TranslateService
     ) { }
 
     ngOnInit(): void {

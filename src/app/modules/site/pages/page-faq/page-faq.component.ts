@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-faq',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
     styleUrls: ['./page-faq.component.scss']
 })
 export class PageFaqComponent {
-    constructor() { }
+
+    tagLang = 'page-faq.';
+
+    constructor(public translate: TranslateService) { }
+
+    getLang(text: string): string {
+
+        return this.translate.instant(this.tagLang + text);
+    }
 }

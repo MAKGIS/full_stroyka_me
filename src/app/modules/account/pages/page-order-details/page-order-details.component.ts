@@ -10,5 +10,7 @@ import { order } from '../../../../../data/account-order-details';
 export class PageOrderDetailsComponent {
     order: Order = order;
 
+    tagLang = 'page-order-details.';
+
     constructor() { }
 }

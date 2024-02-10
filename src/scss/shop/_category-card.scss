@@ -70,10 +70,15 @@
         text-decoration: underline;
     }
 }
-.category-card__products {
-    display: none;
+
+
+.brand-grid {
+    display: block;
 }
 
+.categories-grid {
+    display: block;
+}
 
 .category-card--layout--classic {
     @media (min-width: breakpoint(lg-start)) and (max-width: breakpoint(lg-end)) {

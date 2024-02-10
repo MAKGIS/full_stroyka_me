@@ -71,7 +71,7 @@
                 <div *ngIf="location === 'header'" class="suggestions__item-actions">
                     <button
                         type="button"
-                        title="Add to cart"
+                        title="{{ tagLang+'Add to cart'  | translate }}"
                         class="btn btn-primary btn-sm btn-svg-icon"
                         [class.btn-loading]="addedToCartProducts.includes(product)"
                         (click)="addToCart(product)"

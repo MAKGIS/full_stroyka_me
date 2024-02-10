@@ -12,6 +12,8 @@ import { postComments } from '../../../../../data/blog-post-comments';
 export class PostComponent {
     @Input() layout: 'classic'|'full' = 'classic';
 
+    tagLang = 'post.component.';
+
     posts: Post[] = posts;
     comments: PostCommentsList = postComments;
 

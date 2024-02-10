@@ -7838,8 +7838,11 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
 .category-card__all a:hover {
   text-decoration: underline;
 }
-.category-card__products {
-  display: none;
+.brand-grid {
+  display: block;
+}
+.categories-grid {
+  display: block;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .category-card--layout--classic .category-card__image {
@@ -13443,17 +13446,20 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
   padding: 28px;
 }
 .test-name-Component {
-  /* display: block;*/
+  /* display: block; */
   display: none;
   color: brown;
 }
 .test-border {
   /* border: 1px dashed red; */
-  height: 100%; /*  !!!  use alredy !!! */
+  height: inherit; /*  !!!  use always !!! */
 }
+/*
 .test-border-red {
-  border: 1px dashed red;
-  height: 100%; /*  !!!  use alredy !!! */
-}
+
+    border: 1px dashed red;
+    height: inherit;
+   }
+*/
 
 /*# sourceMappingURL=styles.css.map*/

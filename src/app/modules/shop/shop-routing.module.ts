@@ -14,6 +14,7 @@ import { ProductResolverService } from './resolvers/product-resolver.service';
 import { PageOrderSuccessComponent } from './pages/page-order-success/page-order-success.component';
 
 import { getProductStandard, getRootCategorySlug } from 'src/fake-server/database/brands';
+import { PageProductBelgiumComponent } from './pages/page-product-belgium/page-product-belgium.component';
 
 const rootCategorySlug: string  = getRootCategorySlug(); //'Sanitaire';  // 'power-tools'
 
@@ -147,6 +148,18 @@ const routes: Routes = [
     {
         path: 'product-standard',
         component: PageProductComponent,
+        data: {
+            layout: 'standard',
+            sidebarPosition: 'start',
+            productSlug: getProductStandard(), // 'brandix-screwdriver-screw1500acc',
+        },
+        resolve: {
+            product: ProductResolverService
+        },
+    },
+    {
+        path: 'product-belgium',
+        component: PageProductBelgiumComponent,
         data: {
             layout: 'standard',
             sidebarPosition: 'start',

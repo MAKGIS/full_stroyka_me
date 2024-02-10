@@ -50,6 +50,8 @@ export class PageHomeOneComponent implements OnInit, OnDestroy {
 
     isLog = true;
 
+    tagLang = 'page-home.';
+
     constructor(
         private shop: ShopService,
         public translate: TranslateService,

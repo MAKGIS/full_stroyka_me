@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
     styleUrls: ['./page-password.component.sass']
 })
 export class PagePasswordComponent {
+
+    tagLang = 'page-password.';
+
     constructor() { }
 }

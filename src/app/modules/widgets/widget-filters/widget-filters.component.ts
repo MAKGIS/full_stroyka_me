@@ -16,6 +16,7 @@ import { EMPTY, merge, of, Subject } from 'rxjs';
 import { PageCategoryService } from '../../shop/services/page-category.service';
 import { distinctUntilChanged, map, skip, takeUntil } from 'rxjs/operators';
 import { FilterOptionItem, FilterOptionService } from 'src/app/shared/api/filter-option.service';
+import { TranslateService } from '@ngx-translate/core';
 
 interface FormFilterValues {
     [filterSlug: string]: [number, number] | {[itemSlug: string]: boolean} | string;
@@ -29,12 +30,16 @@ interface FormFilterValues {
 export class WidgetFiltersComponent implements OnInit, OnDestroy {
     @Input() offcanvas: 'always'|'mobile' = 'mobile';
 
+    tagLang = 'widget-filters.';
+
     destroy$: Subject<void> = new Subject<void>();
 
     filters: Filter[] = [];
     filtersForm!: FormGroup;
     isPlatformBrowser = isPlatformBrowser(this.platformId);
     rightToLeft = false;
+
+    filter_check: any;
 
     isLog = true;
 
@@ -44,7 +49,8 @@ export class WidgetFiltersComponent implements OnInit, OnDestroy {
         private fb: FormBuilder,
         public root: RootService,
         public pageCategory: PageCategoryService,
-        private filterOptionService: FilterOptionService
+        private filterOptionService: FilterOptionService,
+        public translate: TranslateService
     ) {
         this.rightToLeft = this.direction.isRTL();
     }
@@ -54,6 +60,7 @@ export class WidgetFiltersComponent implements OnInit, OnDestroy {
             map(x => x?.filters || []),
             takeUntil(this.destroy$),
         ).subscribe(filters => {
+
             this.filters = filters;
             this.filtersForm = this.makeFiltersForm(filters);
 
@@ -126,8 +133,11 @@ export class WidgetFiltersComponent implements OnInit, OnDestroy {
     }
 
     trackBySlug(index: number, item: {slug: string}): any {
-        return item.slug;
+       return item.slug;
     }
+    trackByName(index: number, item: any): any {
+        return item.name;
+     }
 
     makeFiltersForm(filters: Filter[]): FormGroup {
         const filtersFromGroup: {[key: string]: AbstractControl} = {};
@@ -144,6 +154,7 @@ export class WidgetFiltersComponent implements OnInit, OnDestroy {
                     filtersFromGroup[filter.slug] = this.fb.control(filter.value);
                     break;
                 case 'check':
+                    this.filter_check = this.getSort(filter.items);
                 case 'color':
                     filtersFromGroup[filter.slug] = this.makeListFilterForm(filter);
                     break;
@@ -292,5 +303,39 @@ export class WidgetFiltersComponent implements OnInit, OnDestroy {
 
     getRangeControl(filter: Filter): FormControl {
         return this.filtersForm.get(filter.slug) as FormControl;
+    }
+
+    getLang(text: string): string {
+
+        return this.translate.instant(this.tagLang + text);
+    }
+
+    getSort(items: any): any {
+
+
+        if (this.isLog) {
+         //   console.log('- cmp -- WidgetFiltersComponent.getSort() 1 items -> %o', items);
+          }
+
+          items.sort((a, b) => {
+
+                let fa = a.name.toLowerCase(),
+                    fb = b.name.toLowerCase();
+
+                if (fa < fb) {
+                    return -1;
+                }
+                if (fa > fb) {
+                    return 1;
+                }
+                return 0;
+            });
+
+
+        if (this.isLog) {
+            console.log('- cmp -- WidgetFiltersComponent.getSort() 2 items -> %o', items);
+          }
+
+        return items;
     }
 }

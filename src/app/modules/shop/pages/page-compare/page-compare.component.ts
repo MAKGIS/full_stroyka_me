@@ -5,6 +5,7 @@ import { Product } from '../../../../shared/interfaces/product';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { RootService } from '../../../../shared/services/root.service';
+import { TranslateService } from '@ngx-translate/core';
 
 interface Feature {
     name: string;
@@ -19,6 +20,8 @@ interface Feature {
 export class PageCompareComponent implements OnInit, OnDestroy {
     private destroy$: Subject<void> = new Subject();
 
+    tagLang = 'page-compare.';
+
     products: Product[] = [];
     features: Feature[] = [];
     addedToCartProducts: Product[] = [];
@@ -27,8 +30,9 @@ export class PageCompareComponent implements OnInit, OnDestroy {
     constructor(
         public root: RootService,
         private compare: CompareService,
-        private cart: CartService
-    ) { }
+        private cart: CartService,
+        public translate: TranslateService
+           ) { }
 
     ngOnInit(): void {
         this.compare.items$.pipe(takeUntil(this.destroy$)).subscribe(products => {
@@ -82,5 +86,10 @@ export class PageCompareComponent implements OnInit, OnDestroy {
                 this.removedProducts = this.removedProducts.filter(eachProduct => eachProduct !== product);
             }
         });
+    }
+
+    getLang(text: string): string {
+
+        return this.translate.instant(this.tagLang + text);
     }
 }

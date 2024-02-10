@@ -2,7 +2,7 @@
 
 <div class="card">
     <div class="card-header">
-        <h5>Order History</h5>
+        <h5>{{ tagLang+'Order History' | translate }}</h5>
     </div>
     <div class="card-divider"></div>
     <div class="card-table">
@@ -10,10 +10,10 @@
             <table>
                 <thead>
                 <tr>
-                    <th>Order</th>
-                    <th>Date</th>
-                    <th>Status</th>
-                    <th>Total</th>
+                    <th>{{ tagLang+'Order' | translate }}</th>
+                    <th>{{ tagLang+'Date' | translate }}</th>
+                    <th>{{ tagLang+'Status' | translate }}</th>
+                    <th>{{ tagLang+'Total' | translate }}</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -21,7 +21,7 @@
                     <td><a [routerLink]="'/account/orders/' + order.id">#{{ order.id }}</a></td>
                     <td>{{ order.date }}</td>
                     <td>{{ order.status }}</td>
-                    <td>{{ order.total|currencyFormat }} for {{ order.quantity }} item(s)</td>
+                    <td>{{ order.total|currencyFormat }} {{ tagLang+'for' | translate }} {{ order.quantity }} {{ tagLang+'item(s)' | translate }}</td>
                 </tr>
                 </tbody>
             </table>

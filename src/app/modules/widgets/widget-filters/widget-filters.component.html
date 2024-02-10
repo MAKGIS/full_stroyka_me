@@ -4,13 +4,13 @@
     'widget-filters--offcanvas--always': offcanvas === 'always',
     'widget-filters--offcanvas--mobile': offcanvas === 'mobile'
 }" appCollapse>
-    <h4 class="widget-filters__title widget__title">Filters</h4>
+    <h4 class="widget-filters__title widget__title">{{ tagLang+'Filters' | translate }}</h4>
 
     <div class="widget-filters__list" [formGroup]="filtersForm" *ngIf="filtersForm">
         <div *ngFor="let filter of filters; trackBy: trackBySlug" class="widget-filters__item">
             <div class="filter filter--opened" appCollapseItem="filter--opened" #collapse="appCollapseItem">
                 <button type="button" class="filter__title" (click)="collapse.toggle()">
-                    {{ filter.name }}
+                    {{ tagLang+filter.name | translate }}
                     <app-icon class="filter__arrow" name="arrow-rounded-down-12x7" size="12x7"></app-icon>
                 </button>
                 <div class="filter__body" appCollapseContent>
@@ -19,7 +19,7 @@
                             <ul class="filter-categories__list">
                                 <li *ngIf="!filter.root" class="filter-categories__item filter-categories__item--parent">
                                     <app-icon class="filter-categories__arrow"  name="arrow-rounded-left-6x9" size="6x9"></app-icon>
-                                    <a [routerLink]="this.root.shop()">All Products</a>
+                                    <a [routerLink]="this.root.shop()">{{ tagLang+'All Products' | translate }}</a>
                                 </li>
                                 <li *ngFor="let item of filter.items; trackBy: trackBySlug" class="filter-categories__item filter-categories__item--{{ item.type }}">
                                     <app-icon *ngIf="item.type === 'parent'" class="filter-categories__arrow"  name="arrow-rounded-left-6x9" size="6x9"></app-icon>
@@ -55,7 +55,7 @@
                         <div *ngIf="filter.type === 'check'" class="filter-list" [formGroupName]="filter.slug">
                             <div class="filter-list__list">
                                 <label
-                                    *ngFor="let item of filter.items; trackBy: trackBySlug"
+                                    *ngFor="let item of filter_check"
                                     class="filter-list__item"
                                     [ngClass]="{'filter-list__item--disabled': isItemDisabled(filter, item)}"
                                 >
@@ -64,8 +64,7 @@
                                             <input
                                                 class="input-check__input"
                                                 type="checkbox"
-                                                [value]="item.slug"
-                                                [name]="'filter_' + filter.slug"
+                                                [value]="item.slug"                                              [name]="'filter_' + filter.slug"
                                                 [formControlName]="item.slug"
                                             >
                                             <span class="input-check__box"></span>
@@ -99,7 +98,7 @@
                                         </span>
                                     </span>
 
-                                    <span class="filter-list__title">{{ item.name }}</span>
+                                    <span class="filter-list__title">{{ tagLang + item.name | translate }}</span>
                                     <span class="filter-list__counter">{{ item.count }}</span>
                                 </label>
                             </div>
@@ -135,7 +134,7 @@
         </div>
     </div>
     <div class="widget-filters__actions d-flex">
-        <button class="btn btn-secondary btn-sm" (click)="reset()">Reset</button>
+        <button class="btn btn-secondary btn-sm" (click)="reset()">{{ tagLang+'Reset'  | translate }}</button>
     </div>
 </div>
 </div>

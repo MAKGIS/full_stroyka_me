@@ -17,6 +17,12 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { PageCategoryComponent } from './pages/page-category/page-category.component';
 import { PagePostComponent } from './pages/page-post/page-post.component';
 
+// Translate
+import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient } from '@angular/common/http';
+import { createTranslateLoader } from 'src/app/app.module';
+
 @NgModule({
     declarations: [
         // components
@@ -33,7 +39,15 @@ import { PagePostComponent } from './pages/page-post/page-post.component';
         // modules
         BlogRoutingModule,
         SharedModule,
-        WidgetsModule
+        WidgetsModule,
+
+        TranslateModule.forChild({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: (createTranslateLoader),
+                deps: [HttpClient]
+            }
+        })
     ]
 })
 export class BlogModule { }

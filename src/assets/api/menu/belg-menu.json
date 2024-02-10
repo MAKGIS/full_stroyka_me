@@ -1,0 +1,11 @@
+[
+  {"label": "Home", "url": "/home"},
+  {"label": "Browse", "url": "/shop/catalog", "menu": {
+      "type": "menu",
+      "items": [
+          {"label": "Brands", "url": "/brands"},
+          {"label": "Products", "url": "/shop/catalog"}
+      ]
+  }},
+  {"label": "Compare", "url": "/shop/compare"  }
+]

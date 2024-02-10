@@ -16,6 +16,8 @@ export class ProductSidebarComponent implements OnInit {
     categories$!: Observable<Category[]>;
     bestsellers$!: Observable<Product[]>;
 
+    tagLang = 'product-sidebar.';
+
     constructor(
         private shop: ShopService,
         private categoriesService: CategoriesService

@@ -12,24 +12,24 @@
                 <div class="view-options__filters-button">
                     <button type="button" class="filters-button" (click)="sidebar.open()">
                         <app-icon class="filters-button__icon" name="filters-16" size="16"></app-icon>
-                        <span class="filters-button__title">Filters</span>
+                        <span class="filters-button__title">{{ tagLang+'Filters' | translate }}</span>
                         <span class="filters-button__counter" *ngIf="filtersCount > 0">{{ filtersCount }}</span>
                     </button>
                 </div>
                 <div class="view-options__layout">
                     <div class="layout-switcher">
                         <div class="layout-switcher__list">
-                            <button title="Grid" type="button" class="layout-switcher__button"
+                            <button title="{{ tagLang+'Grid' | translate }}" type="button" class="layout-switcher__button"
                                     [ngClass]="{'layout-switcher__button--active': layout === 'grid'}" (click)="setLayout('grid')">
 
                                 <app-icon name="layout-grid-16x16" size="16"></app-icon>
                             </button>
-                            <button title="Grid With Features" type="button" class="layout-switcher__button"
+                            <button title="{{ tagLang+'Grid With Features' | translate }}" type="button" class="layout-switcher__button"
                                     [ngClass]="{'layout-switcher__button--active': layout === 'grid-with-features'}" (click)="setLayout('grid-with-features')">
 
                                 <app-icon name="layout-grid-with-details-16x16" size="16"></app-icon>
                             </button>
-                            <button title="List" type="button" class="layout-switcher__button"
+                            <button title="{{ tagLang+'List' | translate }}" type="button" class="layout-switcher__button"
                                     [ngClass]="{'layout-switcher__button--active': layout === 'list'}" (click)="setLayout('list')">
 
                                 <app-icon name="layout-list-16x16" size="16"></app-icon>
@@ -38,23 +38,23 @@
                     </div>
                 </div>
                 <div class="view-options__legend">
-                    Showing {{ this.pageService.from }}–{{ this.pageService.to }}
-                    of {{ this.pageService.total }}
-                    results
+                    {{ tagLang+'Showing' | translate }} {{ this.pageService.from }}–{{ this.pageService.to }}
+                    {{ tagLang+'of' | translate }} {{ this.pageService.total }}
+                    {{ tagLang+'results' | translate }}
                 </div>
                 <div class="view-options__divider"></div>
                 <div class="view-options__control">
-                    <label for="view-options-sort">Sort By</label>
+                    <label for="view-options-sort">{{ tagLang+'Sort By' | translate }}</label>
                     <div>
                         <select class="form-control form-control-sm" id="view-options-sort" formControlName="sort">
-                            <option value="default">Default</option>
-                            <option value="name_asc">Name (A-Z)</option>
-                            <option value="name_desc">Name (Z-A)</option>
+                            <option value="default">{{ tagLang+'Default' | translate }}</option>
+                            <option value="name_asc">{{ tagLang+'Name (A-Z)' | translate }}</option>
+                            <option value="name_desc">{{ tagLang+'Name (Z-A)' | translate }}</option>
                         </select>
                     </div>
                 </div>
                 <div class="view-options__control">
-                    <label for="view-options-limit">Show</label>
+                    <label for="view-options-limit">{{ tagLang+'Show' | translate }}</label>
                     <div>
                         <select class="form-control form-control-sm" id="view-options-limit" formControlName="limit">
                             <option value="12">12</option>
@@ -79,9 +79,9 @@
     </div>
 
     <div *ngIf="!pageService.items?.length" class="products-view__empty">
-        <div class="products-view__empty-title">No matching items</div>
-        <div class="products-view__empty-subtitle">Try resetting the filters</div>
-        <button type="button" class="btn btn-primary btn-sm" (click)="resetFilters()">Reset filters</button>
+        <div class="products-view__empty-title">{{ tagLang+'No matching items' | translate }}</div>
+        <div class="products-view__empty-subtitle">{{ tagLang+'Try resetting the filters' | translate }}</div>
+        <button type="button" class="btn btn-primary btn-sm" (click)="resetFilters()">{{ tagLang+'Reset filters' | translate }}</button>
     </div>
 </div>
 

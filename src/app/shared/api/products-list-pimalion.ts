@@ -262,13 +262,19 @@ export function getProductsListPimalion(categoriesService: CategoriesService, br
 
     const filterValues = options.filterValues || {};
     const filters: Filter[] = [];
-    const filtersDef = [
-          {type: 'range', slug: 'price', name: 'Price'},
-        //  {type: 'check', slug: 'brand', name: 'Marques', items: brands},
-        // {type: 'check', slug: 'brand', name: 'Brand'},
-        // {type: 'radio', slug: 'discount', name: 'With Discount'},
-        // {type: 'color', slug: 'color', name: 'Color'},
+
+    let filtersDef = [
+        {type: 'range', slug: 'price', name: 'Price'},
+      //  {type: 'check', slug: 'brand', name: 'Marques', items: brands},
+      // {type: 'check', slug: 'brand', name: 'Brand'},
+       {type: 'radio', slug: 'discount', name: 'With Discount'},
+       {type: 'color', slug: 'color', name: 'Color'},
     ];
+
+     if (environment.menuFile === 'belg-menu.json') {
+        filtersDef = [];
+     }
+
 
     if (isPtoductListPimalionLog) {
         console.log(`- fn -- getProductsListPimalion() (1) pimalionBody -> %O`, pimalionBody);

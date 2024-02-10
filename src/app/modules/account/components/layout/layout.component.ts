@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-layout',
@@ -17,5 +18,12 @@ export class LayoutComponent {
         {label: 'Logout', url: './login'}
     ];
 
-    constructor() { }
+    tagLang = 'layout.';
+
+    constructor(public translate: TranslateService) { }
+
+    getLang(text: string): string {
+
+        return this.translate.instant(this.tagLang + text);
+    }
 }

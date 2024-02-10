@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
     styleUrls: ['./widget-tags.component.scss']
 })
 export class WidgetTagsComponent {
+
+    tagLang = 'widget-tags.';
+
     constructor() { }
 }

@@ -9,12 +9,12 @@
             <div class="profile-card__name">Helena Garcia</div>
             <div class="profile-card__email">stroyka@example.com</div>
             <div class="profile-card__edit">
-                <a routerLink="../profile" class="btn btn-secondary btn-sm">Edit Profile</a>
+                <a routerLink="../profile" class="btn btn-secondary btn-sm">{{ tagLang+'Edit Profile' | translate }}</a>
             </div>
         </div>
     </div>
     <div class="dashboard__address card address-card address-card--featured">
-        <div class="address-card__badge" *ngIf="address.default">Default Address</div>
+        <div class="address-card__badge" *ngIf="address.default">{{ tagLang+'Default Address' | translate }}</div>
         <div class="address-card__body">
             <div class="address-card__name">{{ address.firstName + ' ' + address.lastName}}</div>
             <div class="address-card__row">
@@ -23,21 +23,21 @@
                 {{ address.address }}
             </div>
             <div class="address-card__row">
-                <div class="address-card__row-title">Phone Number</div>
+                <div class="address-card__row-title">{{ tagLang+'Phone Number' | translate }}</div>
                 <div class="address-card__row-content">{{ address.phone }}</div>
             </div>
             <div class="address-card__row">
-                <div class="address-card__row-title">Email Address</div>
+                <div class="address-card__row-title">{{ tagLang+'Email Address' | translate }}</div>
                 <div class="address-card__row-content">{{ address.email }}</div>
             </div>
             <div class="address-card__footer">
-                <a routerLink="/account/addresses/5">Edit Address</a>
+                <a routerLink="/account/addresses/5">{{ tagLang+'Edit Address' | translate }}</a>
             </div>
         </div>
     </div>
     <div class="dashboard__orders card">
         <div class="card-header">
-            <h5>Recent Orders</h5>
+            <h5>{{ tagLang+'Recent Orders' | translate }}</h5>
         </div>
         <div class="card-divider"></div>
         <div class="card-table">
@@ -45,10 +45,10 @@
                 <table>
                     <thead>
                     <tr>
-                        <th>Order</th>
-                        <th>Date</th>
-                        <th>Status</th>
-                        <th>Total</th>
+                        <th>{{ tagLang+'Order' | translate }}</th>
+                        <th>{{ tagLang+'Date' | translate }}</th>
+                        <th>{{ tagLang+'Status' | translate }}</th>
+                        <th>{{ tagLang+'Total' | translate }}</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -56,7 +56,7 @@
                         <td><a href="">#{{ order.id }}</a></td>
                         <td>{{ order.date }}</td>
                         <td>{{ order.status }}</td>
-                        <td>{{ order.total|currencyFormat }} for {{ order.quantity }} item(s)</td>
+                        <td>{{ order.total|currencyFormat }} {{ tagLang+'for' | translate }} {{ order.quantity }} {{ tagLang+'item(s)' | translate }}</td>
                     </tr>
                     </tbody>
                 </table>

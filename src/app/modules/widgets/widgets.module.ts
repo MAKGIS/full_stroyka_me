@@ -22,6 +22,11 @@ import { WidgetProductsComponent } from './widget-products/widget-products.compo
 import { WidgetSearchComponent } from './widget-search/widget-search.component';
 import { WidgetTagsComponent } from './widget-tags/widget-tags.component';
 
+import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient } from '@angular/common/http';
+import { createTranslateLoader } from 'src/app/app.module';
+
 @NgModule({
     declarations: [
         // widgets
@@ -44,7 +49,17 @@ import { WidgetTagsComponent } from './widget-tags/widget-tags.component';
         // modules (third-party)
         NgxSliderModule,
         // modules
-        SharedModule
+        SharedModule,
+
+        TranslateModule.forChild({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: (createTranslateLoader),
+                deps: [HttpClient]
+            },
+            //isolate: true,
+            //extend: true
+        })
     ],
     exports: [
         // widgets

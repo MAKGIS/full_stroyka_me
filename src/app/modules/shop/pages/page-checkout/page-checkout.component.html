@@ -1,79 +1,83 @@
 <div class="test-border"><div class="test-name-Component">{{this.constructor.name}}</div>
 
-<app-page-header [header]="'Checkout'" [breadcrumbs]="[
+<app-page-header [header]="getLang('Checkout')" [breadcrumbs]="[
     {label: 'Home',          url: root.home()},
     {label: 'Shopping Cart', url: root.cart()},
     {label: 'Checkout',      url: ''}
 ]"></app-page-header>
+<!--  Ok
+<h2>lang_test$: {{translate.get('page-checkout.Checkout') | async}}</h2>
+-->
+<!-- Error
+<h2>lang_test: {{lang_test }}</h2>
+-->
+
 
 <div class="checkout block">
     <div class="container">
         <div class="row">
             <div class="col-12 mb-3">
-                <app-alert type="primary" size="lg">Returning customer? <a [routerLink]="root.login()">Click here to login</a></app-alert>
+                <app-alert type="primary" size="lg">{{ tagLang+'Returning customer?'  | translate }} <a [routerLink]="root.login()">{{ tagLang+'Click here to login'  | translate }}</a></app-alert>
             </div>
 
             <div class="col-12 col-lg-6 col-xl-7">
                 <div class="card mb-lg-0">
                     <div class="card-body">
-                        <h3 class="card-title">Billing details</h3>
+                        <h3 class="card-title">{{ tagLang+'Billing details'  | translate }}</h3>
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label for="checkout-first-name">First Name</label>
-                                <input type="text" class="form-control" id="checkout-first-name" placeholder="First Name">
+                                <label for="checkout-first-name">{{ tagLang+'First Name'  | translate }}</label>
+                                <input type="text" class="form-control" id="checkout-first-name" placeholder="{{ tagLang+'First Name'  | translate }}">
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="checkout-last-name">Last Name</label>
-                                <input type="text" class="form-control" id="checkout-last-name" placeholder="Last Name">
+                                <label for="checkout-last-name">{{ tagLang+'Last Name'  | translate }}</label>
+                                <input type="text" class="form-control" id="checkout-last-name" placeholder="{{ tagLang+'Last Name'  | translate }}">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="checkout-company-name">Company Name <span class="text-muted">(Optional)</span></label>
-                            <input type="text" class="form-control" id="checkout-company-name" placeholder="Company Name">
+                            <label for="checkout-company-name">{{ tagLang+'Company Name'  | translate }} <span class="text-muted">{{ tagLang+'(Optional)'  | translate }}</span></label>
+                            <input type="text" class="form-control" id="checkout-company-name" placeholder="{{ tagLang+'Company Name'  | translate }}">
                         </div>
                         <div class="form-group">
-                            <label for="checkout-country">Country</label>
+                            <label for="checkout-country">{{ tagLang+'Country'  | translate }}</label>
                             <select id="checkout-country" class="form-control">
-                                <option>Select a country...</option>
-                                <option>United States</option>
-                                <option>Russia</option>
-                                <option>Italy</option>
-                                <option>France</option>
-                                <option>Ukraine</option>
-                                <option>Germany</option>
-                                <option>Australia</option>
+                                <option>{{ tagLang+'Select a country...'  | translate }}</option>
+                                <option>{{ tagLang+'United States'  | translate }}</option>
+                                <option>{{ tagLang+'England'  | translate }}</option>
+                                <option>{{ tagLang+'Russia'  | translate }}</option>
+                                <option>{{ tagLang+'France'  | translate }}</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="checkout-street-address">Street Address</label>
-                            <input type="text" class="form-control" id="checkout-street-address" placeholder="Street Address">
+                            <label for="checkout-street-address">{{ tagLang+'Street Address'  | translate }}</label>
+                            <input type="text" class="form-control" id="checkout-street-address" placeholder="{{ tagLang+'Street Address'  | translate }}">
                         </div>
                         <div class="form-group">
-                            <label for="checkout-address">Apartment, suite, unit etc. <span class="text-muted">(Optional)</span></label>
+                            <label for="checkout-address">{{ tagLang+'Apartment, suite, unit etc.'  | translate }} <span class="text-muted">{{ tagLang+'(Optional)'  | translate }}</span></label>
                             <input type="text" class="form-control" id="checkout-address">
                         </div>
                         <div class="form-group">
-                            <label for="checkout-city">Town / City</label>
+                            <label for="checkout-city">{{ tagLang+'Town / City'  | translate }}</label>
                             <input type="text" class="form-control" id="checkout-city">
                         </div>
                         <div class="form-group">
-                            <label for="checkout-state">State / County</label>
+                            <label for="checkout-state">{{ tagLang+'State / County'  | translate }}</label>
                             <input type="text" class="form-control" id="checkout-state">
                         </div>
                         <div class="form-group">
-                            <label for="checkout-postcode">Postcode / ZIP</label>
+                            <label for="checkout-postcode">{{ tagLang+'Postcode / ZIP'  | translate }}</label>
                             <input type="text" class="form-control" id="checkout-postcode">
                         </div>
 
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label for="checkout-email">Email address</label>
-                                <input type="email" class="form-control" id="checkout-email" placeholder="Email address">
+                                <label for="checkout-email">{{ tagLang+'Email address'  | translate }}</label>
+                                <input type="email" class="form-control" id="checkout-email" placeholder="{{ tagLang+'Email address'  | translate }}">
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="checkout-phone">Phone</label>
-                                <input type="text" class="form-control" id="checkout-phone" placeholder="Phone">
+                                <label for="checkout-phone">{{ tagLang+'Phone'  | translate }}</label>
+                                <input type="text" class="form-control" id="checkout-phone" placeholder="{{ tagLang+'Phone'  | translate }}">
                             </div>
                         </div>
 
@@ -86,13 +90,13 @@
                                             <svg class="input-check__icon" width="9px" height="7px"><use xlink:href="assets/images/sprite.svg#check-9x7"></use></svg>
                                         </span>
                                     </span>
-                                <label class="form-check-label" for="checkout-create-account">Create an account?</label>
+                                <label class="form-check-label" for="checkout-create-account">{{ tagLang+'Create an account?'  | translate }}</label>
                             </div>
                         </div>
                     </div>
                     <div class="card-divider"></div>
                     <div class="card-body">
-                        <h3 class="card-title">Shipping Details</h3>
+                        <h3 class="card-title">{{ tagLang+'Shipping Details'  | translate }}</h3>
 
                         <div class="form-group">
                             <div class="form-check">
@@ -103,12 +107,12 @@
                                             <svg class="input-check__icon" width="9px" height="7px"><use xlink:href="assets/images/sprite.svg#check-9x7"></use></svg>
                                         </span>
                                     </span>
-                                <label class="form-check-label" for="checkout-different-address">Ship to a different address?</label>
+                                <label class="form-check-label" for="checkout-different-address">{{ tagLang+'Ship to a different address?'  | translate }}</label>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="checkout-comment">Order notes <span class="text-muted">(Optional)</span></label>
+                            <label for="checkout-comment">{{ tagLang+'Order notes'  | translate }} <span class="text-muted">{{ tagLang+'(Optional)'  | translate }}</span></label>
                             <textarea id="checkout-comment" class="form-control" rows="4"></textarea>
                         </div>
                     </div>
@@ -118,13 +122,13 @@
             <div class="col-12 col-lg-6 col-xl-5 mt-4 mt-lg-0">
                 <div class="card mb-0">
                     <div class="card-body">
-                        <h3 class="card-title">Your Order</h3>
+                        <h3 class="card-title">{{ tagLang+'Your Order'  | translate }}</h3>
 
                         <table class="checkout__totals">
                             <thead class="checkout__totals-header">
                             <tr>
-                                <th>Product</th>
-                                <th>Total</th>
+                                <th>{{ tagLang+'Product'  | translate }}</th>
+                                <th>{{ tagLang+'Total'  | translate }}</th>
                             </tr>
                             </thead>
                             <tbody class="checkout__totals-products">
@@ -135,17 +139,17 @@
                             </tbody>
                             <tbody *ngIf="(cart.totals$|async)?.length" class="checkout__totals-subtotals">
                             <tr>
-                                <th>Subtotal</th>
+                                <th>{{ tagLang+'Subtotal'  | translate }}</th>
                                 <td>{{ cart.subtotal$|async|currencyFormat }}</td>
                             </tr>
                             <tr *ngFor="let total of cart.totals$|async">
-                                <th>{{ total.title }}</th>
+                                <th>{{ tagLang+total.title  | translate }}</th>
                                 <td>{{ total.price|currencyFormat }}</td>
                             </tr>
                             </tbody>
                             <tfoot class="checkout__totals-footer">
                             <tr>
-                                <th>Total</th>
+                                <th>{{ tagLang+'Total'  | translate }}</th>
                                 <td>{{ cart.total$|async|currencyFormat }}</td>
                             </tr>
                             </tfoot>
@@ -161,12 +165,15 @@
                                                     <span class="input-radio__circle"></span>
                                                 </span>
                                             </span>
-                                        <span class="payment-methods__item-title">Direct bank transfer</span>
+                                        <span class="payment-methods__item-title">{{ tagLang+'Direct bank transfer'  | translate }}</span>
                                     </label>
                                     <div class="payment-methods__item-container">
                                         <div class="payment-methods__item-description text-muted">
+                                            {{ tagLang+'payment-methods__item-description'  | translate }}
+                                            <!--
                                             Make your payment directly into our bank account. Please use your Order ID as the payment
                                             reference. Your order will not be shipped until the funds have cleared in our account.
+                                            -->
                                         </div>
                                     </div>
                                 </li>
@@ -178,11 +185,11 @@
                                                     <span class="input-radio__circle"></span>
                                                 </span>
                                             </span>
-                                        <span class="payment-methods__item-title">Check payments</span>
+                                        <span class="payment-methods__item-title">{{ tagLang+'Check payments'  | translate }}</span>
                                     </label>
                                     <div class="payment-methods__item-container">
                                         <div class="payment-methods__item-description text-muted">
-                                            Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.
+                                            {{ tagLang+'payment-methods__item-description'  | translate }}
                                         </div>
                                     </div>
                                 </li>
@@ -194,11 +201,11 @@
                                                     <span class="input-radio__circle"></span>
                                                 </span>
                                             </span>
-                                        <span class="payment-methods__item-title">Cash on delivery</span>
+                                        <span class="payment-methods__item-title">{{ tagLang+'Cash on delivery'  | translate }}</span>
                                     </label>
                                     <div class="payment-methods__item-container">
                                         <div class="payment-methods__item-description text-muted">
-                                            Pay with cash upon delivery.
+                                            {{ tagLang+'Pay with cash upon delivery.'  | translate }}
                                         </div>
                                     </div>
                                 </li>
@@ -214,7 +221,7 @@
                                     </label>
                                     <div class="payment-methods__item-container">
                                         <div class="payment-methods__item-description text-muted">
-                                            Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.
+                                            {{ tagLang+'Pay via PayPal'  | translate }}
                                         </div>
                                     </div>
                                 </li>
@@ -231,12 +238,12 @@
                                         </span>
                                     </span>
                                 <label class="form-check-label" for="checkout-terms">
-                                    I have read and agree to the website <a target="_blank" [routerLink]="root.terms()">terms and conditions</a>*
+                                    {{ tagLang+'I have read and agree to the website'  | translate }} <a target="_blank" [routerLink]="root.terms()">{{ tagLang+'terms and conditions'  | translate }}</a>*
                                 </label>
                             </div>
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-xl btn-block">Place Order</button>
+                        <button type="submit" class="btn btn-primary btn-xl btn-block">{{ tagLang+'Place Order'  | translate }}</button>
                     </div>
                 </div>
             </div>

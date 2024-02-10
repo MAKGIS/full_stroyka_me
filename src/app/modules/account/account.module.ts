@@ -20,6 +20,12 @@ import { PageProfileComponent } from './pages/page-profile/page-profile.componen
 import { PageOrderDetailsComponent } from './pages/page-order-details/page-order-details.component';
 import { PageEditAddressComponent } from './pages/page-edit-address/page-edit-address.component';
 
+// Translate
+import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient } from '@angular/common/http';
+import { createTranslateLoader } from 'src/app/app.module';
+
 @NgModule({
     declarations: [
         // components
@@ -39,7 +45,15 @@ import { PageEditAddressComponent } from './pages/page-edit-address/page-edit-ad
         CommonModule,
         // modules
         AccountRoutingModule,
-        SharedModule
+        SharedModule,
+
+        TranslateModule.forChild({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: (createTranslateLoader),
+                deps: [HttpClient]
+            }
+        })
     ]
 })
 export class AccountModule { }

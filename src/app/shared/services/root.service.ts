@@ -3,12 +3,14 @@ import { Product } from '../interfaces/product';
 import { Category } from '../interfaces/category';
 import { Brand } from '../interfaces/brand';
 
-const isRootServiceLog = false;
 
 @Injectable({
     providedIn: 'root'
 })
 export class RootService {
+
+    isLog = true;
+
     constructor() { }
 
     home(): string {
@@ -21,7 +23,7 @@ export class RootService {
 
     category(category: Partial<Category>): string {
 
-        if (isRootServiceLog) {
+        if (this.isLog) {
             console.log('- srv -- RootService.category() category -> %o', category);
         }
 
@@ -38,6 +40,11 @@ export class RootService {
             throw Error('Provide category with "path", "slug" or "id".');
         }
         if (category.type === 'blog') {
+            return this.blog();
+        }
+
+        // mak
+        if (!category.type) {
             return this.blog();
         }
 

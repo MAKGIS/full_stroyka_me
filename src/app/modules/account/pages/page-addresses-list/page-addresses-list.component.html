@@ -3,13 +3,13 @@
 <div class="addresses-list">
     <a routerLink="./" class="addresses-list__item addresses-list__item--new">
         <div class="addresses-list__plus"></div>
-        <div class="btn btn-secondary btn-sm">Add New</div>
+        <div class="btn btn-secondary btn-sm">{{ tagLang+'Add New' | translate }}</div>
     </a>
     <div class="addresses-list__divider"></div>
 
     <ng-container *ngFor="let address of addresses">
         <div class="addresses-list__item card address-card">
-            <div class="address-card__badge" *ngIf="address.default">Default</div>
+            <div class="address-card__badge" *ngIf="address.default">{{ tagLang+'Default' | translate }}</div>
             <div class="address-card__body">
                 <div class="address-card__name">{{ address.firstName + ' ' + address.lastName}}</div>
                 <div class="address-card__row">
@@ -18,16 +18,16 @@
                     {{ address.address }}
                 </div>
                 <div class="address-card__row">
-                    <div class="address-card__row-title">Phone Number</div>
+                    <div class="address-card__row-title">{{ tagLang+'Phone Number' | translate }}</div>
                     <div class="address-card__row-content">{{ address.phone }}</div>
                 </div>
                 <div class="address-card__row">
-                    <div class="address-card__row-title">Email Address</div>
+                    <div class="address-card__row-title">{{ tagLang+'Email Address' | translate }}</div>
                     <div class="address-card__row-content">{{ address.email }}</div>
                 </div>
                 <div class="address-card__footer">
-                    <a routerLink="./5">Edit</a>&nbsp;&nbsp;
-                    <a routerLink="./">Remove</a>
+                    <a routerLink="./5">{{ tagLang+'Edit' | translate }}</a>&nbsp;&nbsp;
+                    <a routerLink="./">{{ tagLang+'Remove' | translate }}</a>
                 </div>
             </div>
         </div>

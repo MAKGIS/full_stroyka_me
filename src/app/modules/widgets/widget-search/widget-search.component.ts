@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
     styleUrls: ['./widget-search.component.scss']
 })
 export class WidgetSearchComponent {
+
+    tagLang = 'widget-search.';
+
     constructor() { }
 }

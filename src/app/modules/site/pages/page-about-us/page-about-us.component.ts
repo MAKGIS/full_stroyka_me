@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DirectionService } from '../../../../shared/services/direction.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-about-us',
@@ -18,7 +19,10 @@ export class PageAboutUsComponent {
         rtl: this.direction.isRTL()
     };
 
+    tagLang = 'about-us.';
+
     constructor(
-        private direction: DirectionService
+        private direction: DirectionService,
+        public translate: TranslateService
     ) { }
 }

@@ -2,9 +2,10 @@ import { AfterViewChecked, Component, ElementRef, Input, NgZone, OnDestroy, OnIn
 import { navigation } from '../../../../../data/header-navigation';
 import { NavigationLink } from '../../../../shared/interfaces/navigation-link';
 import { DirectionService } from '../../../../shared/services/direction.service';
-import { merge, Subject } from 'rxjs';
+import { merge, Observable, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { HeaderService } from '../../../../shared/services/header.service';
+import { ShopService } from 'src/app/shared/api/shop.service';
 
 @Component({
     selector: 'app-header-links',
@@ -19,7 +20,9 @@ export class LinksComponent implements OnInit, OnDestroy, AfterViewChecked {
 
     destroy$: Subject<void> = new Subject<void>();
 
-    items: NavigationLink[] = navigation;
+    items: NavigationLink[] = []; // navigation;
+    items$: Observable<NavigationLink[]>;
+
     hoveredItem: NavigationLink|null = null;
 
     reCalcSubmenuPosition = false;
@@ -28,6 +31,7 @@ export class LinksComponent implements OnInit, OnDestroy, AfterViewChecked {
         private direction: DirectionService,
         private header: HeaderService,
         private zone: NgZone,
+        private shopService: ShopService
     ) {}
 
     onItemMouseEnter(item: NavigationLink): void {
@@ -72,6 +76,9 @@ export class LinksComponent implements OnInit, OnDestroy, AfterViewChecked {
     }
 
     ngOnInit(): void {
+
+        this.items$ = this.shopService.getFullMenu();
+
         merge(
             this.header.navPanelPositionState$,
             this.header.navPanelVisibility$,

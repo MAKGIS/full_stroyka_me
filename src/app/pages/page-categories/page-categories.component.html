@@ -1,0 +1,13 @@
+
+<div class="test-border"><div class="test-name-Component">{{this.constructor.name}}</div>
+
+
+<ng-container *ngIf="categories$ | async as categories">
+
+
+   <app-block-categories-grid [header]="getLang('Categories')" layout="classic" [categories]="categories">
+   </app-block-categories-grid>
+
+</ng-container>
+
+</div>

@@ -2,7 +2,7 @@
 
 <div class="card">
     <div class="card-header">
-        <h5>Edit Address</h5>
+        <h5>{{ tagLang+'Edit Address' | translate }}</h5>
     </div>
     <div class="card-divider"></div>
     <div class="card-body">
@@ -10,66 +10,62 @@
             <div class="col-12 col-lg-10 col-xl-8">
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="checkout-first-name">First Name</label>
-                        <input type="text" class="form-control" id="checkout-first-name" placeholder="First Name">
+                        <label for="checkout-first-name">{{ tagLang+'First Name' | translate }}</label>
+                        <input type="text" class="form-control" id="checkout-first-name" placeholder="{{ tagLang+'First Name' | translate }}">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="checkout-last-name">Last Name</label>
-                        <input type="text" class="form-control" id="checkout-last-name" placeholder="Last Name">
+                        <label for="checkout-last-name">{{ tagLang+'Last Name' | translate }}</label>
+                        <input type="text" class="form-control" id="checkout-last-name" placeholder="{{ tagLang+'Last Name' | translate }}">
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="checkout-company-name">Company Name <span class="text-muted">(Optional)</span></label>
-                    <input type="text" class="form-control" id="checkout-company-name" placeholder="Company Name">
+                    <label for="checkout-company-name">{{ tagLang+'Company Name' | translate }} <span class="text-muted">{{ tagLang+'(Optional)' | translate }}</span></label>
+                    <input type="text" class="form-control" id="checkout-company-name" placeholder="{{ tagLang+'Company Name' | translate }}">
                 </div>
                 <div class="form-group">
-                    <label for="checkout-country">Country</label>
+                    <label for="checkout-country">{{ tagLang+'Country' | translate }}</label>
                     <select id="checkout-country" class="form-control form-control-select2">
-                        <option>Select a country...</option>
-                        <option>United States</option>
-                        <option>Russia</option>
-                        <option>Italy</option>
-                        <option>France</option>
-                        <option>Ukraine</option>
-                        <option>Germany</option>
-                        <option>Australia</option>
+                        <option>{{ tagLang+'Select a country...' | translate }}</option>
+                        <option>{{ tagLang+'United States' | translate }}</option>
+                        <option>{{ tagLang+'Russia' | translate }}</option>
+                        <option>{{ tagLang+'' | translate }}</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="checkout-street-address">Street Address</label>
-                    <input type="text" class="form-control" id="checkout-street-address" placeholder="Street Address">
+                    <label for="checkout-street-address">{{ tagLang+'Street Address' | translate }}</label>
+                    <input type="text" class="form-control" id="checkout-street-address" placeholder="{{ tagLang+'Street Address' | translate }}">
                 </div>
                 <div class="form-group">
-                    <label for="checkout-address">Apartment, suite, unit etc. <span class="text-muted">(Optional)</span></label>
+                    <label for="checkout-address">{{ tagLang+'Apartment, suite, unit etc.' | translate }} <span class="text-muted">{{ tagLang+'(Optional)' | translate }}</span></label>
                     <input type="text" class="form-control" id="checkout-address">
                 </div>
                 <div class="form-group">
-                    <label for="checkout-city">Town / City</label>
+                    <label for="checkout-city">{{ tagLang+'Town / City' | translate }}</label>
                     <input type="text" class="form-control" id="checkout-city">
                 </div>
                 <div class="form-group">
-                    <label for="checkout-state">State / County</label>
+                    <label for="checkout-state">{{ tagLang+'State / County' | translate }}</label>
                     <input type="text" class="form-control" id="checkout-state">
                 </div>
                 <div class="form-group">
-                    <label for="checkout-postcode">Postcode / ZIP</label>
+                    <label for="checkout-postcode">{{ tagLang+'Postcode / ZIP' | translate }}</label>
                     <input type="text" class="form-control" id="checkout-postcode">
                 </div>
 
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="checkout-email">Email address</label>
-                        <input type="email" class="form-control" id="checkout-email" placeholder="Email address">
+                        <label for="checkout-email">{{ tagLang+'Email address' | translate }}</label>
+                        <input type="email" class="form-control" id="checkout-email" placeholder="{{ tagLang+'Email address' | translate }}">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="checkout-phone">Phone</label>
-                        <input type="text" class="form-control" id="checkout-phone" placeholder="Phone">
+                        <label for="checkout-phone">{{ tagLang+'Phone' | translate }}</label>
+                        <input type="text" class="form-control" id="checkout-phone" placeholder="{{ tagLang+'Phone' | translate }}">
                     </div>
                 </div>
 
                 <div class="form-group mt-3 mb-0">
-                    <button class="btn btn-primary">Save</button>
+                    <button class="btn btn-primary">{{ tagLang+'Save' | translate }}</button>
                 </div>
             </div>
         </div>

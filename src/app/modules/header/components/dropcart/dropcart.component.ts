@@ -18,6 +18,8 @@ export class DropcartComponent {
 
     @Output() closeMenu: EventEmitter<void> = new EventEmitter<void>();
 
+    tagLang = 'dropcart.';
+
     constructor(
         public state: OffcanvasCartService,
         public cart: CartService,

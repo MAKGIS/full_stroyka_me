@@ -16,6 +16,8 @@ export class PageProductComponent implements OnInit {
     layout: 'standard'|'columnar'|'sidebar' = 'standard';
     sidebarPosition: 'start'|'end' = 'start'; // For LTR scripts "start" is "left" and "end" is "right"
 
+    tagLang = 'page-product.';
+
     constructor(
         private shop: ShopService,
         private route: ActivatedRoute,

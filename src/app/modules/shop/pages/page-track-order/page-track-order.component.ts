@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
     styleUrls: ['./page-track-order.component.scss']
 })
 export class PageTrackOrderComponent {
+
+    tagLang = 'page-track-order.';
+
     constructor() { }
 }

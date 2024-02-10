@@ -38,6 +38,11 @@ import { PageHomeTwoComponent } from './pages/page-home-two/page-home-two.compon
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { PageOffcanvasCartComponent } from './pages/page-offcanvas-cart/page-offcanvas-cart.component';
 
+//
+import { PageBrandsComponent } from './pages/page-brands/page-brands.component';
+import { PageCategoriesComponent } from './pages/page-categories/page-categories.component';
+
+
 // AOT compilation support
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -52,7 +57,9 @@ export function createTranslateLoader(http: HttpClient) {
         PageHomeOneComponent,
         PageHomeTwoComponent,
         PageNotFoundComponent,
-        PageOffcanvasCartComponent
+        PageOffcanvasCartComponent,
+        PageBrandsComponent,
+        PageCategoriesComponent
     ],
     imports: [
         // modules (angular)
@@ -82,6 +89,7 @@ export function createTranslateLoader(http: HttpClient) {
     ],
     providers: [
         // { provide: LOCALE_ID, useValue: 'it' }
+       // TranslateService
     ],
     bootstrap: [AppComponent]
 })

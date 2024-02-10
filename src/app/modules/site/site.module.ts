@@ -20,6 +20,17 @@ import { PageFaqComponent } from './pages/page-faq/page-faq.component';
 import { PageTermsComponent } from './pages/page-terms/page-terms.component';
 import { PageTypographyComponent } from './pages/page-typography/page-typography.component';
 
+import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient } from '@angular/common/http';
+import { createTranslateLoader } from 'src/app/app.module';
+
+/*
+export function createTranslateLoader3(http: HttpClient) {
+    return new TranslateHttpLoader(http, './assets/i18n/shop/', '.json');
+}
+*/
+
 @NgModule({
     declarations: [
         // pages
@@ -39,7 +50,17 @@ import { PageTypographyComponent } from './pages/page-typography/page-typography
         // modules
         BlocksModule,
         SharedModule,
-        SiteRoutingModule
+        SiteRoutingModule,
+
+        TranslateModule.forChild({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: (createTranslateLoader),
+                deps: [HttpClient]
+            },
+            //isolate: true,
+            //extend: true
+        })
     ]
 })
 export class SiteModule { }

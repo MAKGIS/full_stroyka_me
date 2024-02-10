@@ -4,6 +4,8 @@ export const mobileMenu: MobileMenuItem[] = [
     {type: 'link', label: 'Home', url: '/', children: [
         {type: 'link', label: 'Home 1', url: '/'},
         {type: 'link', label: 'Home 2', url: '/home-two'},
+        {type: 'link', label: 'Categories', url: '/categories'},
+        {type: 'link', label: 'Brands', url: '/brands'},
         {type: 'link', label: 'Offcanvas Cart', url: '/offcanvas-cart'}
     ]},
 /*
@@ -35,8 +37,9 @@ export const mobileMenu: MobileMenuItem[] = [
         ]},
         {type: 'link', label: 'Shop List',          url: '/shop/category-list'},
         {type: 'link', label: 'Shop Right Sidebar', url: '/shop/category-right-sidebar'},
-        {type: 'link', label: 'Product',            url: '/shop/product-standard', children: [
-            {type: 'link', label: 'Product',            url: '/shop/product-standard'},
+        {type: 'link', label: 'Product group',            url: '/shop/product-standard', children: [
+            {type: 'link', label: 'Product standard',   url: '/shop/product-standard'},
+            {type: 'link', label: 'Product',            url: '/shop/product-belgium'},
             {type: 'link', label: 'Product Alt',        url: '/shop/product-columnar'},
             {type: 'link', label: 'Product Sidebar',    url: '/shop/product-sidebar'}
         ]},

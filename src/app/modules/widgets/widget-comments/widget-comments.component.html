@@ -1,5 +1,5 @@
 <div class="widget-comments widget">
-    <h4 class="widget__title">Latest Comments</h4>
+    <h4 class="widget__title">{{ tagLang+'Latest Comments'  | translate }}</h4>
     <ul class="widget-comments__list">
         <li *ngFor="let comment of comments" class="widget-comments__item">
             <div class="widget-comments__author"><a routerLink="./">{{ comment.author }}</a></div>

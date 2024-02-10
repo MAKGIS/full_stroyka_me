@@ -10,6 +10,8 @@ export class WidgetCategoriesComponent {
     @Input() location: 'blog'|'shop' = 'blog';
     @Input() categories: any[] = [];
 
+    tagLang = 'widget-categories.';
+
     constructor(
         public root: RootService,
     ) { }

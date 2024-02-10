@@ -8,7 +8,9 @@
             </button>
         </div>
         <div class="mobilemenu__content">
-            <app-mobile-links [tagLang]="'menu.'" [links]="links" (itemClick)="onItemClick($event)"></app-mobile-links>
+            <ng-container *ngIf="links$ | async as links">
+                <app-mobile-links [tagLang]="'menu.'" [links]="links" (itemClick)="onItemClick($event)"></app-mobile-links>
+            </ng-container>
         </div>
     </div>
 </div>

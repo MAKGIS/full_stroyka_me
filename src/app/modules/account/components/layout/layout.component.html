@@ -1,6 +1,6 @@
 <div class="test-border"><div class="test-name-Component">{{this.constructor.name}}</div>
 
-<app-page-header [header]="'My Account'" [breadcrumbs]="[
+<app-page-header [header]="getLang('My Account')" [breadcrumbs]="[
     {label: 'Home',       url: '/'},
     {label: 'My Account', url: ''}
 ]"></app-page-header>
@@ -10,10 +10,10 @@
         <div class="row">
             <div class="col-12 col-lg-3 d-flex">
                 <div class="account-nav flex-grow-1">
-                    <h4 class="account-nav__title">Navigation</h4>
+                    <h4 class="account-nav__title">{{ tagLang+'Navigation' | translate }}</h4>
                     <ul>
                         <li *ngFor="let link of links" class="account-nav__item" routerLinkActive="account-nav__item--active" [routerLinkActiveOptions]="{exact: true}">
-                            <a [routerLink]="link.url">{{ link.label }}</a>
+                            <a [routerLink]="link.url">{{ tagLang+link.label | translate }}</a>
                         </li>
                     </ul>
                 </div>

@@ -2,7 +2,7 @@
 
 <ul class="nav-links__list">
     <li
-        *ngFor="let item of items"
+        *ngFor="let item of items$ | async as items"
         class="nav-links__item"
         [ngClass]="{
             'nav-links__item--has-submenu': item.menu,

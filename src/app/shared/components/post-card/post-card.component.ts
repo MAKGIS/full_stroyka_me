@@ -11,5 +11,7 @@ export class PostCardComponent {
     @Input() post!: Post;
     @Input() layout: 'grid-nl'|'grid-lg'|'list-nl'|'list-sm'|null = null;
 
+    tagLang = 'post-card.';
+
     constructor(public root: RootService) { }
 }

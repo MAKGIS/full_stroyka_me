@@ -24,6 +24,7 @@ export class ProductsViewComponent implements OnInit, OnDestroy {
     filtersCount = 0;
 
     isLog = true;
+    tagLang = 'products-view.';
 
     constructor(
         private fb: FormBuilder,

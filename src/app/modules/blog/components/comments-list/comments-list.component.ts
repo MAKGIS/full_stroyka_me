@@ -10,5 +10,7 @@ export class CommentsListComponent {
     @Input() comments: PostComment[] = [];
     @Input() level = 0;
 
+    tagLang = 'comments-list.';
+
     constructor() { }
 }

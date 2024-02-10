@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
     styleUrls: ['./widget-newsletter.component.scss']
 })
 export class WidgetNewsletterComponent {
+
+    tagLang = 'widget-newsletter.';
+
     constructor() { }
 }

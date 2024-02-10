@@ -18,6 +18,9 @@ import { ProductsViewComponent } from './components/products-view/products-view.
 import { ProductTabsComponent } from './components/product-tabs/product-tabs.component';
 import { ShopSidebarComponent } from './components/shop-sidebar/shop-sidebar.component';
 
+//
+//
+import { ProductTabsBelgiumComponent } from './components/product-tabs-belgium/product-tabs-belgium.component';
 // pages
 import { PageCartComponent } from './pages/page-cart/page-cart.component';
 import { PageCategoryComponent } from './pages/page-category/page-category.component';
@@ -28,6 +31,9 @@ import { PageTrackOrderComponent } from './pages/page-track-order/page-track-ord
 import { PageWishlistComponent } from './pages/page-wishlist/page-wishlist.component';
 import { ProductSidebarComponent } from './components/product-sidebar/product-sidebar.component';
 import { PageOrderSuccessComponent } from './pages/page-order-success/page-order-success.component';
+
+//
+import { PageProductBelgiumComponent } from './pages/page-product-belgium/page-product-belgium.component';
 
 
 import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
@@ -55,7 +61,10 @@ export function createTranslateLoader3(http: HttpClient) {
         PageTrackOrderComponent,
         PageWishlistComponent,
         ProductSidebarComponent,
-        PageOrderSuccessComponent
+        PageOrderSuccessComponent,
+
+        PageProductBelgiumComponent,
+        ProductTabsBelgiumComponent
     ],
     imports: [
         // modules (angular)
@@ -80,6 +89,7 @@ export function createTranslateLoader3(http: HttpClient) {
             //extend: true
         })
 
-    ]
+    ],
+    //providers: [TranslateService]
 })
 export class ShopModule { }

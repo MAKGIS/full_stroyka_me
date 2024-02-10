@@ -9,5 +9,7 @@ import { theme } from '../../../../data/theme';
 export class WidgetAboutusComponent {
     theme = theme;
 
+    tagLang = 'widget-aboutus.';
+
     constructor() { }
 }

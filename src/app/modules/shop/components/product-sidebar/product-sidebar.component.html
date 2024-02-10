@@ -5,7 +5,7 @@
         <app-widget-categories [categories]="(categories$|async) || []" location="shop"></app-widget-categories>
     </div>
     <div class="block-sidebar__item">
-        <app-widget-products header="Latest Products" [products]="(bestsellers$|async) || []"></app-widget-products>
+        <app-widget-products header="{{ tagLang+'Latest Products'  | translate }}" [products]="(bestsellers$|async) || []"></app-widget-products>
     </div>
 </div>
 

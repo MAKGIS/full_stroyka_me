@@ -10,5 +10,7 @@ import { addresses } from '../../../../../data/account-addresses';
 export class PageAddressesListComponent {
     addresses: Address[] = addresses;
 
+    tagLang = 'page-addresses-list.';
+
     constructor() { }
 }

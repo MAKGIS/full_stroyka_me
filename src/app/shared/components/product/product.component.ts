@@ -80,9 +80,4 @@ export class ProductComponent {
         }
     }
 
-    getLangText(text: string): string {
-
-        const textV = "{{ 'product." + text + "'  | translate }}";
-        return textV;
-    }
 }

@@ -51,6 +51,7 @@ export class PageHomeTwoComponent implements OnInit, OnDestroy {
     latestProducts!: ProductsCarouselData;
 
     isLog = true;
+    tagLang = 'page-home.';
 
     constructor(
         private shop: ShopService,

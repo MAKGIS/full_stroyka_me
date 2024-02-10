@@ -17,7 +17,7 @@
     "Plastic": "Plastic",
     "Quantity": "Quantity",
 
-    "Add to cart": "Add to cart"
+    "Add to Cart": "Add to cart"
    },
    "prod-tabs": {
 
@@ -25,6 +25,42 @@
     "Specification": "Specification",
     "Reviews": "Reviews",
     "Product Full Description": "Product Full Description",
+
+    "Specification 2": "Specification",
+    "Customer Reviews": "Customer Reviews",
+    "Write A Review": "Write A Review",
+    "Review Stars": "Review Stars",
+    "Stars Rating": "Stars Rating",
+
+    "Your Name": "Your Name",
+    "Email Address": "Email Address",
+    "Your Review": "Your Review",
+    "Post Your Review": "Post Your Review"
+
+   },
+   "prod-tabs-belgium": {
+
+    "Description": "Description",
+    "Specification": "Specification",
+    "Reviews": "Reviews",
+    "Documents": "Documents",
+    "SEO": "SEO",
+    "Price comparison": "Price comparison",
+    "Product Description": "Product Description",
+    "Product Full Description": "Product Full Description",
+
+    "Generate a title": "Generate a title",
+    "Loading...": "Loading...",
+    "Generate a description": "Generate a description",
+    "Save description": "Save description",
+
+    "Add a Characteristic": "Add a Characteristic to the datamodel",
+    "Generate keywords": "Generate keywords",
+    "Keywords": "Keywords",
+    "Search on Google": "Search on Google",
+    "No products loaded": "No products loaded",
+    "Notice": "Notice",
+    "Generate content": "Generate content",
 
     "Specification 2": "Specification",
     "Customer Reviews": "Customer Reviews",
@@ -50,14 +86,201 @@
 
     "Add To Cart": "Add To Cart"
    },
+   "products-view": {
+    "Grid": "Grid",
+    "Grid With Features": "Grid With Features",
+    "List": "List",
 
+    "Filters": "Filters",
+    "Sort By": "Sort By",
+    "Showing": "Showing",
+    "of": "of",
+    "results": "results",
+    "Default": "Default",
+    "Name (A-Z)": "Name (A-Z)",
+    "Name (Z-A)": "Name (Z-A)",
+    "Show": "Show",
+    "No matching items": "No matching items",
+    "Try resetting the filters": "Try resetting the filters",
+    "Reset filters": "Reset filters"
+
+   },
+   "product-sidebar": {
+      "Latest Products": "Latest Products"
+   },
 
    "header": {
-    "Customer Service": "Customer Service"
+    "Customer Service": "Customer Service",
+    "primaryPhone": "(800) 060-0730"
    },
    "search": {
     "All Categories":"All Categories",
-     "Search over 10,000 products": "Search over 10,000 products"
+     "Search over 10,000 products": "Search over 10,000 products",
+
+     "Add to cart": "Add to cart"
+   },
+
+   "page-home": {
+      "Featured Products": "Featured Products",
+      "Bestsellers": "Bestsellers",
+      "Popular Categories": "Popular Categories",
+      "New Arrivals": "New Arrivals",
+      "Latest News": "Latest News",
+
+      "Top Rated Products": "Top Rated Products",
+      "Special Offers": "Special Offers"
+   },
+   "page-brands": {
+    "Brands": "Brands"
+   },
+   "page-categories": {
+    "Categories": "Categories"
+   },
+   "page-product": {
+     "Related Products": "Related Products"
+   },
+   "page-product-belgium": {
+    "Related Products": "Related Products"
+   },
+   "page-cart": {
+    "Your shopping cart is empty!": "Your shopping cart is empty!",
+    "Continue": "Continue",
+    "Image": "Image",
+    "Product": "Product",
+    "Price": "Price",
+    "Quantity": "Quantity",
+    "Total": "Total",
+    "Password": "Password",
+    "Coupon Code": "Coupon Code",
+    "Apply Coupon": "Apply Coupon",
+    "Continue Shopping": "Continue Shopping",
+    "Update Cart": "Update Cart",
+    "Cart Totals": "Cart Totals",
+    "Subtotal": "Subtotal",
+    "Calculate Shipping": "Calculate Shipping",
+    "Proceed to checkout": "Proceed to checkout",
+
+    "Shipping": "shipping",
+    "Fee": "fee",
+    "Tax": "tax",
+    "Other": "other"
+   },
+   "page-checkout": {
+
+      "Checkout": "Checkout",
+      "Returning customer?": "Returning customer?",
+      "Click here to login": "Click here to login",
+
+      "Billing details": "Billing details",
+      "First Name": "First Name",
+      "Last Name": "Last Name",
+      "Company Name": "Company Name",
+      "Country": "Country",
+
+      "Select a country...": "Select a country...",
+      "United States": "United States",
+      "France": "France",
+      "Russia": "Russia",
+      "England": "England",
+
+      "Street Address": "Street Address",
+
+      "Apartment, suite, unit etc.": "Apartment, suite, unit etc.",
+      "(Optional)": "(Optional)",
+      "Town / City": "Town / City",
+      "State / County": "State / County",
+      "Postcode / ZIP": "Postcode / ZIP",
+
+      "Email address": "Email address",
+      "Phone": "Phone",
+
+      "Create an account?": "Create an account?",
+      "Shipping Details": "Shipping Details",
+      "Ship to a different address?": "Ship to a different address?",
+
+      "Order notes": "Order notes",
+      "Your Order": "Your Order",
+      "Product": "Product",
+      "Total": "Total",
+
+      "Subtotal": "Subtotal",
+      "Direct bank transfer": "Direct bank transfer",
+      "Check payments": "Check payments",
+      "Cash on delivery": "Cash on delivery",
+      "Pay with cash upon delivery.": "Pay with cash upon delivery.",
+      "PayPal": "PayPal",
+      "Pay via PayPal": "Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.",
+
+       "I have read and agree to the website": "I have read and agree to the website",
+       "terms and conditions": "terms and conditions",
+       "Place Order": "Place Order",
+
+       "payment-methods__item-description": "Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.",
+
+       "Shipping": "shipping",
+       "Fee": "fee",
+       "Tax": "tax",
+       "Other": "other"
+   },
+   "page-order-success": {
+    "Thank you": "Thank you",
+    "Your order has been received": "Your order has been received",
+    "Go To Homepage": "Go To Homepage",
+
+    "Order number": "Order number",
+    "Created at": "Created at",
+    "Total": "Total",
+    "Payment method": "Payment method",
+    "Product": "Product",
+    "Qty": "Qty",
+
+    "Subtotal": "Subtotal",
+    "Shipping Address": "Shipping Address",
+    "Phone Number": "Phone Number",
+    "Email Address": "Email Address",
+
+    "Billing Address": "Billing Address",
+
+    "Store Credit": "Store Credit",
+    "Shipping": "Shipping"
+   },
+   "page-wishlist": {
+
+    "Wish List": "Wish List",
+
+    "Your wish list is empty!": "Your wish list is empty!",
+    "Continue": "Continue",
+
+    "Image": "Image",
+    "Product": "Product",
+    "Stock Status": "Stock Status",
+    "Price": "Price",
+    "Reviews": "Reviews",
+    "In Stock": "In Stock",
+    "Add To Cart": "Add To Cart"
+   },
+   "page-compare": {
+
+    "Comparison": "Comparison",
+
+    "block-empty__message": "You have not chosen any products to compare!",
+    "Continue": "Continue",
+    "Product": "Product",
+    "Rating": "Rating",
+    "Reviews": "Reviews",
+    "Availability": "Availability",
+    "In Stock": "In Stock",
+    "Price": "Price",
+    "Remove": "Remove"
+
+   },
+   "page-track-order": {
+
+    "Track Order": "Track Order",
+    "Track Order text": "Vestibulum sem odio, ullamcorper a imperdiet tincidunt sed magna felis, consequat a erat ut, rutrum finibus odio.",
+    "Order ID": "Order ID",
+    "Email address": "Email address",
+    "Track": "Track"
    },
 
    "menu": {
@@ -85,7 +308,10 @@
       "Home": "Home",
         "Home 1": "Home 1",
         "Home 2": "Home 2",
+        "Brands": "Brands",
+        "Categories grid": "Categories",
         "Offcanvas Cart": "Offcanvas Cart",
+        "Browse": "Browse",
 
       "Megamenu": "Megamenu",
 
@@ -93,12 +319,16 @@
           "Shop Grid": "Shop Grid",
               "3 Columns Sidebar": "3 Columns Sidebar",
               "4 Columns Full": "4 Columns Full",
-              "5 Columns Ful": "5 Columns Ful",
+              "5 Columns Full": "5 Columns Full",
           "Shop List": "Shop list",
           "Shop Right Sidebar": "Shop Right Sidebar",
-          "Product": "Product",
+          "Product group": "Product",
+              "Product standard": "Product standard",
+              "Product": "Product",
               "Product Alt": "Product Alt",
               "Product Sidebar":"Product Sidebar",
+          "Products": "Products",
+
           "Cart":"Cart",
           "Checkout":"Checkout",
           "Order Success":"Order Success",
@@ -227,12 +457,15 @@
 
     },
 
-    "block-banner": {
+    "block-bann:er": {
       "title": "Hand Tools",
       "text": "Hammers, Chisels, Universal Pliers, Nippers, Jigsaws, Saws",
       "Shop Now": "Shop Now"
     },
-
+    "block-categories": {
+      "Show All": "Show All",
+      "Products": "Products"
+    },
     "block-features": {
 
       "Free Shipping": "Free Shipping",
@@ -250,5 +483,322 @@
     },
     "block-slideshow": {
       "Shop Now": "Shop Now"
-    }
+    },
+    "block-brands-grid": {
+      "Products": "Products"
+    },
+    "block-categories-grid": {
+      "Products": "Products"
+    },
+    "widget-aboutus": {
+      "About Blog": "About Blog",
+      "aboutus-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus, eget viverra nulla sem vitae neque. Quisque id sodales libero."
+    },
+    "widget-categories": {
+      "Categories": "Categories"
+    },
+    "widget-filters": {
+      "Filters": "Filters",
+      "Reset": "Reset",
+      "All Products": "All Products",
+
+      "Categories": "Categories",
+      "Marques": "Brends",
+      "Price": "Price",
+      "Color": "Color",
+
+      "With Discount": "With Discount",
+      "Any": "Any",
+      "No": "No",
+      "Yes": "Yes"
+    },
+    "widget-newsletter": {
+      "Our Newsletter": "Our Newsletter",
+      "Email Address": "Email Address",
+      "Subscribe": "Subscribe"
+    },
+    "widget-posts": {
+      "Latest Posts": "Latest Posts"
+    },
+    "widget-search": {
+      "Blog search...": "Blog search..."
+    },
+    "widget-tags": {
+      "Tags Cloud": "Tags Cloud",
+      "Promotion": "Promotion",
+            "Power Tool": "Power Tool",
+            "New Arrivals": "New Arrivals",
+            "Screwdriver": "Screwdriver",
+            "Wrench": "Wrench",
+            "Mounts": "Mounts",
+            "Electrodes": "Electrodes",
+            "Chainsaws": "Chainsaws",
+            "Manometers": "Manometers",
+            "Nails": "Nails",
+            "Air Guns": "Air Guns",
+            "Cutting Discs": "Cutting Discs"
+    },
+    "widget-comments": {
+      "Latest Comments": "Latest Comments"
+    },
+
+    "comments-list": {
+      "Reply": "Reply"
+    },
+
+    "pc": {
+      "Home": "Home",
+      "Shop": "Shop en"
+
+    },
+    "shop-sidebar": {
+      "Latest Products": "Latest Products"
+    },
+
+  "dropcart": {
+    "Shopping Cart": "Shopping Cart",
+    "Your shopping cart is empty!": "Your shopping cart is empty!",
+    "View Cart": "View Cart",
+    "Checkout": "Checkout",
+
+    "Subtotal": "Subtotal",
+    "Total": "Total",
+
+    "Shipping": "shipping",
+    "Fee": "fee",
+    "Tax": "tax",
+    "Other": "other"
+  },
+
+  "about-us": {
+    "About Us": "About Us",
+    "About Us text 1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacus metus, convallis ut leo nec, tincidunt eleifend justo. Ut felis orci, hendrerit a pulvinar et, gravida ac lorem. Sed vitae molestie sapien, at sollicitudin tortor.",
+    "About Us text 2": "Duis id volutpat libero, id vestibulum purus.Donec euismod accumsan felis,egestas lobortis velit tempor vitae. Integer eget velit fermentum, dignissim odio non, bibendum velit.",
+
+    "Meat Our Team": "Meat Our Team",
+    "Want to work in our friendly team?": "Want to work in our friendly team?",
+    "Contact us": "Contact us",
+    "and we will consider your candidacy.": "and we will consider your candidacy.",
+    "Michael Russo": "Michael Russo",
+    "Chief Executive Officer": "Chief Executive Officer",
+    "Katherine Miller": "Katherine Miller",
+    "Marketing Officer": "Marketing Officer",
+
+    "Anthony Harris": "Anthony Harris",
+    "Finance Director": "Finance Director"
+  },
+
+  "page-contact-us": {
+
+    "Contact Us": "Contact Us",
+    "Our Address": "Our Address",
+    "contact-us__address 1": " 715 Fake Ave, Apt. 34, New York, NY 10021 USA",
+    "contact-us__address 2": "Email: stroyka@example.com",
+    "contact-us__address 3": "Phone Number: +1 754 000-00-00",
+
+    "Opening Hours": "Opening Hours",
+    "Opening Hours 2": "Monday to Friday: 8am-8pm<br>Saturday: 8am-6pm<br>Sunday: 10am-4pm",
+
+    "Comment": "Comment",
+    "Comment 2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit suscipit mi, non tempor nulla finibus eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "Leave us a Message": "Leave us a Message",
+    "Your Name": "Your Name",
+    "Email": "Email",
+    "Email Address": "Email Address",
+    "Subject": "Subject",
+    "Message": "Message",
+    "Send Message": "Send Message"
+  },
+  "page-not-found": {
+    "Oops! Error 404": "Oops! Error 404",
+    "Page Not Found": "Page Not Found",
+    "not-found__text": "We can't seem to find the page you're looking for.",
+    "Try to use the search.": "Try to use the search.",
+    "Search Query...": "Search Query...",
+    "Search": "Search",
+    "Or go to the home page to start over.": "Or go to the home page to start over.",
+    "Go To Home Page": "Go To Home Page"
+  },
+"page-terms": {
+  "Terms And Conditions": "Terms And Conditions",
+  "This Agreement was last modified on 27 May 2018.": "This Agreement was last modified on 27 May 2018.",
+
+  "document__content 1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac pretium nibh facilisis.",
+  "Definitions": "Definitions",
+
+  "Risus": "Risus",
+  "document__content Risus": "— Morbi posuere eleifend sollicitudin. Praesent eget ante in enim scelerisque scelerisque. Donec mi lorem, molestie a sapien non, laoreet convallis felis. In semper felis in lacus",
+  "Praesent": "Praesent",
+  "document__content Praesent": " — Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla orci ante, viverra in imperdiet in, pharetra et leo",
+  "Vestibulum": "Vestibulum",
+  "document__content Vestibulum": " — Vestibulum arcu tellus, aliquam vel fermentum vestibulum, lacinia pulvinaripsum. In hac habitasse platea dictumst. Integer felis libero, blandit scelerisque mauris eget, porta",
+
+  "Ornare dolor": "Ornare dolor",
+  "Ornare dolor 2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac pretium nibh facilisis. ",
+
+  "For information about how to contact us, please visit our": "For information about how to contact us, please visit our",
+  "contact page": "contact page"
+},
+"page-faq": {
+  "Frequently Asked Questions": "Frequently Asked Questions",
+  "Shipping Information": "Shipping Information",
+  "What shipping methods are available?": "What shipping methods are available?",
+
+  "faq__section 1": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "Do you ship internationally?": "Do you ship internationally?",
+  "faq__section 2": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "What shipping methods are available? 2": "What shipping methods are available?",
+  "faq__section 3": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "Do you ship internationally? 3": "Do you ship internationally?",
+  "faq__section 4": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+  "Payment Information": "Payment Information",
+  "What shipping methods are available? 4": "What shipping methods are available?",
+
+  "What shipping methods are available? 5": "What shipping methods are available? 5",
+  "faq__section 5": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "What shipping methods are available? 6": "What shipping methods are available? 6",
+  "faq__section 6": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+  "Orders and Returns": "Orders and Returns",
+  "What shipping methods are available? 7": "What shipping methods are available?",
+
+  "faq__section 7": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "faq__section 8": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+  "What shipping methods are available? 8": "What shipping methods are available?"
+},
+"page-category": {
+  "Latest News": "Latest News"
+},
+"page-login": {
+  "My Account": "My Account",
+  "Login": "Login",
+
+  "Email address": "Email address",
+  "Enter email": "Enter email",
+  "Password": "Password",
+  "Forgotten Password": "Forgotten Password",
+  "Remember Me": "Remember Me",
+  "Register": "Register",
+  "Repeat Password": "Repeat Password"
+},
+"layout": {
+  "My Account": "My Account",
+  "Navigation": "Navigation",
+
+  "Login":"Login",
+  "Dashboard":"Dashboard",
+  "Edit Profile":"Edit Profile",
+  "Order History":"Order History",
+  "Order Details":"Order Details",
+  "Addresses":"Addresses",
+  "Edit Address":"Edit Address",
+  "Password":"Password",
+  "Logout": "Logout"
+},
+"page-dashboard": {
+  "Edit Profile": "Edit Profile",
+  "Default Address": "Default Address",
+  "Phone Number": "Phone Number",
+  "Email Address": "Email Address",
+  "Edit Address": "Edit Address",
+  "Recent Orders": "Recent Orders",
+  "Order": "Order",
+  "Date": "Date",
+  "Status": "Status",
+  "Total": "Total",
+  "for": "for",
+  "item(s)": "item(s)"
+},
+"page-addresses-list": {
+  "Add New": "Add New",
+  "Default": "Default",
+  "Phone Number": "Phone Number",
+  "Email Address": "Email Address",
+  "Edit": "Edit",
+  "Remove": "Remove"
+},
+"page-edit-address": {
+  "Edit Address": "Edit Address",
+  "First Name": "First Name",
+  "Last Name": "Last Name",
+  "Company Name": "Company Name",
+  "(Optional)": "(Optional)",
+  "Country": "Country",
+  "Select a country...": "Select a country...",
+  "United States": "United States",
+  "Russia": "Russia",
+  "France": "France",
+  "Street Address": "Street Address",
+  "Apartment, suite, unit etc.": "Apartment, suite, unit etc.",
+  "Town / City": "Town / City",
+  "State / County": "State / County",
+  "Postcode / ZIP": "Postcode / ZIP",
+  "Email address": "Email address",
+  "Phone": "Phone",
+  "Save": "Save"
+},
+"page-profile": {
+  "Edit Profile": "Edit Profile",
+  "First Name": "First Name",
+  "Last Name": "Last Name",
+  "Email Address": "Email Address",
+  "Phone Number": "Phone Number",
+  "Save": "Save"
+},
+"page-password": {
+  "Change Password": "Change Password",
+  "Current Password": "Current Password",
+  "New Password": "New Password",
+  "Reenter New Password": "Reenter New Password",
+  "Change": "Change"
+},
+"page-order-details": {
+  "Order": "Order",
+  "Was placed on": "Was placed on",
+  "and is currently": "and is currently",
+  "Product": "Product",
+  "Total": "Total",
+  "Subtotal": "Subtotal",
+  "Shipping Address": "Shipping Address",
+  "Phone Number": "Phone Number",
+  "Email Address": "Email Address",
+  "Billing Address": "Billing Address",
+
+  "Store Credit": "Store Credit",
+  "Shipping": "Shipping",
+  "Back to list": "Back to list"
+},
+"page-orders-list": {
+  "Order History": "Order History",
+  "Order": "Order",
+  "Date": "Date",
+  "Status": "Status",
+  "Total": "Total",
+  "for": "for",
+  "item(s)": "item(s)"
+},
+
+"post.component": {
+
+  "Latest news": "Latest news",
+  "Related Posts": "Related Posts",
+  "Comments": "Comments",
+  "Write A Comment": "Write A Comment",
+  "First Name": "First Name",
+  "Last Name": "Last Name",
+  "Email Address": "Email Address",
+  "Comment": "Comment",
+  "Post Comment": "Post Comment",
+
+  "Promotion": "Promotion",
+  "Power Tool": "Power Tool",
+  "Wrench": "Wrench",
+  "Electrodes": "Electrodes"
+},
+"post-card": {
+  "Read More": "Read More",
+  "post-card__content": "In one general sense, philosophy is associated with wisdom, intellectual culture and a search for knowledge. In that sense, all cultures..."
+}
 }

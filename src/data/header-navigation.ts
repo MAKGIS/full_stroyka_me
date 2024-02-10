@@ -6,6 +6,8 @@ export const navigation: NavigationLink[] = [
         items: [
             {label: 'Home 1', url: '/'},
             {label: 'Home 2', url: '/home-two'},
+            {label: 'Categories', url: '/categories'},
+            {label: 'Brands', url: '/brands'},
             {label: 'Offcanvas Cart', url: '/offcanvas-cart'}
         ]
     }},
@@ -60,8 +62,9 @@ export const navigation: NavigationLink[] = [
             ]},
             {label: 'Shop List', url: '/shop/category-list'},
             {label: 'Shop Right Sidebar', url: '/shop/category-right-sidebar'},
-            {label: 'Product', url: '/shop/product-standard', items: [
-                {label: 'Product', url: '/shop/product-standard'},
+            {label: 'Product group', url: '/shop/product-standard', items: [
+                {label: 'Product standard', url: '/shop/product-standard'},
+                {label: 'Product', url: '/shop/product-belgium'},
                 {label: 'Product Alt', url: '/shop/product-columnar'},
                 {label: 'Product Sidebar', url: '/shop/product-sidebar'}
             ]},

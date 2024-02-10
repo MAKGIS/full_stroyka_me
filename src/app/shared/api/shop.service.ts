@@ -54,6 +54,11 @@ import { CurrencyResponce, RateValue } from '../interfaces/currency';
 // import { CurrencyService } from '../services/currency.service';
 import { BlockSlide } from '../interfaces/block-header-group';
 import { LanguageChangedService } from '../services/language-changed.service';
+import { NavigationLink } from '../interfaces/navigation-link';
+import { navigation } from 'src/data/header-navigation';
+import { environment } from 'src/environments/environment';
+import { mobileMenu } from 'src/data/mobile-menu';
+import { MobileMenuItem } from '../interfaces/mobile-menu-item';
 
 // [{"key": "brandName.keyword", "value": "NICOLL"}]
 export interface FilterValue {
@@ -84,7 +89,7 @@ const httpOptions = {
 export class ShopService {
 
     isLog = true;
-    delayTest = 0;
+    delayTest = 500;
 
     constructor(
         private http: HttpClient,
@@ -95,8 +100,139 @@ export class ShopService {
         // private languageChangedService: LanguageChangedService
     ) { }
 
+    getFullMenu(): Observable<NavigationLink[]> {
 
-    /**
+       // items: NavigationLink[] = navigation;
+
+        switch (getModeSource()) {
+
+            case 'fake-server':
+
+                return of(navigation);
+                break;
+            case 'json':
+
+                return this.http.get<NavigationLink[]>('assets/api/menu/' +  environment.menuFile)
+                .pipe(
+                   tap( n =>
+                    {
+                        if (this.isLog)  {
+                            console.log('- srv -- ShopService.getFullMenu() menu -> %o', n);
+                        }
+                    }),
+                   delay(this.delayTest)
+               );
+               break;
+
+            case 'demo.sourcing.pm':
+
+            return this.http.get<NavigationLink[]>('assets/api/menu/' +  environment.menuFile)
+            .pipe(
+               tap( n =>
+                {
+                    if (this.isLog)  {
+                        console.log('- srv -- ShopService.getFullMenu() menu -> %o', n);
+                    }
+                }),
+               delay(this.delayTest)
+           );
+                break;
+
+             default:
+
+                return of(navigation);
+          }
+    }
+
+    getMobileMenu(): Observable<MobileMenuItem[]> {
+
+        // items: NavigationLink[] = navigation;
+
+         switch (getModeSource()) {
+
+             case 'fake-server':
+
+                 return of(mobileMenu);
+                 break;
+             case 'json':
+
+                 return this.http.get<MobileMenuItem[]>('assets/api/menu/' +  environment.mobileMenuFile)
+                 .pipe(
+                    tap( n =>
+                     {
+                         if (this.isLog)  {
+                             console.log('- srv -- ShopService.getMobileMenu() menu -> %o', n);
+                         }
+                     }),
+                    delay(this.delayTest)
+                );
+                break;
+
+             case 'demo.sourcing.pm':
+
+             return this.http.get<MobileMenuItem[]>('assets/api/menu/' +  environment.mobileMenuFile)
+             .pipe(
+                tap( n =>
+                 {
+                     if (this.isLog)  {
+                         console.log('- srv -- ShopService.getMobileMenu() menu -> %o', n);
+                     }
+                 }),
+                delay(this.delayTest)
+            );
+                 break;
+
+              default:
+
+                 return of(mobileMenu);
+           }
+     }
+
+    getDepartmentsFake(): Observable<NavigationLink[]> {
+
+        // items: NavigationLink[] = navigation;
+
+         switch (getModeSource()) {
+
+             case 'fake-server':
+
+                 return of(navigation);
+                 break;
+             case 'json':
+
+                 return this.http.get<NavigationLink[]>('assets/api/menu/' +  environment.menuFile)
+                 .pipe(
+                    tap( n =>
+                     {
+                         if (this.isLog)  {
+                             console.log('- srv -- ShopService.getFullMenu() menu -> %o', n);
+                         }
+                     }),
+                    delay(this.delayTest)
+                );
+                break;
+
+             case 'demo.sourcing.pm':
+
+             return this.http.get<NavigationLink[]>('assets/api/menu/' +  environment.menuFile)
+             .pipe(
+                tap( n =>
+                 {
+                     if (this.isLog)  {
+                         console.log('- srv -- ShopService.getFullMenu() menu -> %o', n);
+                     }
+                 }),
+                delay(this.delayTest)
+            );
+                 break;
+
+              default:
+
+                 return of(navigation);
+           }
+     }
+
+     /**
      * Returns popular brands.
      */
      getPopularBrands(): Observable<Brand[]> {

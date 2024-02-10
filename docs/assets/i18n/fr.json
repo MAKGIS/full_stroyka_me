@@ -1,4 +1,6 @@
 {
+
+
   "product": {
 
     "Wishlist": "Liste de souhaits",
@@ -17,16 +19,16 @@
     "Plastic": "Plastique",
     "Quantity": "Quantité",
 
-    "Add to cart": "Ajouter au panier"
+    "Add to Cart": "Ajouter au panier"
    },
    "prod-tabs": {
 
     "Description": "Description",
-    "Specification": "Spécification",
+    "Specification": "Caractéristiques",
     "Reviews": "Avis",
     "Product Full Description": "Description complète du produit",
 
-    "Specification 2": "Spécification",
+    "Specification 2": "Caractéristiques",
     "Customer Reviews": "Avis clients",
     "Write A Review": "Écrire une critique",
     "Review Stars": "Étoiles de la critique",
@@ -36,6 +38,42 @@
     "Email Address": "Adresse email",
     "Your Review": "Votre avis",
     "Post Your Review": "Publiez votre avis"
+
+   },
+   "prod-tabs-belgium": {
+
+    "Description": "Description",
+    "Specification": "Caractéristiques",
+    "Documents": "Documents",
+    "SEO": "SEO",
+    "Price comparison": "Comparateur de prix",
+    "Reviews": "Reviews",
+    "Product Description": "Description du produit",
+    "Product Full Description": "Product Full Description",
+
+    "Generate a title": "Générer un titre",
+    "Loading...": "Chargement...",
+    "Generate a description": "Générer une description",
+    "Save description": "Sauver la description",
+
+    "Add a Characteristic": "Ajouter une Caractéristique au datamodèle",
+    "Generate keywords": "Générer mots clés",
+    "Keywords": "Mots clés",
+    "Search on Google": "Rechercher sur Google",
+    "No products loaded": "Aucun produit chargé",
+    "Notice": "Avis",
+    "Generate content": "Generer les contenus",
+
+    "Specification 2": "Caractéristiques",
+    "Customer Reviews": "Customer Reviews",
+    "Write A Review": "Write A Review",
+    "Review Stars": "Review Stars",
+    "Stars Rating": "Stars Rating",
+
+    "Your Name": "Your Name",
+    "Email Address": "Email Address",
+    "Your Review": "Your Review",
+    "Post Your Review": "Post Your Review"
 
    },
    "prod-card": {
@@ -48,16 +86,182 @@
     "In Stock": "En stock",
     "Availability": "Disponibilité",
 
-    "Add To Cart": "Ajouter au panier"
+    "Add To Cart": "Au panier"
    },
 
    "header": {
-    "Customer Service": "Service client"
+    "Customer Service": "Service client",
+    "primaryPhone": "+(33) 6 23 48 01 80"
    },
    "search": {
     "All Categories":"Toutes Catégories",
-    "Search over 10,000 products": "Recherchez plus de 10 000 produits"
+    "Search over 10,000 products": "Recherchez plus de 10 000 produits",
+
+    "Add to cart": "Au panier"
   },
+
+  "page-home": {
+    "Featured Products": "Produits populaires",
+    "Bestsellers": "Meilleures ventes",
+    "Popular Categories": "Catégories populaires",
+    "New Arrivals": "Nouveautés",
+    "Latest News": "Dernières nouvelles",
+
+    "Top Rated Products": "Produits les mieux notés",
+    "Special Offers": "Offres spéciales"
+ },
+ "page-brands": {
+  "Brands": "Marques"
+ },
+ "page-categories": {
+  "Categories": "Catégories"
+ },
+ "page-product": {
+   "Related Products": "Produits connexes"
+ },
+ "page-product-belgium": {
+  "Related Products": "Produits connexes"
+ },
+ "page-cart": {
+  "Your shopping cart is empty!": "Votre panier est vide!",
+  "Continue": "Continuer",
+  "Image": "Image",
+  "Product": "Produit",
+  "Price": "Prix",
+  "Quantity": "Quantité",
+  "Total": "Total",
+  "Password": "Mot de passe",
+  "Coupon Code": "Coupon Code",
+  "Apply Coupon": "Appliquer le coupon",
+  "Continue Shopping": "Continuer mes achats",
+  "Update Cart": "Mettre à jour le panier",
+  "Cart Totals": "Totaux du panier",
+  "Subtotal": "Sous-total",
+  "Calculate Shipping": "Calculer l'expédition",
+  "Proceed to checkout": "Procéder au paiement",
+
+  "Shipping": "expédition",
+  "Fee": "frais",
+  "Tax": "tax",
+  "Other": "other"
+ },
+ "page-checkout": {
+
+  "Checkout": "Commander",
+  "Returning customer?": "Client fidèle ?",
+  "Click here to login": "Cliquez ici pour vous connecter",
+
+  "Billing details": "Détails de facturation",
+  "First Name": "Prénom",
+  "Last Name": "Nom de famille",
+  "Company Name": "Nom de la société",
+  "Country": "Pays",
+
+  "Select a country...": "Sélectionner un pays...",
+  "United States": "États-Unis",
+  "France": "France",
+  "Russia": "Russie",
+  "England": "Angleterre",
+
+  "Street Address": "Adresse civique",
+
+  "Apartment, suite, unit etc.": "Appartement, suite, unité etc.",
+  "(Optional)": "(Facultatif)",
+  "Town / City": "Ville / Ville",
+  "State / County": "État/Comté",
+  "Postcode / ZIP": "Code postal/ZIP",
+
+  "Email address": "Adresse email",
+  "Phone": "Téléphone",
+
+  "Create an account?": "Créer un compte ?",
+  "Shipping Details": "Détails d'expédition",
+  "Ship to a different address?": "Expédier à une autre adresse ?",
+
+  "Order notes": "Notes de commande",
+  "Your Order": "Votre commande",
+  "Product": "Produit",
+  "Total": "Total",
+
+  "Subtotal": "Sous-total",
+  "Direct bank transfer": "Virement bancaire direct",
+  "Check payments": "Paiements par chèque",
+  "Cash on delivery": "Paiement à la livraison",
+  "Pay with cash upon delivery.": "Payer en espèces à la livraison.",
+  "PayPal": "PayPal",
+  "Pay via PayPal": "Payez via PayPal ; vous pouvez payer avec votre carte de crédit si vous n'avez pas de compte PayPal.",
+
+   "I have read and agree to the website": "J'ai lu et j'accepte le site Web",
+   "terms and conditions": "termes et conditions",
+   "Place Order": "Passer la commande",
+
+   "payment-methods__item-description": "Veuillez envoyer un chèque au nom du magasin, rue du magasin, ville du magasin, état/comté du magasin, code postal du magasin.",
+
+   "Shipping": "expédition",
+   "Fee": "frais",
+   "Tax": "tax",
+   "Other": "other"
+},
+"page-order-success": {
+  "Thank you": "Merci",
+  "Your order has been received": "Votre commande a été reçue",
+  "Go To Homepage": "Aller à la page d'accueil",
+
+  "Order number": "Numéro de commande",
+  "Created at": "Créé à",
+  "Total": "Total",
+  "Payment method": "Mode de paiement",
+  "Product": "Produit",
+  "Qty": "Quantité",
+
+  "Subtotal": "Sous-total",
+  "Shipping Address": "Adresse de livraison",
+  "Phone Number": "Numéro de téléphone",
+  "Email Address": "Adresse email",
+
+  "Billing Address": "Adresse de facturation",
+
+  "Store Credit": "Crédit magasin",
+  "Shipping": "Expédition"
+ },
+ "page-wishlist": {
+
+  "Wish List": "Liste de souhaits",
+
+  "Your wish list is empty!": "Votre liste de souhaits est vide!",
+  "Continue": "Continuer",
+
+  "Image": "Image",
+  "Product": "Produit",
+  "Stock Status": "Stock Status",
+  "Price": "Prix",
+  "Reviews": "Avis",
+  "In Stock": "En stock",
+  "Add To Cart": "Ajouter au panier"
+ },
+ "page-compare": {
+
+  "Comparison": "Comparaison",
+
+  "block-empty__message": "Vous n'avez choisi aucun produit à comparer !",
+  "Continue": "Continuer",
+  "Product": "Produit",
+  "Rating": "Note",
+  "Reviews": "Avis",
+  "Availability": "Disponibilité",
+  "In Stock": "En stock",
+  "Price": "Prix",
+  "Remove": "Supprimer"
+
+ },
+ "page-track-order": {
+
+  "Track Order": "Suivre la commande",
+  "Track Order text": "Vestibulum sem odio, ullamcorper a imperdiet tincidunt sed magna felis, consequat a erat ut, rutrum finibus odio.",
+  "Order ID": "ID de commande",
+  "Email address": "Adresse email",
+  "Track": "Piste"
+ },
 
    "menu": {
     "Menu": "Menu",
@@ -83,7 +287,10 @@
     "Home": "Maison",
         "Home 1": "Maison 1",
         "Home 2": "Maison 2",
+        "Brands": "Marques",
+        "Categories grid": "Catégories",
         "Offcanvas Cart": "Panier hors toile",
+        "Browse": "Parcourir",
 
     "Megamenu": "Megamenu",
 
@@ -91,12 +298,16 @@
             "Shop Grid": "Grille de magasin",
                 "3 Columns Sidebar": "3 Barre latérale des colonnes",
                 "4 Columns Full": "4 Colonnes pleines",
-                "5 Columns Ful": "5 Colonnes pleines",
+                "5 Columns Full": "5 Colonnes pleines",
             "Shop List": "Liste des boutiques",
             "Shop Right Sidebar": "Acheter dans la barre latérale droite",
-            "Product": "Produit",
+            "Product group": "Product",
+                "Product standard": "Product standard",
+                "Product": "Produit",
                 "Product Alt": "Alt du produit",
                 "Product Sidebar":"Barre latérale du produit",
+            "Products": "Produits",
+
             "Cart":"Chariot",
             "Checkout":"Vérifier",
             "Order Success":"Succès de la commande",
@@ -136,30 +347,30 @@
     "Buy Theme": "Acheter un thème"
    },
    "megamenu": {
-    "Power Tools": "Power Tools",
-      "Engravers": "Engravers",
-      "Wrenches": "Wrenches",
-      "Wall Chaser": "Wall Chaser",
-      "Pneumatic Tools": "Pneumatic Tools",
-  "Machine Tools": "Machine Tools",
-      "Thread Cutting": "Thread Cutting",
-      "Chip Blowers": "Chip Blowers",
-      "Sharpening Machines": "Sharpening Machines",
-      "Pipe Cutters": "Pipe Cutters",
-      "Slotting machines": "Slotting machines",
-      "Lathes": "Lathes",
-  "Hand Tools": "Hand Tools",
-      "Screwdrivers": "Screwdrivers",
-      "Handsaws": "Handsaws",
-      "Knives": "Knives",
-      "Axes": "Axes",
-      "Multitools": "Multitools",
-      "Paint Tools": "Paint Tools",
-  "Garden Equipment": "Garden Equipment",
-      "Motor Pumps": "Motor Pumps",
-      "Chainsaws": "Chainsaws",
-      "Electric Saws": "Electric Saws",
-      "Brush Cutters": "Brush Cutters"
+    "Power Tools": "Outils électriques",
+      "Engravers": "Graveurs",
+      "Wrenches": "Clés",
+      "Wall Chaser": "Chasseur de mur",
+      "Pneumatic Tools": "Outils pneumatiques",
+  "Machine Tools": "Machines-outils",
+      "Thread Cutting": "Coupe de fil",
+      "Chip Blowers": "Souffleurs de copeaux",
+      "Sharpening Machines": "Machines à affûter",
+      "Pipe Cutters": "Coupe-tubes",
+      "Slotting machines": "Machines à sous",
+      "Lathes": "Tours",
+  "Hand Tools": "Outils à main",
+      "Screwdrivers": "Tournevis",
+      "Handsaws": "Scies à main",
+      "Knives": "Couteaux",
+      "Axes": "Haches",
+      "Multitools": "Multioutils",
+      "Paint Tools": "Outils de peinture",
+  "Garden Equipment": "Équipement de jardin",
+      "Motor Pumps": "Motopompes",
+      "Chainsaws": "Tronçonneuses",
+      "Electric Saws": "Scies électriques",
+      "Brush Cutters": "Débroussailleuses"
 
    },
 
@@ -193,11 +404,11 @@
 
   "footer": {
 
-    "footer-contacts-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in feugiat lorem. Pellentque ac placerat tellus.",
+    "footer-contacts-text": "Géré par Pimalion, votre solution tout-en-un pour l'enrichissement et la publication de contenu multi-canal. Notre technologie de pointe aide à rationaliser votre processus de gestion de données et à optimiser vos informations produit pour un impact maximal.",
     "store": {
-        "address": "715 Fake Street, New York 10021 USA",
-        "email": "stroyka@example.com",
-        "phones": "(800) 060-0730', '(800) 060-0730",
+        "address": "AI-Crafted by Pimalion",
+        "email": " info@pimalion.com",
+        "phones": "+(33) 6 23 48 01 80",
         "hours": "Mon-Sat 10:00pm - 7:00pm"
     },
 
@@ -232,6 +443,10 @@
     "text": "Marteaux, burins, pinces universelles, pinces, scies sauteuses, scies",
     "Shop Now": "Acheter maintenant"
   },
+  "block-categories": {
+    "Show All": "Afficher tout",
+    "Products": "Produits"
+  },
   "block-features": {
 
     "Free Shipping": "Livraison gratuite",
@@ -249,5 +464,352 @@
   },
   "block-slideshow": {
     "Shop Now": "Achetez maintenant"
-  }
+  },
+  "block-brands-grid": {
+    "Products": "Des produits"
+  },
+  "block-categories-grid": {
+    "Products": "Des produits"
+  },
+  "products-view": {
+    "Grid": "Grille",
+    "Grid With Features": "Grille avec fonctionnalités",
+    "List": "Liste",
+
+    "Filters": "Filters",
+    "Sort By": "Trier par",
+    "Showing": "Affichage",
+    "of": "de",
+    "results": "résultats",
+    "Default": "Par défaut",
+    "Name (A-Z)": "Nom (A-Z)",
+    "Name (Z-A)": "Nom (Z-A)",
+    "Show": "Montre",
+    "No matching items": "Aucun élément correspondant",
+    "Try resetting the filters": "Essayez de réinitialiser les filtres",
+    "Reset filters": "Réinitialiser les filtres"
+
+  },
+  "product-sidebar": {
+     "Latest Products": "Derniers Produits"
+  },
+
+  "widget-aboutus": {
+    "About Blog": "À propos du blog",
+    "aboutus-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus, eget viverra nulla sem vitae neque. Quisque id sodales libero."
+  },
+  "widget-categories": {
+    "Categories": "Catégories"
+  },
+  "widget-filters": {
+    "Filters": "Filters",
+    "Reset": "Réinitialiser",
+    "All Products": "Tous les produits",
+
+    "Categories": "Catégories",
+    "Marques": "Marques",
+    "Price": "Price",
+    "Color": "Couleur",
+
+    "With Discount": "Avec remise",
+    "Any": "Tous",
+    "No": "Non",
+    "Yes": "Oui"
+  },
+  "widget-newsletter": {
+    "Our Newsletter": "Notre Newsletter",
+    "Email Address": "Adresse email",
+    "Subscribe": "S'abonner"
+  },
+  "widget-posts": {
+    "Latest Posts": "Derniers messages"
+  },
+  "widget-search": {
+    "Blog search...": "Поиск по блогу..."
+  },
+  "widget-tags": {
+    "Tags Cloud": "Nuage de balises",
+    "Promotion": "Promotion",
+          "Power Tool": "Outil électrique",
+          "New Arrivals": "Nouveautés",
+          "Screwdriver": "Tournevis",
+          "Wrench": "Clé",
+          "Mounts": "Montures",
+          "Electrodes": "Électrodes",
+          "Chainsaws": "Tronçonneuses",
+          "Manometers": "Manomètres",
+          "Nails": "Ongles",
+          "Air Guns": "Pistolets à air",
+          "Cutting Discs": "Disques à découper"
+  },
+  "widget-comments": {
+    "Latest Comments": "Derniers commentaires"
+  },
+
+  "comments-list": {
+    "Reply": "Répondre"
+  },
+
+  "pc": {
+      "Home": "Home",
+      "Shop": "Shop fr"
+    },
+
+  "shop-sidebar": {
+      "Latest Products": "Derniers produits"
+    },
+
+    "dropcart": {
+      "Shopping Cart": "Panier",
+      "Your shopping cart is empty!": "Votre panier est vide!",
+      "View Cart": "Voir le panier",
+      "Checkout": "Commander",
+
+    "Subtotal": "Sous-total",
+    "Total": "Total",
+
+    "Shipping": "expédition",
+    "Fee": "frais",
+    "Tax": "tax",
+    "Other": "other"
+    },
+
+    "about-us": {
+      "About Us": "À propos de nous",
+      "About Us text 1": "À propos de nous 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacus metus, convallis ut leo nec, tincidunt eleifend justo. Ut felis orci, hendrerit a pulvinar et, gravida ac lorem. Sed vitae molestie sapien, at sollicitudin tortor.",
+      "About Us text 2": "À propos de nous 2 Duis id volutpat libero, id vestibulum purus.Donec euismod accumsan felis,egestas lobortis velit tempor vitae. Integer eget velit fermentum, dignissim odio non, bibendum velit.",
+
+      "Meat Our Team": "Viande notre équipe",
+      "Want to work in our friendly team?": "Voulez-vous travailler dans notre équipe conviviale ?",
+      "Contact us": "Contactez-nous",
+      "and we will consider your candidacy.": "et nous examinerons votre candidature.",
+      "Michael Russo": "Michael Russo",
+      "Chief Executive Officer": "Directeur Général",
+      "Katherine Miller": "Katherine Miller",
+      "Marketing Officer": "Responsable marketing",
+
+      "Anthony Harris": "Anthony Harris",
+      "Finance Director": "Directeur Financier"
+    },
+    "page-contact-us": {
+
+      "Contact Us": "Contactez-nous",
+      "Our Address": "Notre Adresse",
+      "contact-us__address 1": " 715 Fake Ave, Apt. 34, New York, NY 10021 USA",
+      "contact-us__address 2": "Email: stroyka@example.com",
+      "contact-us__address 3": "Phone Number: +1 754 000-00-00",
+
+      "Opening Hours": "Heures d'ouverture",
+      "Opening Hours 1": "Du lundi au vendredi : 8h-20h",
+      "Opening Hours 2": "Samedi : 8h-18h",
+      "Opening Hours 3": "Dimanche : 10h-16h",
+
+      "Comment": "Commentaire",
+      "Comment 2": "Commentaire 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit suscipit mi, non tempor nulla finibus eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Leave us a Message": "Laissez-nous un message",
+      "Your Name": "Votre nom",
+      "Email": "E-mail",
+      "Email Address": "Adresse email",
+      "Subject": "Sujet",
+      "Message": "Message",
+      "Send Message": "Envoyer un message"
+    },
+    "page-not-found": {
+      "Oops! Error 404": "Oups ! Erreur 404",
+      "Page Not Found": "Page non trouvée",
+      "not-found__text": "Nous n'arrivons pas à trouver la page que vous recherchez.",
+      "Try to use the search.": "Essayez d'utiliser la recherche.",
+      "Search Query...": "Requête de recherche...",
+      "Search": "Chercher",
+      "Or go to the home page to start over.": "Ou allez à la page d'accueil pour recommencer.",
+      "Go To Home Page": "Aller à la page d'accueil"
+    },
+    "page-terms": {
+      "Terms And Conditions": "Termes et conditions",
+      "This Agreement was last modified on 27 May 2018.": "Cet accord a été modifié pour la dernière fois le 27 mai 2018.",
+
+      "document__content 1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac pretium nibh facilisis.",
+      "Definitions": "Définitions",
+
+      "Risus": "Risus",
+      "document__content Risus": "— Morbi posuere eleifend sollicitudin. Praesent eget ante in enim scelerisque scelerisque. Donec mi lorem, molestie a sapien non, laoreet convallis felis. In semper felis in lacus",
+      "Praesent": "Praesent",
+      "document__content Praesent": " — Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla orci ante, viverra in imperdiet in, pharetra et leo",
+      "Vestibulum": "Vestibulum",
+      "document__content Vestibulum": " — Vestibulum arcu tellus, aliquam vel fermentum vestibulum, lacinia pulvinaripsum. In hac habitasse platea dictumst. Integer felis libero, blandit scelerisque mauris eget, porta",
+
+      "Ornare dolor": "Ornare dolor",
+      "Ornare dolor 2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis neque ut purus fermentum, ac pretium nibh facilisis. ",
+
+      "For information about how to contact us, please visit our": "Pour plus d'informations sur la façon de nous contacter, veuillez visiter notre",
+      "contact page": "page de contact"
+    },
+    "page-faq": {
+      "Frequently Asked Questions": "Questions fréquemment posées",
+      "Shipping Information": "Informations d'expédition",
+      "What shipping methods are available?": "Quelles méthodes d'expédition sont disponibles ?",
+
+      "faq__section 1": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Do you ship internationally?": "Do you ship internationally?",
+      "faq__section 2": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "What shipping methods are available? 2": "What shipping methods are available?",
+      "faq__section 3": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Do you ship internationally? 3": "Do you ship internationally?",
+      "faq__section 4": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+      "Payment Information": "Informations de paiement",
+      "What shipping methods are available? 4": "What shipping methods are available?",
+
+      "What shipping methods are available? 5": "What shipping methods are available? 5",
+      "faq__section 5": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "What shipping methods are available? 6": "What shipping methods are available? 6",
+      "faq__section 6": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+      "Orders and Returns": "Commandes et retours",
+      "What shipping methods are available? 7": "What shipping methods are available?",
+
+      "faq__section 7": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "faq__section 8": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+      "What shipping methods are available? 8": "What shipping methods are available?"
+    },
+    "page-category": {
+      "Latest News": "Dernières nouvelles"
+    },
+    "page-login": {
+      "My Account": "Mon compte",
+      "Login": "Connexion",
+
+      "Email address": "Adresse email",
+      "Enter email": "Entrez l'e-mail",
+      "Password": "Mot de passe",
+      "Forgotten Password": "Mot de passe oublié",
+      "Remember Me": "Souvenez-vous de moi",
+      "Register": "S'inscrire",
+      "Repeat Password": "Répéter le mot de passe"
+    },
+    "layout": {
+      "My Account": "Mon compte",
+      "Navigation": "Navigation",
+
+      "Login":"Connexion",
+      "Dashboard":"Tableau de bord",
+      "Edit Profile":"Modifier le profil",
+      "Order History":"Historique des commandes",
+      "Order Details":"Détails de la commande",
+      "Addresses":"Adresses",
+      "Edit Address":"Modifier l'adresse",
+      "Password":"Mot de passe",
+      "Logout": "Déconnexion"
+    },
+    "page-dashboard": {
+      "Edit Profile": "Modifier le profil",
+      "Default Address": "Adresse par défaut",
+      "Phone Number": "Numéro de téléphone",
+      "Email Address": "Adresse email",
+      "Edit Address": "Modifier l'adresse",
+      "Recent Orders": "Commandes récentes",
+      "Order": "Commander",
+      "Date": "Date",
+      "Status": "Status",
+      "Total": "Total",
+      "for": "pour",
+      "item(s)": "élément(s)"
+    },
+    "page-addresses-list": {
+      "Add New": "Ajouter un nouveau",
+      "Default": "Par défaut",
+      "Phone Number": "Numéro de téléphone",
+      "Email Address": "Adresse email",
+      "Edit": "Modifier",
+      "Remove": "Supprimer"
+    },
+    "page-edit-address": {
+      "Edit Address": "Modifier l'adresse",
+      "First Name": "Prénom",
+      "Last Name": "Nom de famille",
+      "Company Name": "Nom de la société",
+      "Country": "Pays",
+
+    "Select a country...": "Sélectionner un pays...",
+    "United States": "États-Unis",
+    "France": "France",
+    "Russia": "Russie",
+    "England": "Angleterre",
+
+    "Street Address": "Adresse civique",
+
+    "Apartment, suite, unit etc.": "Appartement, suite, unité etc.",
+    "(Optional)": "(Facultatif)",
+    "Town / City": "Ville / Ville",
+    "State / County": "État/Comté",
+    "Postcode / ZIP": "Code postal/ZIP",
+
+    "Email address": "Adresse email",
+    "Phone": "Téléphone",
+
+      "Save": "Enregistrer"
+    },
+    "page-profile": {
+      "Edit Profile": "Modifier le profil",
+      "First Name": "Prénom",
+      "Last Name": "Nom de famille",
+      "Email Address": "Adresse email",
+      "Phone Number": "Numéro de téléphone",
+      "Save": "Enregistrer"
+    },
+    "page-password": {
+      "Change Password": "Modifier le mot de passe",
+      "Current Password": "Mot de passe actuel",
+      "New Password": "Nouveau mot de passe",
+      "Reenter New Password": "Entrer le nouveau mot de passe",
+      "Change": "Modifier"
+    },
+    "page-order-details": {
+      "Order": "Commander",
+      "Was placed on": "A été placé sur",
+      "and is currently": "et est actuellement",
+      "Product": "Produit",
+      "Total": "Total",
+      "Subtotal": "Sous-total",
+      "Shipping Address": "Adresse de livraison",
+      "Phone Number": "Numéro de téléphone",
+      "Email Address": "Adresse email",
+      "Billing Address": "Adresse de facturation",
+
+      "Store Credit": "Crédit magasin",
+      "Shipping": "Expédition",
+      "Back to list": "Retour à la liste"
+    },
+    "page-orders-list": {
+      "Order History": "Historique des commandes",
+      "Order": "Commander",
+      "Date": "Date",
+      "Status": "Statut",
+      "Total": "Total",
+      "for": "pour",
+      "item(s)": "élément(s)"
+    },
+
+    "post.component": {
+      "Latest news": "Dernières actualités",
+      "Related Posts": "Messages connexes",
+      "Comments": "Commentaires",
+      "Write A Comment": "Écrire un commentaire",
+      "First Name": "Prénom",
+      "Last Name": "Nom de famille",
+      "Email Address": "Adresse email",
+      "Comment": "Commentaire",
+      "Post Comment": "Publier un commentaire",
+
+      "Promotion": "Promotion",
+      "Power Tool": "Outil électrique",
+      "Wrench": "Clé",
+      "Electrodes": "Électrodes"
+    },
+    "post-card": {
+      "Read More": "Lire la suite",
+      "post-card__content": "D'une manière générale, la philosophie est associée à la sagesse, à la culture intellectuelle et à la recherche de connaissances. En ce sens, toutes les cultures..."
+
+    }
 }
